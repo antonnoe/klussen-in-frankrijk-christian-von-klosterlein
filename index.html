@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klussen in Frankrijk Kennisbank</title>
     <style>
-        /* --- ALGEMENE STIJL & RESET --- */
+        /* --- BASIS & TYPOGRAFIE --- */
         * { box-sizing: border-box; }
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
             margin: 0;
-            padding: 0; /* Padding verplaatst naar container voor sticky effect */
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
@@ -23,21 +22,24 @@
             padding: 20px;
         }
 
-        /* --- HEADER --- */
+        a { color: #800000; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* --- HEADER SECTIE --- */
         .header {
             text-align: center;
             background: white;
             padding: 40px 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-bottom: 30px;
-            border-bottom: 5px solid #800000;
+            border-top: 6px solid #800000;
         }
 
         .header h1 {
             color: #800000;
-            margin: 0 0 15px 0;
-            font-size: 2.5em;
+            margin: 0 0 20px 0;
+            font-size: 2.6em;
             line-height: 1.2;
         }
 
@@ -45,66 +47,67 @@
             font-size: 1.1em;
             color: #444;
             max-width: 800px;
-            margin: 0 auto 20px auto;
-        }
-
-        .intro-text a {
-            color: #800000;
-            text-decoration: underline;
-            font-weight: 500;
+            margin: 0 auto 25px auto;
         }
 
         .motto {
-            font-size: 1.3em;
-            color: #2c3e50;
+            font-size: 1.25em;
+            color: #555;
             font-style: italic;
-            font-weight: 600;
+            font-weight: 500;
             margin-top: 20px;
-            border-top: 1px solid #eee;
             padding-top: 20px;
+            border-top: 1px solid #eee;
             display: inline-block;
         }
 
-        /* --- STICKY DASHBOARD (ZOEKEN + NAV) --- */
+        /* --- STICKY DASHBOARD (ZOEKEN + NAVIGATIE) --- */
         .sticky-dashboard {
             position: -webkit-sticky; /* Safari */
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 15px;
-            margin: 0 -20px 30px -20px; /* Negatieve margin om schermbreedte te vullen */
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            border-bottom: 1px solid #ddd;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(8px);
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+            margin-left: -20px; /* Compenseer body padding */
+            margin-right: -20px;
+            width: calc(100% + 40px);
         }
 
-        .dashboard-inner {
+        .dashboard-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        /* Zoekbalk styling */
+        /* Zoekbalk */
         .search-wrapper {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .search-input {
-            flex: 1;
-            padding: 12px 20px;
-            font-size: 16px;
+            width: 100%;
+            padding: 12px 25px;
+            font-size: 17px;
             border: 2px solid #ddd;
             border-radius: 30px;
             outline: none;
-            transition: border-color 0.3s, box-shadow 0.3s;
+            transition: all 0.3s ease;
+            background-color: #f9f9f9;
         }
 
         .search-input:focus {
             border-color: #800000;
-            box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.1);
+            background-color: #fff;
+            box-shadow: 0 0 0 4px rgba(128, 0, 0, 0.1);
         }
 
         /* Navigatie Chips */
@@ -116,18 +119,18 @@
         }
 
         .nav-chip {
-            background: #f0f0f0;
-            color: #555;
-            padding: 6px 14px;
+            background: #e9ecef;
+            color: #495057;
+            padding: 6px 16px;
             border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.85em;
+            font-size: 0.9em;
             font-weight: 500;
             transition: all 0.2s;
             border: 1px solid transparent;
+            text-decoration: none !important;
         }
 
-        .nav-chip:hover, .nav-chip.active {
+        .nav-chip:hover {
             background: #800000;
             color: white;
             transform: translateY(-1px);
@@ -140,7 +143,8 @@
             overflow: hidden;
             box-shadow: 0 2px 10px rgba(0,0,0,0.03);
             margin-bottom: 40px;
-            scroll-margin-top: 160px; /* Zorgt dat sticky header niet over titel valt bij klik */
+            /* Zorgt dat titel niet achter sticky header verdwijnt bij klik */
+            scroll-margin-top: 180px; 
         }
 
         .rubriek-header {
@@ -150,88 +154,85 @@
         }
 
         .rubriek-title {
-            font-size: 1.4em;
-            font-weight: bold;
+            font-size: 1.5em;
+            font-weight: 700;
             margin: 0;
             display: flex;
             align-items: center;
-            gap: 10px;
         }
 
         .rubriek-desc {
-            font-size: 0.9em;
+            font-size: 0.95em;
             opacity: 0.9;
-            margin-top: 4px;
+            margin-top: 5px;
             font-weight: 300;
+            font-style: italic;
         }
 
         .rubriek-content {
-            padding: 20px;
+            padding: 25px;
         }
 
-        /* Grid layout */
+        /* Grid Layout */
         .doc-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
         }
 
-        /* De Tegel */
+        /* De Tegel (Card) */
         .doc-card {
             display: flex;
             flex-direction: column;
             padding: 20px;
             background: #fff;
             border-radius: 8px;
-            text-decoration: none;
+            text-decoration: none !important; /* Forceer geen onderstreping hele kaart */
             color: #333;
-            border: 1px solid #eee;
+            border: 1px solid #e0e0e0;
             transition: all 0.2s ease;
             height: 100%;
-            position: relative;
-            top: 0;
         }
 
         .doc-card:hover {
             border-color: #800000;
-            box-shadow: 0 5px 15px rgba(128,0,0,0.08);
-            top: -3px;
+            box-shadow: 0 8px 20px rgba(128,0,0,0.1);
+            transform: translateY(-3px);
         }
 
         .doc-title {
             color: #800000;
             font-weight: 700;
-            font-size: 1.1em;
-            margin-bottom: 8px;
+            font-size: 1.15em;
+            margin-bottom: 12px;
             line-height: 1.3;
         }
 
         .doc-text {
-            font-size: 0.9em;
-            color: #666;
+            font-size: 0.95em;
+            color: #555;
             line-height: 1.5;
         }
 
-        .hidden {
-            display: none !important;
-        }
-
+        /* Hulpklassen */
+        .hidden { display: none !important; }
+        
         /* Footer */
         .footer {
             text-align: center;
             padding: 40px;
-            color: #999;
+            color: #888;
             font-size: 0.9em;
             border-top: 1px solid #eee;
+            margin-top: 40px;
         }
 
         /* Mobiel */
         @media (max-width: 768px) {
-            .header h1 { font-size: 1.8em; }
-            .motto { font-size: 1.1em; }
+            .header h1 { font-size: 2em; }
             .doc-grid { grid-template-columns: 1fr; }
-            .sticky-dashboard { padding: 10px; margin-bottom: 20px; }
-            .nav-chips { display: none; /* Te veel knoppen voor mobiel, alleen zoeken */ }
+            .nav-chips { display: none; /* Te druk op mobiel, alleen zoeken */ }
+            .rubriek { scroll-margin-top: 120px; }
         }
     </style>
 </head>
@@ -255,34 +256,31 @@
     </div>
 
     <div class="sticky-dashboard">
-        <div class="dashboard-inner">
+        <div class="dashboard-content">
             <div class="search-wrapper">
                 <input type="text" 
                        id="searchInput" 
                        class="search-input" 
-                       list="suggestions" 
-                       placeholder="🔍 Typ om te zoeken (bijv. 'dak', 'vocht', 'vergunning')..."
+                       placeholder="🔍 Typ hier om te zoeken (bijv. 'dak', 'vocht', 'vergunning')..."
                        autocomplete="off">
-                <datalist id="suggestions"></datalist>
             </div>
 
             <div class="nav-chips">
-                <a href="javascript:void(0)" onclick="resetFilter()" class="nav-chip active">Alles tonen</a>
-                <a href="#algemeen" class="nav-chip">Algemeen</a>
-                <a href="#hout" class="nav-chip">Hout</a>
-                <a href="#muren" class="nav-chip">Muren</a>
-                <a href="#vocht" class="nav-chip">Vocht</a>
-                <a href="#plafonds" class="nav-chip">Plafonds</a>
-                <a href="#vloeren" class="nav-chip">Vloeren</a>
-                <a href="#dakramen" class="nav-chip">Dakramen</a>
-                <a href="#dak" class="nav-chip">Dak</a>
-                <a href="#luiken" class="nav-chip">Luiken</a>
-                <a href="#terras" class="nav-chip">Terras</a>
-                <a href="#water" class="nav-chip">Water</a>
-                <a href="#riolering" class="nav-chip">Riolering</a>
-                <a href="#badkamer" class="nav-chip">Badkamer</a>
-                <a href="#bevestigingen" class="nav-chip">Bevestigingen</a>
-                <a href="#verwarming" class="nav-chip">Verwarming</a>
+                <a href="#algemeen" class="nav-chip">1. Algemeen</a>
+                <a href="#hout" class="nav-chip">2. Hout</a>
+                <a href="#muren" class="nav-chip">3. Muren</a>
+                <a href="#vocht" class="nav-chip">4. Vocht</a>
+                <a href="#plafonds" class="nav-chip">5. Plafonds</a>
+                <a href="#vloeren" class="nav-chip">6. Vloeren</a>
+                <a href="#dakramen" class="nav-chip">7. Dakramen</a>
+                <a href="#dak" class="nav-chip">8. Dak</a>
+                <a href="#luiken" class="nav-chip">9. Luiken</a>
+                <a href="#terras" class="nav-chip">10. Terras</a>
+                <a href="#water" class="nav-chip">11. Water</a>
+                <a href="#riolering" class="nav-chip">12. Riolering</a>
+                <a href="#badkamer" class="nav-chip">13. Badkamer</a>
+                <a href="#bevestigingen" class="nav-chip">14. Bevestigingen</a>
+                <a href="#verwarming" class="nav-chip">15. Verwarming</a>
                 <a href="#slot" class="nav-chip">Slot</a>
             </div>
         </div>
@@ -297,19 +295,19 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1HOkfoY64BqYMrQCtLu11nL8mLgPlwdr5/view?usp=sharing" target="_blank">
                     <div class="doc-title">📄 Voorstellen en intenties</div>
-                    <div class="doc-text">Introductie tot de website over klussen in Frankrijk, met ervaringen uit Duitsland, Nederland en Frankrijk.</div>
+                    <div class="doc-text">Dit document, getiteld "KLUSSEN IN FRANKRIJK is geschreven door Christian von Klösterlein. Het dient als een introductie tot zijn website, die is opgezet om zijn ervaringen met het renoveren en klussen in oude huizen in Duitsland, Nederland en Frankrijk te delen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1yTdwuYoNholGArrc-jc0DZVzAgL7N2bu/view?usp=sharing" target="_blank">
                     <div class="doc-title">👷 Aannemers en architecten</div>
-                    <div class="doc-text">Rol, selectie en Franse regelgeving voor bouwprofessionals, inclusief garantie décennale.</div>
+                    <div class="doc-text">Dit document behandelt de rol en het belang van aannemers en architecten bij bouw- en renovatieprojecten in Frankrijk. Het bespreekt hoe je geschikte professionals kunt vinden en selecteren, waar je op moet letten bij het aangaan van contracten en wat de specifieke Franse regelgeving en gebruiken zijn.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1sanVcTO4si46QjS6rTkjqDkjZTeK8p8U/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏗️ Wat is er op bouwkundig gebied anders</div>
-                    <div class="doc-text">Bouwkundige verschillen tussen Frankrijk en Nederland: methoden, materialen en terminologie.</div>
+                    <div class="doc-text">Dit document belicht de belangrijkste bouwkundige verschillen tussen Frankrijk en Nederland. Het gaat in op de afwijkende bouwmethoden, materialen en terminologie die men kan tegenkomen bij het renoveren van een Frans huis.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1izxk8owTR_0mo9EHWElamXh4eEpLcnf7/view?usp=sharing" target="_blank">
                     <div class="doc-title">📐 Alles in huis is scheef</div>
-                    <div class="doc-text">Praktische tips voor het omgaan met scheve muren, vloeren en plafonds in oude Franse huizen.</div>
+                    <div class="doc-text">Dit document biedt praktische tips en oplossingen voor het omgaan met de uitdagingen van scheve muren, vloeren en plafonds in oude Franse huizen. Het legt uit hoe je de mate van scheefheid kunt meten en beoordelen.</div>
                 </a>
             </div>
         </div>
@@ -324,15 +322,15 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1KJxtT4FwuVH35Ysffoycx7y2qY7VSfvL/view?usp=sharing" target="_blank">
                     <div class="doc-title">🌳 Gegevens over hout</div>
-                    <div class="doc-text">Overzicht van Franse houtsoorten, eigenschappen en behandeling tegen insecten en schimmels.</div>
+                    <div class="doc-text">Dit document biedt een overzicht van verschillende houtsoorten die veel in Frankrijk worden gebruikt, met hun eigenschappen, toepassingen en specifieke aandachtspunten. Het behandelt onderwerpen als duurzaamheid, hardheid en bewerkbaarheid.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1RvghnW8El_KSeBH_9iJ61zS9vQpECUMj/view?usp=sharing" target="_blank">
                     <div class="doc-title">🛠️ Tips voor het werken met hout</div>
-                    <div class="doc-text">Praktische technieken voor houtbewerking, gereedschap en werken met oud hout.</div>
+                    <div class="doc-text">Dit document bevat een verzameling praktische tips en technieken voor het bewerken van hout, specifiek gericht op de situaties die je in Frankrijk kunt tegenkomen. Het geeft advies over het juiste gereedschap.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1JTQneHH68o5VI7m6E92y4O2x8_ZB31eL/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔧 Gaten in hout opvullen</div>
-                    <div class="doc-text">Reparatietechnieken voor gaten en scheuren met verschillende vulmiddelen.</div>
+                    <div class="doc-text">Dit document legt uit hoe je gaten, scheuren en andere onvolkomenheden in hout effectief kunt repareren. Het bespreekt verschillende vulmiddelen, zoals houtplamuur, kneedbaar hout en epoxy.</div>
                 </a>
             </div>
         </div>
@@ -347,27 +345,27 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1ucFcj0_f0dKui5s42e2Y6H_QMA5eRHQu/view?usp=sharing" target="_blank">
                     <div class="doc-title">📏 Trucs voor scheve muren</div>
-                    <div class="doc-text">Technieken voor afwerking en inrichting met scheve muren.</div>
+                    <div class="doc-text">Dit document bouwt voort op het thema 'Alles in huis is scheef' en geeft specifieke technieken voor het afwerken en inrichten van kamers met scheve muren. Het behandelt onderwerpen als het aanbrengen van pleisterwerk.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1MW9wfNGzJbx4jgobY_SoQ8l8F2yBbojA/view?usp=sharing" target="_blank">
                     <div class="doc-title">🗄️ Een kast op een doorgezakte vloer plaatsen</div>
-                    <div class="doc-text">Handleiding voor het waterpas plaatsen van meubels op ongelijke vloeren.</div>
+                    <div class="doc-text">Dit document biedt een praktische handleiding voor het waterpas plaatsen van een kast of ander meubelstuk op een ongelijke of doorgezakte vloer.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1N2jezAusFIowPhr6UZMxxL_3rrwMt1gm/view?usp=sharing" target="_blank">
                     <div class="doc-title">⬜ Wanden van gipsplaten</div>
-                    <div class="doc-text">Complete gids voor werken met placo/BA13: soorten, plaatsing en afwerking.</div>
+                    <div class="doc-text">Dit document is een uitgebreide gids voor het werken met gipsplaten, in Frankrijk bekend als 'placo' of 'BA13'. Het beschrijft de verschillende soorten gipsplaten en de benodigde materialen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1JQBWA0GTvcF29csssIpEl8FgWCNIU2Ds/view?usp=sharing" target="_blank">
                     <div class="doc-title">🧱 Wanden van gasbetonblokken</div>
-                    <div class="doc-text">Bouwen met cellenbeton: voordelen, techniek en afwerking.</div>
+                    <div class="doc-text">Dit document legt uit hoe je een binnenmuur kunt bouwen met gasbetonblokken (cellenbeton). Het behandelt de voordelen van dit materiaal, zoals het lichte gewicht en de goede isolerende eigenschappen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1T4B1i-qUZWk0lpAS9fKDfBpMBF9P8Wxb/view?usp=sharing" target="_blank">
                     <div class="doc-title">⛰️ Buitenmuren van natuursteen voegen</div>
-                    <div class="doc-text">Restauratie van voegen in natuurstenen muren met kalkmortel.</div>
+                    <div class="doc-text">Dit document is een handleiding voor het restaureren van de voegen van natuurstenen buitenmuren ('en pierre'). Het legt uit hoe je oude, beschadigde voegen kunt verwijderen en de muur kunt voorbereiden.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/19Wct4r1Tzk4iXfcQxnqe6U6QeMCvjPmj/view?usp=sharing" target="_blank">
                     <div class="doc-title">🚪 Muuropeningen</div>
-                    <div class="doc-text">Maken van nieuwe openingen voor deuren en ramen, inclusief lateien.</div>
+                    <div class="doc-text">Dit document behandelt het maken of aanpassen van muuropeningen, bijvoorbeeld voor een nieuwe deur of een raam. Het beschrijft de stappen die nodig zijn, van het plannen en aftekenen van de opening tot het plaatsen van een latei.</div>
                 </a>
             </div>
         </div>
@@ -382,39 +380,39 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1n_Pnw1Ns2IJXNJ_VbkKWNmXAcMJQ5iJq/view?usp=sharing" target="_blank">
                     <div class="doc-title">💧 Vochtproblemen en hun bestrijding</div>
-                    <div class="doc-text">Overzicht van vochtproblemen: herkenning en gevolgen.</div>
+                    <div class="doc-text">Dit inleidende document geeft een algemeen overzicht van de meest voorkomende vochtproblemen in huizen, zoals optrekkend vocht, doorslaand vocht en condens.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1jIgWxD2hhjwmmwmWg-UeD-9L_ptr1Nu7/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔍 Oorzaken van vochtproblemen</div>
-                    <div class="doc-text">Identificatie van vochtbronnen en bouwkundige gebreken.</div>
+                    <div class="doc-text">Dit document gaat dieper in op de verschillende oorzaken van vochtproblemen. Het helpt bij het identificeren van de bron van het vocht, wat cruciaal is voor een effectieve oplossing.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1Tr0hOEFo1wg5UW532jVbZYzGNzcoMcIs/view?usp=sharing" target="_blank">
                     <div class="doc-title">⬆️ Optrekkend vocht</div>
-                    <div class="doc-text">Herkenning en bestrijding van opstijgend vocht in oude muren.</div>
+                    <div class="doc-text">Dit document richt zich specifiek op optrekkend vocht, een veelvoorkomend probleem in oudere huizen zonder (functionerende) waterkering. Het legt uit hoe je optrekkend vocht kunt herkennen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1KP5i4mG6rUfNiRkPCfB1TlabCINvXOgd/view?usp=sharing" target="_blank">
                     <div class="doc-title">🌧️ Maatregelen bij vochtdoorslag</div>
-                    <div class="doc-text">Oplossingen voor doorslaand vocht via buitenmuren.</div>
+                    <div class="doc-text">Dit document behandelt doorslaand vocht, dat ontstaat wanneer regenwater via de buitenmuur naar binnen dringt. Het bespreekt de mogelijke oorzaken, zoals poreuze stenen of beschadigd voegwerk.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1jNS4DmuNn4m_3wpXCtkeb4lTvLUsSxJ-/view?usp=sharing" target="_blank">
                     <div class="doc-title">💦 Condensvocht</div>
-                    <div class="doc-text">Oorzaken en oplossingen voor condens en schimmelvorming.</div>
+                    <div class="doc-text">Dit document focust op condensatie, een veelvoorkomende oorzaak van vocht en schimmel in huis. Het legt uit hoe condens ontstaat door een combinatie van vochtproductie, onvoldoende ventilatie en koude oppervlakken.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1ARO7oaiVxR3qK9ADlFsnGcVSSwkYZa0S/view?usp=sharing" target="_blank">
                     <div class="doc-title">🎨 Binnenafwerking van vochtige muren</div>
-                    <div class="doc-text">Juiste materialen en technieken voor vochtige muren.</div>
+                    <div class="doc-text">Dit document geeft advies over hoe je muren die vochtig zijn (geweest) het beste kunt afwerken. Nadat de oorzaak van het vochtprobleem is verholpen, is het belangrijk om de juiste materialen te kiezen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1mCX3FHHMSiie1ILJAT00ppqWCbtIbSUE/view?usp=sharing" target="_blank">
                     <div class="doc-title">🛡️ Vochtwering bij binnenisolatie van daken</div>
-                    <div class="doc-text">Dampschermen en folies voor dakisolatie.</div>
+                    <div class="doc-text">Dit document behandelt een specifiek maar belangrijk onderwerp: het voorkomen van vochtproblemen bij het isoleren van een dak van binnenuit. Het legt het belang uit van een dampscherm.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1-xWhLrlw2IvQHpkXfwwzRSTPkrU97cDo/view?usp=sharing" target="_blank">
                     <div class="doc-title">📊 Vochtproblemen aandachtspunten en theorie</div>
-                    <div class="doc-text">Theoretische achtergrond vochttransport in bouwmaterialen.</div>
+                    <div class="doc-text">Dit document biedt een diepgaandere theoretische achtergrond over vochtproblemen. Het gaat in op de fysische principes van vochttransport in bouwmaterialen, zoals capillaire werking.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1F8VzEF-kYa4AoFuTJCnzcnsT42G2mY44/view?usp=sharing" target="_blank">
                     <div class="doc-title">✅ Vochtproblemen oplossen</div>
-                    <div class="doc-text">Praktisch stappenplan voor diagnose en aanpak.</div>
+                    <div class="doc-text">Dit document is een praktische samenvatting en checklist voor het oplossen van vochtproblemen. Het combineert de kennis uit de voorgaande documenten en biedt een stappenplan.</div>
                 </a>
             </div>
         </div>
@@ -429,27 +427,27 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1GuNPsw7EQqLf4G1HAyUQbsN6j2gtFV8v/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏠 Plafonds en plafondafwerking</div>
-                    <div class="doc-text">Overzicht van Franse plafondtypes en afwerkingsmogelijkheden.</div>
+                    <div class="doc-text">Dit document geeft een algemeen overzicht van de verschillende soorten plafonds die je in Franse huizen kunt aantreffen, zoals het traditionele 'plafond à la française'.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1EDInqoPaTMD_wnfCuOWA1MWrhnqKnFDT/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔎 Verken uw plafond</div>
-                    <div class="doc-text">Onderzoek van plafondconstructie voor renovatie.</div>
+                    <div class="doc-text">Voordat je aan een plafond begint te werken, is het belangrijk om te weten hoe het is opgebouwd. Dit document legt uit hoe je de constructie van je plafond kunt onderzoeken.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1jAjLToTE0Kh_Dat1BVbwAFol5_XO_1b3/view?usp=sharing" target="_blank">
                     <div class="doc-title">⬇️ Hangend gipsplatenplafond</div>
-                    <div class="doc-text">Handleiding voor verlaagd plafond met metalen frame.</div>
+                    <div class="doc-text">Dit document is een gedetailleerde handleiding voor het maken van een verlaagd of vrijdragend plafond met gipsplaten ('placo'). Het beschrijft de stappen voor het monteren van een metalen frame.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1GxviZ6EKEK1KIvjsRv7G9wEfFolkhjg_/view?usp=sharing" target="_blank">
                     <div class="doc-title">🪵 Planken plafonds</div>
-                    <div class="doc-text">Houten schroten plafonds: materialen en montage.</div>
+                    <div class="doc-text">Dit document behandelt plafonds die zijn afgewerkt met houten planken of schroten. Het bespreekt de verschillende houtsoorten en profielen die geschikt zijn voor deze toepassing.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1NYQQIGDm09UJ4rolwlQ9MxXWJSZLwKsn/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏛️ Een gipsplatenplafond tussen de balken</div>
-                    <div class="doc-text">Behoud van zichtbare balken met placo ertussen.</div>
+                    <div class="doc-text">Dit document legt uit hoe je een gipsplatenplafond kunt aanbrengen tussen de balken van een 'plafond à la française', zodat de balken zichtbaar blijven.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1I1A0b0zG8KZczc_mYiwcVJDuokgGLEUh/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔨 Diverse oplossingen voor vloeren en plafonds</div>
-                    <div class="doc-text">Alternatieve technieken zoals pleister op riet.</div>
+                    <div class="doc-text">Dit document bespreekt een aantal alternatieve en specifieke oplossingen voor vloer- en plafondconstructies. Het kan gaan over het herstellen van traditionele pleisterplafonds op riet.</div>
                 </a>
             </div>
         </div>
@@ -464,59 +462,59 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/17HhMUKFJa9FMgnS733Vhwis42Xcpg2un/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏡 Vloeren en trappen</div>
-                    <div class="doc-text">Overzicht van Franse vloer- en traptypes.</div>
+                    <div class="doc-text">Dit inleidende document geeft een overzicht van de verschillende soorten vloeren en trappen die men in Franse huizen kan tegenkomen. Het behandelt de kenmerken van houten balkenvloeren, stenen vloeren, etc.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1wzInOsi_j9m0WfDK7qvkYPNCA1_huaXc/view?usp=sharing" target="_blank">
                     <div class="doc-title">🪵 Balkenvloeren</div>
-                    <div class="doc-text">Constructie en herstel van houten balkenvloeren.</div>
+                    <div class="doc-text">Dit document gaat dieper in op de constructie en het herstel van traditionele houten balkenvloeren. Het legt uit hoe je de staat van de balken en de vloerdelen kunt beoordelen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1J613I6mQktqYe1tOTwbN7fBrfDBQPAaw/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔨 Een plank vervangen</div>
-                    <div class="doc-text">Stapsgewijze handleiding voor plankreparatie.</div>
+                    <div class="doc-text">Dit document biedt een stapsgewijze handleiding voor het vervangen van een beschadigde plank in een houten vloer. Het legt uit hoe je de oude plank kunt verwijderen zonder schade.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/145RAIhwLR9i_ftdJKi8lQCqgUEVM6Oiw/view?usp=sharing" target="_blank">
                     <div class="doc-title">💪 Een vloer verstevigen</div>
-                    <div class="doc-text">Methoden tegen doorbuiging en trillingen.</div>
+                    <div class="doc-text">Dit document beschrijft verschillende methoden om een bestaande houten vloer te verstevigen die te ver doorbuigt of trilt. Technieken die aan bod komen zijn onder andere het aanbrengen van extra balken.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1A3yHv21VmhGOzdRe46nQ-HDfBWdFSJuq/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏠 Een nieuwe vloer leggen</div>
-                    <div class="doc-text">Gids voor laminaat, parket en PVC.</div>
+                    <div class="doc-text">Dit document is een algemene gids voor het leggen van een nieuwe vloerbedekking, zoals laminaat, parket of PVC. Het behandelt de voorbereiding van de ondervloer.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1jT4zoWugzB6DgV9bp4GmW88hukyF7GZY/view?usp=sharing" target="_blank">
                     <div class="doc-title">⚠️ Een doorgezakte vloer</div>
-                    <div class="doc-text">Analyse en ingrijpende oplossingen.</div>
+                    <div class="doc-text">Dit document gaat dieper in op het probleem van doorgezakte vloeren. Het helpt bij het analyseren van de oorzaak en de ernst van de doorzakking en bespreekt meer ingrijpende oplossingen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1RAthnWMdXdpTF7MANtfDLwSdyT3bxrwR/view?usp=sharing" target="_blank">
                     <div class="doc-title">🛠️ Balken repareren</div>
-                    <div class="doc-text">Technieken voor beschadigde balkkoppen.</div>
+                    <div class="doc-text">Dit document focust op specifieke technieken voor het repareren van beschadigde houten balken. Het behandelt het herstellen van balkkoppen die zijn aangetast door vocht.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1Lm5iSQQbeJcRuNqQHxiDJ4GNSFXGB5Ym/view?usp=sharing" target="_blank">
                     <div class="doc-title">📐 Opdekvloeren</div>
-                    <div class="doc-text">Egalisatie en isolatie met zwevende dekvloeren.</div>
+                    <div class="doc-text">Dit document legt uit hoe je een opdekvloer of zwevende dekvloer kunt aanbrengen. Dit type vloer wordt vaak gebruikt om een bestaande vloer te egaliseren of leidingen weg te werken.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/13ZmhTG1HSntqHTVNfr8TQCtfS9hl_y5p/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔊 Krakende vloeren</div>
-                    <div class="doc-text">Oplossingen voor geluidsproblemen.</div>
+                    <div class="doc-text">Dit document biedt oplossingen voor het verhelpen van krakende houten vloeren. Het legt uit wat de oorzaken zijn van het kraken en bespreekt methoden om dit te stoppen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1RUm0Xz58FdJZpvwNgw8noxhdgq8hNpms/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏺 Betegelen van oude vloeren</div>
-                    <div class="doc-text">Werken met tomettes en terracotta.</div>
+                    <div class="doc-text">Dit document behandelt de specifieke uitdagingen van het betegelen van oude vloeren, zoals de typisch Franse 'tomettes' (terracotta tegels). Het geeft advies over schoonmaken en repareren.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1G80_N0ePYKEpCqz612IDeGr10NHK3E4D/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏗️ Andere vloeren en trappen</div>
-                    <div class="doc-text">Betonvloeren en trappenrenovatie.</div>
+                    <div class="doc-text">Dit document bespreekt diverse andere vloer- en trapsoorten en -technieken die niet in de voorgaande documenten aan bod kwamen, zoals betonnen vloeren op zand.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1mXdttntY7bc5sNb5WDCsahbWbYe7ZHS0/view?usp=sharing" target="_blank">
                     <div class="doc-title">📏 Trappen</div>
-                    <div class="doc-text">Uitgebreide gids met Franse normen.</div>
+                    <div class="doc-text">Dit document is een uitgebreide gids over trappen. Het behandelt de verschillende soorten trappen, de materialen en de Franse terminologie en normen met betrekking tot afmetingen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1bPt6V23ZUbRCnlzrGUpSzs5wbpaLX6Fh/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏗️ Systeemvloeren van poutrelles et hourdis</div>
-                    <div class="doc-text">Typisch Franse vloerconstructie met liggers.</div>
+                    <div class="doc-text">Dit document legt uit hoe een typisch Franse systeemvloer van 'poutrelles et hourdis' (balken en vulelementen) wordt opgebouwd. Deze vloeren bestaan uit prefab betonnen of stalen liggers.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/129BtUUYmhuzmQAz7r_PJ6r0mFYvlWSGu/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔧 Vloeren met lewisplaten</div>
-                    <div class="doc-text">Dunne betonvloeren op houten constructie.</div>
+                    <div class="doc-text">Dit document behandelt het gebruik van Lewisplaten voor het maken van dunne, lichte en sterke betonvloeren op houten balklagen. Ideaal voor badkamervloeren.</div>
                 </a>
             </div>
         </div>
@@ -531,47 +529,47 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1qGvwwNHic9vehdZd365z_KMTmKKk_-DX/view?usp=sharing" target="_blank">
                     <div class="doc-title">🪟 Dakramen inleiding</div>
-                    <div class="doc-text">Voordelen van dakramen voor licht en ventilatie.</div>
+                    <div class="doc-text">Dit document is een inleiding op het onderwerp dakramen, in Frankrijk vaak met de merknaam 'Velux' aangeduid. Het geeft een overzicht van de voordelen zoals meer daglicht.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1BEmLcAcSDm_Nvx-JWYgWoJf7JLOhqgyQ/view?usp=sharing" target="_blank">
                     <div class="doc-title">✅ Keuze van een raam</div>
-                    <div class="doc-text">Afmetingen, materialen en bedieningsmethoden.</div>
+                    <div class="doc-text">Dit document helpt bij het kiezen van het juiste dakraam voor jouw situatie. Het behandelt de verschillende afmetingen, materialen en soorten beglazing.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1nxkFD0nBusn6gd4gmLnGBvmwQ28EGq6K/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏠 Dakraam in een modern dak</div>
-                    <div class="doc-text">Plaatsing met onderdakfolie en gootstukken.</div>
+                    <div class="doc-text">Dit document beschrijft de procedure voor het plaatsen van een dakraam in een modern dak, dat doorgaans is voorzien van een onderdakfolie.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1eHsX4aMQel7ZMltHE7FKbnguOX7igihC/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏛️ Dakraam in een oud dak</div>
-                    <div class="doc-text">Uitdagingen bij traditionele daken.</div>
+                    <div class="doc-text">Dit document behandelt de specifieke uitdagingen bij het plaatsen van een dakraam in een oud, traditioneel Frans dak zonder onderdak.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1l3py6yhtJy6tJHI3lH68_zsJs-kh9hv-/view?usp=sharing" target="_blank">
                     <div class="doc-title">⚙️ Dakraam plaatsing</div>
-                    <div class="doc-text">Complete stapsgewijze handleiding.</div>
+                    <div class="doc-text">Dit document is een algemene, stapsgewijze handleiding voor de plaatsing van een dakraam. Het combineert de informatie uit de voorgaande documenten.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1GnvsTzi7hqzBXr-iq4Zcww_vL06Alj5t/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔨 Dakraam binnenafwerking</div>
-                    <div class="doc-text">Aftimmering en isolatie rond het kozijn.</div>
+                    <div class="doc-text">Nadat het dakraam is geplaatst, moet de binnenzijde netjes worden afgewerkt. Dit document legt uit hoe je de aftimmering rondom het raam maakt, meestal met gipsplaat of hout.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1xEOYX1RwYoH8Nt1YTCfUw0AyyhXXadra/view?usp=sharing" target="_blank">
                     <div class="doc-title">💧 Condensproblemen bij dakramen</div>
-                    <div class="doc-text">Oorzaken en oplossingen voor condens.</div>
+                    <div class="doc-text">Dit document behandelt het specifieke probleem van condensvorming op en rond dakramen. Het legt uit wat de oorzaken zijn en draagt oplossingen aan.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1wW-2BSR0W5nosGHDnu59zeRQ-5va_91f/view?usp=sharing" target="_blank">
                     <div class="doc-title">💡 Diverse aandachtspunten bij dakramen</div>
-                    <div class="doc-text">Tips voor onderhoud en kleine reparaties.</div>
+                    <div class="doc-text">Dit document is een verzameling van diverse tips en aandachtspunten met betrekking tot dakramen, zoals onderhoud en kleine reparaties.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1ZxXeU0kmecG0yR-s5s3P4L2snbcbIZoo/view?usp=sharing" target="_blank">
                     <div class="doc-title">📋 Vergunning nodig</div>
-                    <div class="doc-text">Déclaration préalable de travaux procedure.</div>
+                    <div class="doc-text">Dit belangrijke document legt uit welke vergunningen er in Frankrijk nodig zijn voor het plaatsen van een dakraam ('déclaration préalable de travaux').</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1azvIQwMOzuNhlCTmp9Io2At-CjLS_zPw/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔗 Tips en links</div>
-                    <div class="doc-text">Handige websites en aanvullende informatie.</div>
+                    <div class="doc-text">Dit document biedt een verzameling handige tips en links naar externe websites met aanvullende informatie over dakramen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1uqkxjLXOHukGwHrWfB4MLuQKej8lYCTE/view?usp=sharing" target="_blank">
                     <div class="doc-title">ℹ️ Aanvullende informatie velux</div>
-                    <div class="doc-text">Specifieke info over het merk Velux.</div>
+                    <div class="doc-text">Dit document bevat specifieke aanvullende informatie over het merk Velux, zoals productlijnen en coderingen.</div>
                 </a>
             </div>
         </div>
@@ -586,27 +584,27 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1qX8z5ajxKWP4bbGWtpu3TRQSMHjeUHv6/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏗️ Dakconstructies</div>
-                    <div class="doc-text">Franse dakconstructietypes en terminologie.</div>
+                    <div class="doc-text">Dit document geeft een overzicht van de verschillende soorten dakconstructies die in Frankrijk worden toegepast, met speciale aandacht voor traditionele spantendaken.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1VXRHrwtoCvdzDFSjt_M8XxONxDd29OC-/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏺 Dakpanmodellen</div>
-                    <div class="doc-text">Tuile canal, plate en mécanique types.</div>
+                    <div class="doc-text">Dit document biedt een overzicht van de diverse soorten dakpannen ('tuiles') die in Frankrijk worden gebruikt, zoals de 'tuile canal' en 'tuile plate'.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1wLDGCR6KSfAIZZTVto-h4noFCHYn7Ivr/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔄 Een pannendak vernieuwen</div>
-                    <div class="doc-text">Handleiding voor complete dakvernieuwing.</div>
+                    <div class="doc-text">Dit document is een handleiding voor het vernieuwen van een pannendak. Het beschrijft de stappen van het verwijderen van oude pannen tot het leggen van nieuwe.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1T6ea8jkHsRx48-jJfEykZFEWno9791dZ/view?usp=sharing" target="_blank">
                     <div class="doc-title">📐 En als het dak scheef is</div>
-                    <div class="doc-text">Werken met doorgezakte dakconstructies.</div>
+                    <div class="doc-text">Dit document behandelt de uitdaging van het werken met een dak dat in de loop der tijd is doorgezakt of scheefgetrokken.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1PReCFMwsLl8wh1hY3O6gKWPQ4PSdeUGk/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏗️ Dakgoten</div>
-                    <div class="doc-text">Gouttières: materialen en montage.</div>
+                    <div class="doc-text">Dit document gaat over het plaatsen en onderhouden van dakgoten ('gouttières') en regenpijpen. Het bespreekt materialen zoals zink en PVC.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1Zlyu9-QuJVK4Q827ZV_xuxuwDVOdCz7L/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏠 Dakkapellen des lucarnes</div>
-                    <div class="doc-text">Franse dakkapeltypes en constructie.</div>
+                    <div class="doc-text">Dit document behandelt dakkapellen, in het Frans 'lucarnes' genoemd. Het beschrijft de verschillende soorten die kenmerkend zijn voor de Franse architectuur.</div>
                 </a>
             </div>
         </div>
@@ -621,31 +619,31 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/15h2FdYE5TYpFCfOewYWDhxHrF5wWYktY/view?usp=sharing" target="_blank">
                     <div class="doc-title">🚪 Luiken en staldeuren</div>
-                    <div class="doc-text">Overzicht van Franse luiktypes.</div>
+                    <div class="doc-text">Dit document geeft een overzicht van de verschillende soorten luiken ('volets') en staldeuren die kenmerkend zijn voor het Franse platteland.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1fx5c9lJDLoFJBH-ZT0L4LdGigDQmStTd/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔧 Afhangen van klapluiken</div>
-                    <div class="doc-text">Correct monteren van beslag.</div>
+                    <div class="doc-text">Dit document is een praktische handleiding voor het correct afhangen van klapluiken. Het legt uit hoe je het beslag monteert.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/16kuwWSLBKuodVtSILX_fXKT99GtfNop5/view?usp=sharing" target="_blank">
                     <div class="doc-title">⬇️ Rolluiken</div>
-                    <div class="doc-text">Volets roulants: soorten en installatie.</div>
+                    <div class="doc-text">Dit document behandelt rolluiken ('volets roulants'), een populaire vorm van zonwering en beveiliging in Frankrijk. Het bespreekt installatie en soorten.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/16glinvX6kq_dOCAc4GBE1LN92_z1qkkw/view?usp=sharing" target="_blank">
                     <div class="doc-title">🌀 Les persiennes</div>
-                    <div class="doc-text">Luiken met lamellen voor ventilatie.</div>
+                    <div class="doc-text">Dit document gaat specifiek in op 'persiennes', een type luik met horizontale lamellen. De gids behandelt installatie en onderhoud.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1d6hLnGzBEkMBiCBRclwYf7_blE2HdQ6l/view?usp=sharing" target="_blank">
                     <div class="doc-title">⚠️ Uitgezakte luiken</div>
-                    <div class="doc-text">Reparatie van doorgezakte luiken.</div>
+                    <div class="doc-text">Dit document biedt oplossingen voor het probleem van uitgezakte houten luiken die niet meer goed sluiten.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1_XOSL2itAEaqktWoavveCD32d4F8xyAn/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔨 Boerenluiken zelf maken</div>
-                    <div class="doc-text">Handleiding voor traditionele luiken.</div>
+                    <div class="doc-text">Dit document is een handleiding voor het zelf maken van traditionele 'boerenluiken'. Het beschrijft de constructie van een eenvoudig en robuust luik.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1goSIlSLbcIjSuXSfzgNiZXeF_NbhnSmB/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔩 Beslag voor luiken</div>
-                    <div class="doc-text">Ferrure: decoratief en functioneel beslag.</div>
+                    <div class="doc-text">Dit document geeft een overzicht van het verschillende soorten beslag ('ferrure') dat wordt gebruikt voor luiken in Frankrijk.</div>
                 </a>
             </div>
         </div>
@@ -660,7 +658,7 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1NFrKGCInXZcwU6kMihA_ByXIhCPmXpjk/view?usp=sharing" target="_blank">
                     <div class="doc-title">☀️ Een terras aanleggen</div>
-                    <div class="doc-text">Complete gids voor terrasaanleg.</div>
+                    <div class="doc-text">Dit document is een uitgebreide gids voor het aanleggen van een terras. Het behandelt de verschillende fasen van het project: van ontwerp tot aanleg.</div>
                 </a>
             </div>
         </div>
@@ -675,19 +673,19 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1PyjNp-TAOpm51k1QVFknEAhfUjAjJqba/view?usp=sharing" target="_blank">
                     <div class="doc-title">💧 Leggen van het huiswaternet</div>
-                    <div class="doc-text">Leidingen: koper, PER en meerlagenbuis.</div>
+                    <div class="doc-text">Dit document behandelt de aanleg van waterleidingen in huis. Het bespreekt de verschillende materialen die in Frankrijk gebruikelijk zijn, zoals koper en PER.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/14F0qI1oNiGCVdRnNpiZJkPOaCzIX4xs9/view?usp=sharing" target="_blank">
                     <div class="doc-title">📊 Waterdruk en debietproblemen</div>
-                    <div class="doc-text">Diagnose en oplossingen voor drukproblemen.</div>
+                    <div class="doc-text">Dit document helpt bij het diagnosticeren en oplossen van problemen met een te lage waterdruk of onvoldoende waterhoeveelheid.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/15jEbibXYHCg2-4pYzR2jjbSzxSrrjIdy/view?usp=sharing" target="_blank">
                     <div class="doc-title">🗺️ Plan je huiswaternet</div>
-                    <div class="doc-text">Ontwerp voor optimaal leidingnetwerk.</div>
+                    <div class="doc-text">Dit document benadrukt het belang van een goed ontwerp voor het waterleidingnetwerk in huis. Het geeft richtlijnen voor leidingdiameters.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/18sJSyxtzxcNFMT7P0HVExGBB-Xt-4Cx5/view?usp=sharing" target="_blank">
                     <div class="doc-title">💡 Handige tips bij het waternet</div>
-                    <div class="doc-text">Tips voor waterslag en boileronderhoud.</div>
+                    <div class="doc-text">Dit document bevat een verzameling van diverse handige tips en trucs met betrekking tot het waterleidingnetwerk, zoals het voorkomen van waterslag.</div>
                 </a>
             </div>
         </div>
@@ -702,15 +700,15 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1PEIdDpG-MbPQqTOdfyIvH_-XbksmOX1i/view?usp=sharing" target="_blank">
                     <div class="doc-title">🗺️ Riolering plannen</div>
-                    <div class="doc-text">Ontwerp van afvoersysteem met juist afschot.</div>
+                    <div class="doc-text">Dit document legt uit hoe je een plan maakt voor de riolering en afvoer van afvalwater in en om het huis. Het behandelt diameters en afschot.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1vMGznmkncQEUoG1Sz0snpXJIiBy8mqJi/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔧 Riolering aanleggen</div>
-                    <div class="doc-text">Praktische handleiding PVC-leidingen.</div>
+                    <div class="doc-text">Dit document is een praktische handleiding voor het aanleggen van de riolering. Het beschrijft hoe je de PVC-buizen op maat zaagt en verbindt.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1xcSi0IDLuijaA_7ljMcctQjQaLTER9Ah/view?usp=sharing" target="_blank">
                     <div class="doc-title">🚽 De fosse septique</div>
-                    <div class="doc-text">Franse regelgeving SPANC en onderhoud.</div>
+                    <div class="doc-text">Dit document is essentieel voor huiseigenaren in het buitengebied. Het behandelt de 'fosse septique' en de Franse regelgeving 'SPANC'.</div>
                 </a>
             </div>
         </div>
@@ -725,11 +723,11 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1uR-KEYp3efwbPGkoUSalLMZDFIuJ2O58/view?usp=sharing" target="_blank">
                     <div class="doc-title">🛁 Badkamerproject Christian</div>
-                    <div class="doc-text">Voorbeeldproject complete renovatie.</div>
+                    <div class="doc-text">Dit document beschrijft een concreet voorbeeldproject: de renovatie van een badkamer door de auteur. Het laat zien hoe de verschillende aspecten samenkomen.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/10lHG8-MTOLP_JtF_0ehypGFgA8qTjxkZ/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔳 Tegelzetten</div>
-                    <div class="doc-text">Complete handleiding voor wand- en vloertegels.</div>
+                    <div class="doc-text">Dit document is een uitgebreide handleiding voor het zetten van wand- en vloertegels. Het behandelt voorbereiding, lijm, voegen en snijden.</div>
                 </a>
             </div>
         </div>
@@ -744,7 +742,7 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1GGy_RW6cj_SggOPz6HKMZ-WDHbqrRTYs/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔩 Bevestigingen en pluggen</div>
-                    <div class="doc-text">Juiste pluggen voor verschillende muurtypen.</div>
+                    <div class="doc-text">Dit document is een gids voor het kiezen van de juiste pluggen en schroeven voor verschillende soorten muren die je in Frankrijk tegenkomt.</div>
                 </a>
             </div>
         </div>
@@ -759,19 +757,19 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1ooWwb8F5JFt-Te7oojiOwrZL4-a7C5bn/view?usp=sharing" target="_blank">
                     <div class="doc-title">🔥 Over verwarmen</div>
-                    <div class="doc-text">Overzicht van Franse verwarmingssystemen.</div>
+                    <div class="doc-text">Dit document geeft een overzicht van de verschillende manieren om een huis in Frankrijk te verwarmen, zoals CV, elektrisch en houtkachels.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1zIoLnctyOssdrK-BxdykLOmgFYB5anKC/view?usp=sharing" target="_blank">
                     <div class="doc-title">📊 Bereken de warmteverliezen van een huis</div>
-                    <div class="doc-text">Bepalen van benodigd vermogen.</div>
+                    <div class="doc-text">Dit document legt uit hoe je een warmteverliesberekening kunt maken. Essentieel om te bepalen hoeveel vermogen je verwarmingssysteem moet hebben.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1Za3-YDxGekndoUP2zRFh-rykfWrJBFsQ/view?usp=sharing" target="_blank">
                     <div class="doc-title">🏗️ De aanleg van een CV verwarmingssysteem</div>
-                    <div class="doc-text">Installatie van chauffage central.</div>
+                    <div class="doc-text">Dit document is een handleiding voor de aanleg van een centraal verwarmingssysteem. Het behandelt de installatie van ketel, leidingen en radiatoren.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1EDDTYiEtBhdQbMZSom7plZ7T63Y3xqKs/view?usp=sharing" target="_blank">
                     <div class="doc-title">♻️ Ventilatie met warmteterugwinning</div>
-                    <div class="doc-text">VMC double flux voor energiebesparing.</div>
+                    <div class="doc-text">Dit document bespreekt de voordelen van een gebalanceerd ventilatiesysteem met warmteterugwinning ('VMC double flux').</div>
                 </a>
             </div>
         </div>
@@ -786,15 +784,15 @@
             <div class="doc-grid">
                 <a class="doc-card" href="https://drive.google.com/file/d/1vP3ekSWxtZc7cpYyQfpeM_HGFGME_IpY/view?usp=sharing" target="_blank">
                     <div class="doc-title">📚 Boeken</div>
-                    <div class="doc-text">Aanbevolen literatuur over klussen in Frankrijk.</div>
+                    <div class="doc-text">Dit document bevat een lijst van aanbevolen boeken over klussen en renoveren in Frankrijk.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/11ET807OAhw3a-jZ77OwmrIV_ttC_UY3e/view?usp=sharing" target="_blank">
                     <div class="doc-title">🌐 Boeken en websites</div>
-                    <div class="doc-text">Nuttige online bronnen en forums.</div>
+                    <div class="doc-text">In aanvulling op de boekenlijst, biedt dit document een overzicht van nuttige websites, forums en online communities.</div>
                 </a>
                 <a class="doc-card" href="https://drive.google.com/file/d/1jV5zMxtZNNX9hgnB76CllqfKwqZAGcjM/view?usp=sharing" target="_blank">
                     <div class="doc-title">✍️ Slotopmerkingen</div>
-                    <div class="doc-text">Reflecties en aanmoediging van de auteur.</div>
+                    <div class="doc-text">Dit document sluit de kennisbank af met een aantal algemene opmerkingen, reflecties en een woord van dank van de auteur.</div>
                 </a>
             </div>
         </div>
@@ -805,23 +803,11 @@
 </div>
 
 <script>
-    // 1. Initialisatie: Vul de datalist voor slimme suggesties
     document.addEventListener("DOMContentLoaded", function() {
-        const docTitles = document.querySelectorAll('.doc-title');
-        const datalist = document.getElementById('suggestions');
-        
-        docTitles.forEach(title => {
-            let option = document.createElement('option');
-            option.value = title.textContent.replace(/^[^\w]+/, '').trim(); // Verwijder emoji's aan begin
-            datalist.appendChild(option);
-        });
-
-        // Voeg event listeners toe
         const searchInput = document.getElementById('searchInput');
         searchInput.addEventListener('input', runFilter);
     });
 
-    // 2. De Filter Functie (Live Zoeken)
     function runFilter() {
         const input = document.getElementById('searchInput');
         const filterTerm = input.value.toUpperCase();
@@ -854,12 +840,6 @@
                 rubriek.classList.remove('hidden');
             }
         });
-    }
-
-    // 3. Reset functie voor de "Alles tonen" knop
-    function resetFilter() {
-        document.getElementById('searchInput').value = '';
-        runFilter(); // Draai de filter opnieuw (alles wordt weer zichtbaar)
     }
 </script>
 
