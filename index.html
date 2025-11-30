@@ -61,40 +61,35 @@
             display: inline-block;
         }
 
-        /* --- STICKY DASHBOARD (ZOEKEN + NAVIGATIE) --- */
+        /* --- STICKY DASHBOARD --- */
         .sticky-dashboard {
-            position: -webkit-sticky; /* Safari */
+            position: -webkit-sticky;
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(8px);
-            padding: 15px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            background: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             margin-bottom: 40px;
-            margin-left: -20px; /* Compenseer body padding */
+            margin-left: -20px;
             margin-right: -20px;
             width: calc(100% + 40px);
+            padding: 15px 20px;
         }
 
         .dashboard-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
             display: flex;
             flex-direction: column;
             gap: 15px;
+            align-items: center;
         }
 
         /* Zoekbalk */
-        .search-wrapper {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
         .search-input {
             width: 100%;
+            max-width: 600px;
             padding: 12px 25px;
             font-size: 17px;
             border: 2px solid #ddd;
@@ -110,7 +105,7 @@
             box-shadow: 0 0 0 4px rgba(128, 0, 0, 0.1);
         }
 
-        /* Navigatie Chips */
+        /* Desktop Navigatie (Chips) */
         .nav-chips {
             display: flex;
             flex-wrap: wrap;
@@ -121,19 +116,38 @@
         .nav-chip {
             background: #e9ecef;
             color: #495057;
-            padding: 6px 16px;
+            padding: 8px 18px;
             border-radius: 20px;
-            font-size: 0.9em;
+            font-size: 0.95em;
             font-weight: 500;
-            transition: all 0.2s;
+            cursor: pointer;
             border: 1px solid transparent;
-            text-decoration: none !important;
+            transition: all 0.2s;
+            user-select: none;
         }
 
         .nav-chip:hover {
+            background: #dbe0e6;
+            transform: translateY(-1px);
+        }
+
+        .nav-chip.active {
             background: #800000;
             color: white;
-            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(128,0,0,0.3);
+        }
+
+        /* Mobiele Dropdown (standaard verborgen op desktop) */
+        .mobile-select {
+            display: none;
+            width: 100%;
+            max-width: 600px;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            cursor: pointer;
         }
 
         /* --- RUBRIEKEN & TEGELS --- */
@@ -143,8 +157,6 @@
             overflow: hidden;
             box-shadow: 0 2px 10px rgba(0,0,0,0.03);
             margin-bottom: 40px;
-            /* Zorgt dat titel niet achter sticky header verdwijnt bij klik */
-            scroll-margin-top: 180px; 
         }
 
         .rubriek-header {
@@ -157,16 +169,13 @@
             font-size: 1.5em;
             font-weight: 700;
             margin: 0;
-            display: flex;
-            align-items: center;
         }
 
         .rubriek-desc {
             font-size: 0.95em;
             opacity: 0.9;
-            margin-top: 5px;
-            font-weight: 300;
             font-style: italic;
+            margin-top: 5px;
         }
 
         .rubriek-content {
@@ -187,7 +196,7 @@
             padding: 20px;
             background: #fff;
             border-radius: 8px;
-            text-decoration: none !important; /* Forceer geen onderstreping hele kaart */
+            text-decoration: none !important;
             color: #333;
             border: 1px solid #e0e0e0;
             transition: all 0.2s ease;
@@ -214,7 +223,6 @@
             line-height: 1.5;
         }
 
-        /* Hulpklassen */
         .hidden { display: none !important; }
         
         /* Footer */
@@ -227,12 +235,13 @@
             margin-top: 40px;
         }
 
-        /* Mobiel */
+        /* MOBIEL AANPASSINGEN */
         @media (max-width: 768px) {
+            .nav-chips { display: none; } /* Verberg knoppen op mobiel */
+            .mobile-select { display: block; } /* Toon dropdown op mobiel */
             .header h1 { font-size: 2em; }
             .doc-grid { grid-template-columns: 1fr; }
-            .nav-chips { display: none; /* Te druk op mobiel, alleen zoeken */ }
-            .rubriek { scroll-margin-top: 120px; }
+            .sticky-dashboard { padding: 10px 20px; }
         }
     </style>
 </head>
@@ -257,36 +266,55 @@
 
     <div class="sticky-dashboard">
         <div class="dashboard-content">
-            <div class="search-wrapper">
-                <input type="text" 
-                       id="searchInput" 
-                       class="search-input" 
-                       placeholder="🔍 Typ hier om te zoeken (bijv. 'dak', 'vocht', 'vergunning')..."
-                       autocomplete="off">
+            <input type="text" 
+                   id="searchInput" 
+                   class="search-input" 
+                   placeholder="🔍 Zoek op trefwoord (bijv. 'dak', 'isolatie', 'vergunning')..."
+                   autocomplete="off">
+
+            <div class="nav-chips" id="desktopNav">
+                <div class="nav-chip active" onclick="filterCategory('all', this)">Alles tonen</div>
+                <div class="nav-chip" onclick="filterCategory('algemeen', this)">1. Algemeen</div>
+                <div class="nav-chip" onclick="filterCategory('hout', this)">2. Hout</div>
+                <div class="nav-chip" onclick="filterCategory('muren', this)">3. Muren</div>
+                <div class="nav-chip" onclick="filterCategory('vocht', this)">4. Vocht</div>
+                <div class="nav-chip" onclick="filterCategory('plafonds', this)">5. Plafonds</div>
+                <div class="nav-chip" onclick="filterCategory('vloeren', this)">6. Vloeren</div>
+                <div class="nav-chip" onclick="filterCategory('dakramen', this)">7. Dakramen</div>
+                <div class="nav-chip" onclick="filterCategory('dak', this)">8. Dak</div>
+                <div class="nav-chip" onclick="filterCategory('luiken', this)">9. Luiken</div>
+                <div class="nav-chip" onclick="filterCategory('terras', this)">10. Terras</div>
+                <div class="nav-chip" onclick="filterCategory('water', this)">11. Water</div>
+                <div class="nav-chip" onclick="filterCategory('riolering', this)">12. Riolering</div>
+                <div class="nav-chip" onclick="filterCategory('badkamer', this)">13. Badkamer</div>
+                <div class="nav-chip" onclick="filterCategory('bevestigingen', this)">14. Bevestigingen</div>
+                <div class="nav-chip" onclick="filterCategory('verwarming', this)">15. Verwarming</div>
+                <div class="nav-chip" onclick="filterCategory('slot', this)">Slot</div>
             </div>
 
-            <div class="nav-chips">
-                <a href="#algemeen" class="nav-chip">1. Algemeen</a>
-                <a href="#hout" class="nav-chip">2. Hout</a>
-                <a href="#muren" class="nav-chip">3. Muren</a>
-                <a href="#vocht" class="nav-chip">4. Vocht</a>
-                <a href="#plafonds" class="nav-chip">5. Plafonds</a>
-                <a href="#vloeren" class="nav-chip">6. Vloeren</a>
-                <a href="#dakramen" class="nav-chip">7. Dakramen</a>
-                <a href="#dak" class="nav-chip">8. Dak</a>
-                <a href="#luiken" class="nav-chip">9. Luiken</a>
-                <a href="#terras" class="nav-chip">10. Terras</a>
-                <a href="#water" class="nav-chip">11. Water</a>
-                <a href="#riolering" class="nav-chip">12. Riolering</a>
-                <a href="#badkamer" class="nav-chip">13. Badkamer</a>
-                <a href="#bevestigingen" class="nav-chip">14. Bevestigingen</a>
-                <a href="#verwarming" class="nav-chip">15. Verwarming</a>
-                <a href="#slot" class="nav-chip">Slot</a>
-            </div>
+            <select class="mobile-select" id="mobileNav" onchange="filterCategory(this.value, null)">
+                <option value="all">📂 Toon Alles</option>
+                <option value="algemeen">1. Algemeen</option>
+                <option value="hout">2. Hout</option>
+                <option value="muren">3. Muren & Wanden</option>
+                <option value="vocht">4. Vocht</option>
+                <option value="plafonds">5. Plafonds</option>
+                <option value="vloeren">6. Vloeren & Trappen</option>
+                <option value="dakramen">7. Dakramen</option>
+                <option value="dak">8. Dak</option>
+                <option value="luiken">9. Luiken</option>
+                <option value="terras">10. Terras</option>
+                <option value="water">11. Water</option>
+                <option value="riolering">12. Riolering</option>
+                <option value="badkamer">13. Badkamer</option>
+                <option value="bevestigingen">14. Bevestigingen</option>
+                <option value="verwarming">15. Verwarming</option>
+                <option value="slot">Slot</option>
+            </select>
         </div>
     </div>
 
-    <div id="algemeen" class="rubriek">
+    <div id="algemeen" class="rubriek" data-cat="algemeen">
         <div class="rubriek-header">
             <div class="rubriek-title">1. Algemeen</div>
             <div class="rubriek-desc">Franse specificiteiten: vergunningen, architecten, aannemers</div>
@@ -313,7 +341,7 @@
         </div>
     </div>
 
-    <div id="hout" class="rubriek">
+    <div id="hout" class="rubriek" data-cat="hout">
         <div class="rubriek-header">
             <div class="rubriek-title">2. Hout</div>
             <div class="rubriek-desc">Franse specificiteiten: houtsoorten, behandeling</div>
@@ -336,7 +364,7 @@
         </div>
     </div>
 
-    <div id="muren" class="rubriek">
+    <div id="muren" class="rubriek" data-cat="muren">
         <div class="rubriek-header">
             <div class="rubriek-title">3. Muren & Wanden</div>
             <div class="rubriek-desc">Franse specificiteiten: en pierre, en torchis, placo</div>
@@ -371,7 +399,7 @@
         </div>
     </div>
 
-    <div id="vocht" class="rubriek">
+    <div id="vocht" class="rubriek" data-cat="vocht">
         <div class="rubriek-header">
             <div class="rubriek-title">4. Vocht</div>
             <div class="rubriek-desc">Franse specificiteiten: klimaat en bouwstijlen</div>
@@ -418,7 +446,7 @@
         </div>
     </div>
 
-    <div id="plafonds" class="rubriek">
+    <div id="plafonds" class="rubriek" data-cat="plafonds">
         <div class="rubriek-header">
             <div class="rubriek-title">5. Plafonds</div>
             <div class="rubriek-desc">Franse specificiteiten: à la française, gipsplaat (placo)</div>
@@ -453,7 +481,7 @@
         </div>
     </div>
 
-    <div id="vloeren" class="rubriek">
+    <div id="vloeren" class="rubriek" data-cat="vloeren">
         <div class="rubriek-header">
             <div class="rubriek-title">6. Vloeren en Trappen</div>
             <div class="rubriek-desc">Franse specificiteiten: tomettes, poutrelles-hourdis</div>
@@ -520,7 +548,7 @@
         </div>
     </div>
 
-    <div id="dakramen" class="rubriek">
+    <div id="dakramen" class="rubriek" data-cat="dakramen">
         <div class="rubriek-header">
             <div class="rubriek-title">7. Dakramen</div>
             <div class="rubriek-desc">Franse specificiteiten: Velux, vergunningen</div>
@@ -575,7 +603,7 @@
         </div>
     </div>
 
-    <div id="dak" class="rubriek">
+    <div id="dak" class="rubriek" data-cat="dak">
         <div class="rubriek-header">
             <div class="rubriek-title">8. Dak</div>
             <div class="rubriek-desc">Franse specificiteiten: tuiles, lucarnes</div>
@@ -610,7 +638,7 @@
         </div>
     </div>
 
-    <div id="luiken" class="rubriek">
+    <div id="luiken" class="rubriek" data-cat="luiken">
         <div class="rubriek-header">
             <div class="rubriek-title">9. Luiken</div>
             <div class="rubriek-desc">Franse specificiteiten: volets, persiennes</div>
@@ -649,7 +677,7 @@
         </div>
     </div>
 
-    <div id="terras" class="rubriek">
+    <div id="terras" class="rubriek" data-cat="terras">
         <div class="rubriek-header">
             <div class="rubriek-title">10. Terras</div>
             <div class="rubriek-desc">Franse specificiteiten: vergunningen, materialen</div>
@@ -664,7 +692,7 @@
         </div>
     </div>
 
-    <div id="water" class="rubriek">
+    <div id="water" class="rubriek" data-cat="water">
         <div class="rubriek-header">
             <div class="rubriek-title">11. Water</div>
             <div class="rubriek-desc">Franse specificiteiten: leidingdiameters, waterdruk</div>
@@ -691,7 +719,7 @@
         </div>
     </div>
 
-    <div id="riolering" class="rubriek">
+    <div id="riolering" class="rubriek" data-cat="riolering">
         <div class="rubriek-header">
             <div class="rubriek-title">12. Riolering</div>
             <div class="rubriek-desc">Franse specificiteiten: fosse septique</div>
@@ -714,7 +742,7 @@
         </div>
     </div>
 
-    <div id="badkamer" class="rubriek">
+    <div id="badkamer" class="rubriek" data-cat="badkamer">
         <div class="rubriek-header">
             <div class="rubriek-title">13. Badkamer</div>
             <div class="rubriek-desc">Franse specificiteiten: afmetingen, materialen</div>
@@ -733,7 +761,7 @@
         </div>
     </div>
 
-    <div id="bevestigingen" class="rubriek">
+    <div id="bevestigingen" class="rubriek" data-cat="bevestigingen">
         <div class="rubriek-header">
             <div class="rubriek-title">14. Bevestigingen</div>
             <div class="rubriek-desc">Franse specificiteiten: muursoorten</div>
@@ -748,7 +776,7 @@
         </div>
     </div>
 
-    <div id="verwarming" class="rubriek">
+    <div id="verwarming" class="rubriek" data-cat="verwarming">
         <div class="rubriek-header">
             <div class="rubriek-title">15. Verwarming</div>
             <div class="rubriek-desc">Franse specificiteiten: CV-systemen, normen</div>
@@ -775,7 +803,7 @@
         </div>
     </div>
 
-    <div id="slot" class="rubriek">
+    <div id="slot" class="rubriek" data-cat="slot">
         <div class="rubriek-header">
             <div class="rubriek-title">Slot</div>
             <div class="rubriek-desc">Boeken, websites en slotopmerkingen</div>
@@ -803,28 +831,62 @@
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', runFilter);
-    });
+    // Functie voor knoppen en dropdown filter
+    function filterCategory(category, clickedElement) {
+        // 1. Reset zoekbalk
+        document.getElementById('searchInput').value = "";
 
-    function runFilter() {
-        const input = document.getElementById('searchInput');
-        const filterTerm = input.value.toUpperCase();
+        // 2. Update actieve status van knoppen (desktop)
+        if(clickedElement) {
+            document.querySelectorAll('.nav-chip').forEach(chip => chip.classList.remove('active'));
+            clickedElement.classList.add('active');
+        }
+
+        // 3. Update dropdown waarde (voor sync tussen desktop/mobiel)
+        document.getElementById('mobileNav').value = category;
+
+        // 4. Het daadwerkelijke filteren
+        const rubrieken = document.querySelectorAll('.rubriek');
         
-        // Loop door alle rubrieken
+        rubrieken.forEach(rubriek => {
+            // Reset eerst alle kaarten binnen rubriek (voor het geval ze door zoekbalk verborgen waren)
+            rubriek.querySelectorAll('.doc-card').forEach(c => c.classList.remove('hidden'));
+
+            if (category === 'all') {
+                rubriek.classList.remove('hidden');
+            } else {
+                if (rubriek.getAttribute('data-cat') === category) {
+                    rubriek.classList.remove('hidden');
+                } else {
+                    rubriek.classList.add('hidden');
+                }
+            }
+        });
+
+        // Scroll naar boven (zodat je niet halverwege een pagina zit)
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    // Functie voor de Zoekbalk (Live typen)
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+        const filterTerm = e.target.value.toUpperCase();
+        
+        // Als je begint te typen, zetten we de categorie filter op 'Alles' om overal te zoeken
+        if(filterTerm.length > 0) {
+            document.querySelectorAll('.nav-chip').forEach(c => c.classList.remove('active'));
+            // Je zou hier visueel "Alles" actief kunnen maken, maar geen must
+        }
+
         const rubrieken = document.querySelectorAll('.rubriek');
         
         rubrieken.forEach(rubriek => {
             const cards = rubriek.querySelectorAll('.doc-card');
             let visibleCardsCount = 0;
 
-            // Loop door alle kaarten in deze rubriek
             cards.forEach(card => {
                 const title = card.querySelector('.doc-title').textContent;
                 const text = card.querySelector('.doc-text').textContent;
                 
-                // Check of zoekterm voorkomt in titel of tekst
                 if (title.toUpperCase().indexOf(filterTerm) > -1 || text.toUpperCase().indexOf(filterTerm) > -1) {
                     card.classList.remove('hidden');
                     visibleCardsCount++;
@@ -833,14 +895,14 @@
                 }
             });
 
-            // Verberg de HELE rubriek als er geen zichtbare kaarten in zitten
-            if (visibleCardsCount === 0) {
-                rubriek.classList.add('hidden');
-            } else {
+            // Toon rubriek alleen als er hits zijn
+            if (visibleCardsCount > 0) {
                 rubriek.classList.remove('hidden');
+            } else {
+                rubriek.classList.add('hidden');
             }
         });
-    }
+    });
 </script>
 
 </body>
