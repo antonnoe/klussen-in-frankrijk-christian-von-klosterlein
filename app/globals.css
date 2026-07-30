@@ -215,6 +215,44 @@ h1, h2, h3, .brand strong { font-family: Georgia, "Times New Roman", serif; }
 .contents-item:not(.is-empty):hover small { color: #e8c2b8; }
 .contents-item.is-empty { opacity: .4; cursor: default; }
 
+.subject-section {
+  padding: 110px max(24px, calc((100vw - 1180px) / 2));
+  background: #eee5da;
+}
+.subject-section .section-heading { margin-bottom: 48px; }
+.subject-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid rgba(80,40,25,.22);
+  border-left: 1px solid rgba(80,40,25,.22);
+}
+.subject-grid button {
+  min-height: 265px; padding: 30px; display: grid;
+  grid-template-columns: auto 1fr; align-content: start; gap: 10px 18px;
+  border: 0; border-right: 1px solid rgba(80,40,25,.22);
+  border-bottom: 1px solid rgba(80,40,25,.22); background: transparent;
+  color: var(--ink); text-align: left; transition: background 160ms ease;
+}
+.subject-grid button > span {
+  color: var(--wine); font-family: Georgia, serif; font-size: 22px;
+}
+.subject-grid strong {
+  font-family: Georgia, serif; font-size: 23px; font-weight: 400;
+  line-height: 1.25;
+}
+.subject-grid p,
+.subject-grid small,
+.subject-grid em { grid-column: 2; }
+.subject-grid p { color: #655a53; font-size: 13px; line-height: 1.7; }
+.subject-grid small {
+  color: var(--wine); font-size: 10px; font-weight: 900;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.subject-grid em {
+  margin-top: 8px; padding-top: 12px; border-top: 1px solid rgba(80,40,25,.15);
+  color: #766960; font-family: Georgia, serif; font-size: 12px; line-height: 1.55;
+}
+.subject-grid button:hover { background: rgba(128,0,0,.055); }
+
 .source-gallery {
   padding: 100px max(24px, calc((100vw - 1360px) / 2));
   display: grid; grid-template-columns: 280px 1fr; gap: 70px;
@@ -788,6 +826,7 @@ footer p, footer > a:last-child { font-size: 11px; }
   .article-images { grid-template-columns: 1fr; }
   .verified-steps { grid-template-columns: 1fr; }
   .batch-section { grid-template-columns: 1fr; gap: 35px; }
+  .subject-grid { grid-template-columns: 1fr; }
   .batch-hero dl { grid-template-columns: 1fr; gap: 18px; }
   .latest-release { width: min(100% - 28px, 100%); }
   .latest-release-links { grid-template-columns: 1fr 1fr; }
