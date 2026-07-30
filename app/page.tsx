@@ -6,6 +6,7 @@ import {
   archiveDocuments,
   type ArchiveDocument,
 } from "./archive-data";
+import { productionSubjects } from "./subject-data";
 
 const featuredIds = [
   "badkamerproject-christian",
@@ -29,6 +30,7 @@ function formatCode(code: string) {
 export default function Home() {
   const [query, setQuery] = useState("");
   const [activeSection, setActiveSection] = useState("all");
+  const [activeSubject, setActiveSubject] = useState("all");
   const [selected, setSelected] = useState<ArchiveDocument | null>(null);
   const searchRef = useRef<HTMLInputElement>(null);
 
@@ -48,6 +50,12 @@ export default function Home() {
     return archiveDocuments.filter((document) => {
       const inSection =
         activeSection === "all" || document.section === activeSection;
+      const selectedSubject = productionSubjects.find(
+        (subject) => subject.id === activeSubject,
+      );
+      const inSubject =
+        !selectedSubject ||
+        selectedSubject.sections.includes(document.section);
       const inSearch =
         !needle ||
         [
@@ -60,9 +68,27 @@ export default function Home() {
           .join(" ")
           .toLocaleLowerCase("nl")
           .includes(needle);
-      return inSection && inSearch;
+      return inSection && inSubject && inSearch;
     });
-  }, [activeSection, categories, query]);
+  }, [activeSection, activeSubject, categories, query]);
+
+  const subjects = useMemo(
+    () =>
+      productionSubjects.map((subject) => {
+        const documents = archiveDocuments.filter((document) =>
+          subject.sections.includes(document.section),
+        );
+        return {
+          ...subject,
+          documentCount: documents.length,
+          pageCount: documents.reduce(
+            (total, document) => total + document.pages,
+            0,
+          ),
+        };
+      }),
+    [],
+  );
 
   const featuredDocuments = featuredIds
     .map((id) => archiveDocuments.find((document) => document.id === id))
@@ -74,7 +100,16 @@ export default function Home() {
   );
 
   function selectSection(section: string) {
+    setActiveSubject("all");
     setActiveSection(section);
+    document
+      .getElementById("documenten")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function selectSubject(subject: string) {
+    setActiveSection("all");
+    setActiveSubject(subject);
     document
       .getElementById("documenten")
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -94,7 +129,8 @@ export default function Home() {
         </a>
         <nav aria-label="Hoofdnavigatie">
           <a className="nav-new" href="#nieuw">Nieuw: 10 artikelen</a>
-          <a href="#inhoud">Inhoud</a>
+          <a href="#onderwerpen">Onderwerpen</a>
+          <a href="#inhoud">Oud menu</a>
           <a href="#documenten">Documenten</a>
           <a href="#herkomst">Herkomst & audit</a>
         </nav>
@@ -208,11 +244,43 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="subject-section" id="onderwerpen">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Nieuwe productie- en auditstructuur</p>
+            <h2>Acht samenhangende onderwerpen</h2>
+          </div>
+          <p>
+            Nieuwe artikelen worden per onderwerp gereconstrueerd. De
+            oorspronkelijke nummering blijft behouden, maar tekstcontrole,
+            beeldkoppeling en de latere inhoudelijke audit verlopen voortaan
+            binnen deze acht werkgebieden.
+          </p>
+        </div>
+        <div className="subject-grid">
+          {subjects.map((subject, index) => (
+            <button
+              key={subject.id}
+              type="button"
+              onClick={() => selectSubject(subject.id)}
+            >
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <strong>{subject.title}</strong>
+              <p>{subject.description}</p>
+              <small>
+                {subject.documentCount} documenten · {subject.pageCount} pagina’s
+              </small>
+              <em>Auditfocus: {subject.auditFocus}</em>
+            </button>
+          ))}
+        </div>
+      </section>
+
       <section className="section-shell" id="inhoud">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">De oude menulogica, opnieuw leesbaar</p>
-            <h2>Inhoud van het archief</h2>
+            <p className="eyebrow">Historische navigatie blijft intact</p>
+            <h2>Het oorspronkelijke menu</h2>
           </div>
           <p>
             De nummering is overgenomen uit de oorspronkelijke website. Lege
@@ -299,7 +367,10 @@ export default function Home() {
           </label>
           <select
             value={activeSection}
-            onChange={(event) => setActiveSection(event.target.value)}
+            onChange={(event) => {
+              setActiveSubject("all");
+              setActiveSection(event.target.value);
+            }}
             aria-label="Filter op rubriek"
           >
             <option value="all">Alle rubrieken</option>
@@ -311,12 +382,13 @@ export default function Home() {
                 </option>
               ))}
           </select>
-          {(query || activeSection !== "all") && (
+          {(query || activeSection !== "all" || activeSubject !== "all") && (
             <button
               type="button"
               onClick={() => {
                 setQuery("");
                 setActiveSection("all");
+                setActiveSubject("all");
               }}
             >
               Wis filters
