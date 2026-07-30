@@ -1,9 +1,16 @@
 import type { RestoredArticleData } from "./restored-article";
 
-const image = (slug: string, number: number, caption: string, alt = caption) => ({
+const image = (
+  slug: string,
+  number: number,
+  caption: string,
+  afterParagraph: number,
+  alt = caption,
+) => ({
   file: `/articles/${slug}/source-${String(number).padStart(3, "0")}.jpg`,
   caption,
   alt,
+  afterParagraph,
 });
 
 export const batchOneArticles: Record<string, RestoredArticleData> = {
@@ -31,8 +38,8 @@ export const batchOneArticles: Record<string, RestoredArticleData> = {
     deck: "Een oude, ongelijke houten vloer verstevigen en vlak maken als ondergrond voor tegels.",
     sourceUrl: "https://drive.google.com/file/d/1RUm0Xz58FdJZpvwNgw8noxhdgq8hNpms/view?usp=drivesdk",
     images: [
-      image("betegelen-van-oude-vloeren", 0, "Afb. 08.1.8-1 · Oude vloer met getordeerde balken op verschillende hoogtes"),
-      image("betegelen-van-oude-vloeren", 1, "Afb. 08.1.8-2 · Verzaagde vloerplanken tussen de balken met multiplex afdekking"),
+      image("betegelen-van-oude-vloeren", 0, "Afb. 08.1.8-1 · Oude vloer met getordeerde balken op verschillende hoogtes", 2),
+      image("betegelen-van-oude-vloeren", 1, "Afb. 08.1.8-2 · Verzaagde vloerplanken tussen de balken met multiplex afdekking", 6),
     ],
     paragraphs: [
       "Wanneer men een oude plankenvloer wil betegelen, bijvoorbeeld om daar een badkamer te creëren, dan moet de vloer zo stijf en recht als mogelijk zijn.",
@@ -55,8 +62,8 @@ export const batchOneArticles: Record<string, RestoredArticleData> = {
     deck: "Waarom condens juist bij dakramen ontstaat en waarom vrije luchtcirculatie rond het raam belangrijk is.",
     sourceUrl: "https://drive.google.com/file/d/1xEOYX1RwYoH8Nt1YTCfUw0AyyhXXadra/view?usp=drivesdk",
     images: [
-      image("condensproblemen-bij-dakramen", 0, "Afb. 06.5.6-1 · Dakraam met radiator en open binnenafwerking"),
-      image("condensproblemen-bij-dakramen", 1, "Afb. 06.5.5-2 · Binnenafwerking met mogelijke zone voor stilstaande lucht"),
+      image("condensproblemen-bij-dakramen", 0, "Afb. 06.5.6-1 · Dakraam met radiator en open binnenafwerking", 3),
+      image("condensproblemen-bij-dakramen", 1, "Afb. 06.5.5-2 · Binnenafwerking met mogelijke zone voor stilstaande lucht", 4),
     ],
     paragraphs: [
       "Ramen vormen in de omsluitende constructies van een vertrek steeds de koudste plek. En omdat condensatie van luchtvocht juist op de koudste plek plaatsvindt heb je, als er condensvorming optreedt, deze op de ramen. Wilde men dit voorkomen, dan had men de warmteweerstand van de ramen net zo groot moeten maken als die van de aanpalende muren of dakvlakken; dat is alleen met een groot aantal achter elkaar liggende isolatieruiten mogelijk, in de praktijk dus uitgesloten.",
@@ -72,8 +79,8 @@ export const batchOneArticles: Record<string, RestoredArticleData> = {
     deck: "Een korte historische introductie op buitenisolatie van een hellend dak, vaak aangeduid als sarking.",
     sourceUrl: "https://drive.google.com/file/d/1O3jzdfZWsyfH3tsGVZcd2rNkywo-X6Lw/view?usp=drivesdk",
     images: [
-      image("dakbuitenisolatie", 0, "Afb. 15.4.1-1 · Historisch sarkingelement van Isotec"),
-      image("dakbuitenisolatie", 1, "Afb. 15.4.1-2 · Geïntegreerde panlat van het sarkingelement"),
+      image("dakbuitenisolatie", 0, "Afb. 15.4.1-1 · Historisch sarkingelement van Isotec", 2),
+      image("dakbuitenisolatie", 1, "Afb. 15.4.1-2 · Geïntegreerde panlat van het sarkingelement", 2),
     ],
     paragraphs: [
       "Bij zolderisolatie heeft men de keuze tussen buitenisolatie, bijv. door sandwichplaten of isolatie op de sporen, en binnenisolatie, wil zeggen tussen of onder de sporen. Buitenisolatie is alleen bij een complete dakrenovatie te doen, waarbij de pannen, panlatten etc. verwijderd worden. Bij een dak in redelijke toestand wordt daarom eerder binnenisolatie toegepast; die wordt onder 15.5 beschreven.",
@@ -90,10 +97,10 @@ export const batchOneArticles: Record<string, RestoredArticleData> = {
     deck: "Uitgevallen knoesten en oude beslaggaten gecontroleerd uitboren en vullen met passende houten plaatjes.",
     sourceUrl: "https://drive.google.com/file/d/1JTQneHH68o5VI7m6E92y4O2x8_ZB31eL/view?usp=drivesdk",
     images: [
-      image("gaten-in-hout-opvullen", 0, "Afb. 23.5-1 · Eerste boormal met Forstnerboor en vulplaatjes"),
-      image("gaten-in-hout-opvullen", 1, "Afb. 23.5-2 · Boormal op een deur vastgeklemd"),
-      image("gaten-in-hout-opvullen", 2, "Afb. 23.5-3 · Nieuwe boormal van 16 mm MDF"),
-      image("gaten-in-hout-opvullen", 3, "Afb. 23.5-4 · Forstnerboor"),
+      image("gaten-in-hout-opvullen", 0, "Afb. 23.5-1 · Eerste boormal met Forstnerboor en vulplaatjes", 2),
+      image("gaten-in-hout-opvullen", 1, "Afb. 23.5-2 · Boormal op een deur vastgeklemd", 2),
+      image("gaten-in-hout-opvullen", 2, "Afb. 23.5-3 · Nieuwe boormal van 16 mm MDF", 5),
+      image("gaten-in-hout-opvullen", 3, "Afb. 23.5-4 · Forstnerboor", 5),
     ],
     paragraphs: [
       "Hout heeft kwasten, of zegt men knoesten? Die kunnen storend zijn of juist decoratief. En vaak vallen de knoesten uit het hout als dit door drogen of vochtopname krimpt en uitzet. De ontstane gaten in vloeren, deuren etc. kan men dan uitboren en met houtplaatjes opvullen. Deze plaatjes, die met het juiste verloop van de nerf ingezet moeten worden, zijn in diameters van 10 tot 40 of 50mm verkrijgbaar, oplopend per 5mm.",
@@ -110,8 +117,8 @@ export const batchOneArticles: Record<string, RestoredArticleData> = {
     deck: "Waarom oude deuren vaak het herstellen waard zijn en welke aanpak Christian voor zijn eigen huis koos.",
     sourceUrl: "https://drive.google.com/file/d/1jW-YVDVh-LO4I4mCRd0HGao9MeV8R_9a/view?usp=drivesdk",
     images: [
-      image("deuren-opknappen", 0, "Verzamelplaats met afgedankte oude deuren"),
-      image("deuren-opknappen", 1, "Oude deuren en kozijnen die mogelijk nog hersteld kunnen worden"),
+      image("deuren-opknappen", 0, "Verzamelplaats met afgedankte oude deuren", 2),
+      image("deuren-opknappen", 1, "Oude deuren en kozijnen die mogelijk nog hersteld kunnen worden", 2),
     ],
     paragraphs: [
       "### Deuren, ramen en hun sloten/scharnieren opknappen",
@@ -154,8 +161,8 @@ export const batchOneArticles: Record<string, RestoredArticleData> = {
     deck: "De bron van kraak- en piepgeluiden opsporen en beoordelen of vastzetten, opvullen of vervanging nodig is.",
     sourceUrl: "https://drive.google.com/file/d/13ZmhTG1HSntqHTVNfr8TQCtfS9hl_y5p/view?usp=drivesdk",
     images: [
-      image("krakende-vloeren", 0, "Afb. 08.1.7-1 · Vloer van onderen met een te hoog liggende plank en een wig"),
-      image("krakende-vloeren", 1, "Afb. 08.1.7-2 · Pijpbeugel met geluiddempende inlage"),
+      image("krakende-vloeren", 0, "Afb. 08.1.7-1 · Vloer van onderen met een te hoog liggende plank en een wig", 8),
+      image("krakende-vloeren", 1, "Afb. 08.1.7-2 · Pijpbeugel met geluiddempende inlage", 14),
     ],
     paragraphs: [
       "In oude huizen vindt men vaak plankenvloeren die kraken. In bepaalde culturen werden krakende vloeren zelfs bewust toegepast; zo kon men horen als iemand in huis loopt, of via het couloir naar de kamer van de heer komt.",
@@ -184,8 +191,8 @@ export const batchOneArticles: Record<string, RestoredArticleData> = {
     deck: "Het verhaal van Kees, Piet en François — en hoe een oude timmerman uitgezakte luiken weer recht en haaks stelt.",
     sourceUrl: "https://drive.google.com/file/d/1d6hLnGzBEkMBiCBRclwYf7_blE2HdQ6l/view?usp=drivesdk",
     images: [
-      image("uitgezakte-luiken", 0, "Bovenkant van een uitgezakt traditioneel luik"),
-      image("uitgezakte-luiken", 1, "Uitgezakt luik waarbij de diagonale écharpes ontbreken"),
+      image("uitgezakte-luiken", 0, "Bovenkant van een uitgezakt traditioneel luik", 4),
+      image("uitgezakte-luiken", 1, "Uitgezakt luik waarbij de diagonale écharpes ontbreken", 6),
     ],
     paragraphs: [
       "## Het verhaal van Kees, Piet en François",
@@ -207,7 +214,7 @@ export const batchOneArticles: Record<string, RestoredArticleData> = {
     deck: "Een eenvoudige verdeling tussen dagelijks handgereedschap en minder vaak gebruikt bijzonder gereedschap.",
     sourceUrl: "https://drive.google.com/file/d/1M4qpWSpeK3aHlkjeS6puHOXBCcuSOb3o/view?usp=drivesdk",
     images: [
-      image("standaard-gereedschappen", 0, "De dagelijkse en bijzondere gereedschapskist van Christian"),
+      image("standaard-gereedschappen", 0, "De dagelijkse en bijzondere gereedschapskist van Christian", 0),
     ],
     paragraphs: [
       "## Links",
