@@ -682,15 +682,17 @@ footer p, footer > a:last-child { font-size: 11px; }
   background: rgba(128,0,0,.055); font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
   font-size: 13px; line-height: 1.7;
 }
-.reconstructed-copy > p {
-  margin-top: 24px; color: #403936; font-family: Georgia, serif;
-  font-size: 17px; line-height: 1.8;
+.reconstructed-copy .article-paragraph-block > p {
+  max-width: 720px; margin-top: 28px; color: #332e2b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px; line-height: 1.85;
+  font-kerning: normal; text-wrap: pretty;
 }
 .reconstructed-copy h3 {
-  margin-top: 38px; color: var(--wine); font-size: 24px;
+  margin-top: 48px; color: var(--wine); font-size: 26px;
   font-weight: 400; line-height: 1.35;
 }
-.reconstructed-copy .source-caption {
+.reconstructed-copy .article-paragraph-block > .source-caption {
   margin: 22px 0 0; padding: 12px 15px; border-left: 2px solid #c9b5a1;
   background: var(--paper); color: var(--muted);
   font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
@@ -745,15 +747,18 @@ footer p, footer > a:last-child { font-size: 11px; }
   font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
 }
 .batch-body { width: min(100% - 48px, 760px); margin: auto; padding: 80px 0 120px; }
-.batch-body > p {
-  margin-top: 25px; color: #403936; font-family: Georgia, serif;
-  font-size: 18px; line-height: 1.8;
+.batch-body .article-paragraph-block > p {
+  margin-top: 28px; color: #332e2b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px; line-height: 1.85;
+  font-kerning: normal; text-wrap: pretty;
 }
-.batch-body > h2, .batch-body > h3 {
+.batch-body .article-paragraph-block > h2,
+.batch-body .article-paragraph-block > h3 {
   margin-top: 58px; color: var(--wine); font-weight: 400; line-height: 1.25;
 }
-.batch-body > h2 { font-size: 36px; }
-.batch-body > h3 { font-size: 25px; }
+.batch-body .article-paragraph-block > h2 { font-size: 36px; }
+.batch-body .article-paragraph-block > h3 { font-size: 25px; }
 .batch-images { margin-top: 75px; padding-top: 40px; border-top: 1px solid var(--line); }
 .batch-images > h2 { margin-top: 8px; font-size: 34px; font-weight: 400; }
 .no-source-images {
@@ -822,6 +827,10 @@ footer p, footer > a:last-child { font-size: 11px; }
   .article-hero figure { max-width: 420px; }
   .article-status { width: min(100% - 28px, 100%); grid-template-columns: 1fr; gap: 5px; }
   .article-layout { width: min(100% - 38px, 100%); padding-top: 65px; grid-template-columns: 1fr; gap: 55px; }
+  .reconstructed-copy .article-paragraph-block > p,
+  .batch-body .article-paragraph-block > p {
+    font-size: 17px; line-height: 1.8;
+  }
   .article-toc { position: static; }
   .article-images { grid-template-columns: 1fr; }
   .verified-steps { grid-template-columns: 1fr; }
