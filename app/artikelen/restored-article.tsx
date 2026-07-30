@@ -4,7 +4,12 @@ export type RestoredArticleData = {
   deck: string;
   sourceUrl: string;
   paragraphs: string[];
-  images: { file: string; caption: string; alt: string }[];
+  images: {
+    file: string;
+    caption: string;
+    alt: string;
+    afterParagraph: number;
+  }[];
 };
 
 export function RestoredArticle({ article }: { article: RestoredArticleData }) {
@@ -50,34 +55,42 @@ export function RestoredArticle({ article }: { article: RestoredArticleData }) {
           <span aria-hidden="true">✓</span>
           PDF-structuur en paginaovergangen gecontroleerd
         </div>
-        {article.paragraphs.map((paragraph, index) =>
-          paragraph.startsWith("## ") ? (
-            <h2 key={index}>{paragraph.slice(3)}</h2>
-          ) : paragraph.startsWith("### ") ? (
-            <h3 key={index}>{paragraph.slice(4)}</h3>
-          ) : (
-            <p key={index}>{paragraph}</p>
-          ),
-        )}
+        {article.paragraphs.map((paragraph, index) => {
+          const anchoredImages = article.images.filter(
+            (image) => image.afterParagraph === index,
+          );
 
-        {article.images.length ? (
-          <section className="batch-images" aria-label="Oorspronkelijke afbeeldingen">
-            <p className="eyebrow">Beeld uit de bron-PDF</p>
-            <h2>Oorspronkelijke afbeeldingen</h2>
-            <div className="article-images">
-              {article.images.map((image) => (
-                <figure key={image.file}>
-                  <img src={image.file} alt={image.alt} loading="lazy" />
-                  <figcaption>{image.caption}</figcaption>
-                </figure>
-              ))}
-            </div>
-          </section>
-        ) : (
+          return (
+            <section className="article-paragraph-block" key={index}>
+              {paragraph.startsWith("## ") ? (
+                <h2>{paragraph.slice(3)}</h2>
+              ) : paragraph.startsWith("### ") ? (
+                <h3>{paragraph.slice(4)}</h3>
+              ) : (
+                <p>{paragraph}</p>
+              )}
+              {anchoredImages.length ? (
+                <div
+                  className={`article-images count-${anchoredImages.length}`}
+                  aria-label="Afbeeldingen bij deze tekstpassage"
+                >
+                  {anchoredImages.map((image) => (
+                    <figure key={image.file}>
+                      <img src={image.file} alt={image.alt} loading="lazy" />
+                      <figcaption>{image.caption}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              ) : null}
+            </section>
+          );
+        })}
+
+        {!article.images.length ? (
           <aside className="no-source-images">
             Deze bron-PDF bevat geen afzonderlijke afbeeldingen.
           </aside>
-        )}
+        ) : null}
 
         <aside className="article-endnote">
           <p className="eyebrow">Eerst het volledige archief</p>
