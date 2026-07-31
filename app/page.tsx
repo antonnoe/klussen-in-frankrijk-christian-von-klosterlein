@@ -128,7 +128,7 @@ export default function Home() {
           </span>
         </a>
         <nav aria-label="Hoofdnavigatie">
-          <a className="nav-new" href="#nieuw">Nieuw: 38 artikelen</a>
+          <a className="nav-new" href="#nieuw">Nieuw: 54 artikelen</a>
           <a href="#onderwerpen">Onderwerpen</a>
           <a href="#inhoud">Oud menu</a>
           <a href="#documenten">Documenten</a>
@@ -217,29 +217,29 @@ export default function Home() {
       <section className="latest-release" id="nieuw">
         <div className="latest-release-heading">
           <span>Nieuw gepubliceerd</span>
-          <strong>Onderwerpbatches 05 en 06 staan online</strong>
-          <p>Nu 38 volledige webartikelen · 194 PDF-pagina’s</p>
+          <strong>Onderwerpbatches 07 en 08 staan online</strong>
+          <p>Nu 54 volledige webartikelen · 244 PDF-pagina’s</p>
         </div>
         <div className="latest-release-links">
-          <a href="/artikelen/plan-je-huiswaternet">
-            <small>10.1.1</small>
-            Plan je huiswaternet <b>→</b>
+          <a href="/artikelen/dakramen-inleiding">
+            <small>06.5</small>
+            Dakramen (Velux) <b>→</b>
           </a>
-          <a href="/artikelen/riolering-plannen">
-            <small>10.2.1</small>
-            Riolering plannen <b>→</b>
+          <a href="/artikelen/dakraam-in-een-oud-dak">
+            <small>06.5.3</small>
+            Dakraam in een traditioneel dak <b>→</b>
           </a>
-          <a href="/artikelen/badkamerproject-christian">
-            <small>24.1</small>
-            Badkamerproject Christian <b>→</b>
+          <a href="/artikelen/de-isolatie-van-het-franse-huis">
+            <small>15</small>
+            Isolatie van het Franse huis <b>→</b>
           </a>
-          <a href="/artikelen/dakconstructies">
-            <small>06.1</small>
-            Dakconstructies <b>→</b>
+          <a href="/artikelen/isolatie-van-buitenmuren">
+            <small>15.4.2</small>
+            Isolatie van buitenmuren <b>→</b>
           </a>
-          <a href="/artikelen/dakkapellen-des-lucarnes">
-            <small>06.4</small>
-            Dakkapellen <b>→</b>
+          <a href="/artikelen/isolatie-van-een-zolder-met-sporen-en-gordingen-uit-zicht">
+            <small>15.5.3</small>
+            Zolderisolatie <b>→</b>
           </a>
         </div>
       </section>
