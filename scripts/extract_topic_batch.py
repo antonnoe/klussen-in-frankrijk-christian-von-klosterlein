@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 from pathlib import Path
@@ -12,9 +13,11 @@ import fitz
 
 SITE_ROOT = Path(__file__).resolve().parents[1]
 PDF_ROOT = Path("/workspace/scratch/a14d55f478bb/archive/klussen in Frankrijk")
-OUTPUT_DATA = SITE_ROOT / "app/artikelen/deuren-ramen-batch-data.json"
 
-ARTICLES = [
+BATCHES = {
+    "deuren-ramen": {
+        "output": "deuren-ramen-batch-data.json",
+        "articles": [
     {
         "pdf": "deuren sluitend maken.pdf",
         "slug": "deuren-sluitend-maken",
@@ -55,7 +58,86 @@ ARTICLES = [
         "pages": 4,
         "sourceUrl": "https://drive.google.com/file/d/1mi85GqJ4LutdbcgjVk7OaaLZyVyjlPUQ/view?usp=drivesdk",
     },
-]
+        ],
+    },
+    "vocht": {
+        "output": "vocht-batch-data.json",
+        "articles": [
+            {
+                "pdf": "vochtproblemen en hun bestrijding.pdf",
+                "slug": "vochtproblemen-en-hun-bestrijding",
+                "code": "17",
+                "title": "Vochtproblemen en hun bestrijding",
+                "pages": 2,
+                "sourceUrl": "https://drive.google.com/file/d/1n_Pnw1Ns2IJXNJ_VbkKWNmXAcMJQ5iJq/view?usp=drivesdk",
+            },
+            {
+                "pdf": "oorzaken van vochtproblemen.pdf",
+                "slug": "oorzaken-van-vochtproblemen",
+                "code": "17.1",
+                "title": "Oorzaken van vochtproblemen",
+                "pages": 4,
+                "sourceUrl": "https://drive.google.com/file/d/1jIgWxD2hhjwmmwmWg-UeD-9L_ptr1Nu7/view?usp=drivesdk",
+            },
+            {
+                "pdf": "optrekkend vocht.pdf",
+                "slug": "optrekkend-vocht",
+                "code": "17.2",
+                "title": "Optrekkend vocht",
+                "pages": 7,
+                "sourceUrl": "https://drive.google.com/file/d/1Tr0hOEFo1wg5UW532jVbZYzGNzcoMcIs/view?usp=drivesdk",
+            },
+            {
+                "pdf": "maatregelen bij vochtdoorslag.pdf",
+                "slug": "maatregelen-bij-vochtdoorslag",
+                "code": "17.3",
+                "title": "Maatregelen bij vochtdoorslag",
+                "pages": 4,
+                "sourceUrl": "https://drive.google.com/file/d/1KP5i4mG6rUfNiRkPCfB1TlabCINvXOgd/view?usp=drivesdk",
+            },
+            {
+                "pdf": "condensvocht.pdf",
+                "slug": "condensvocht",
+                "code": "17.4",
+                "title": "Condensvocht",
+                "pages": 4,
+                "sourceUrl": "https://drive.google.com/file/d/1jNS4DmuNn4m_3wpXCtkeb4lTvLUsSxJ-/view?usp=drivesdk",
+            },
+            {
+                "pdf": "binnenafwerking van vochtige muren.pdf",
+                "slug": "binnenafwerking-van-vochtige-muren",
+                "code": "17.5",
+                "title": "Binnenafwerking van vochtige muren",
+                "pages": 5,
+                "sourceUrl": "https://drive.google.com/file/d/1ARO7oaiVxR3qK9ADlFsnGcVSSwkYZa0S/view?usp=drivesdk",
+            },
+            {
+                "pdf": "vochtwering bij binnenisolatie van daken.pdf",
+                "slug": "vochtwering-bij-binnenisolatie-van-daken",
+                "code": "17.6",
+                "title": "Vochtwering bij binnenisolatie van daken",
+                "pages": 2,
+                "sourceUrl": "https://drive.google.com/file/d/1mCX3FHHMSiie1ILJAT00ppqWCbtIbSUE/view?usp=drivesdk",
+            },
+            {
+                "pdf": "vochtproblemen aandachtspunten en theorie.pdf",
+                "slug": "vochtproblemen-aandachtspunten-en-theorie",
+                "code": "17.7",
+                "title": "Vochtproblemen: aandachtspunten en theorie",
+                "pages": 5,
+                "sourceUrl": "https://drive.google.com/file/d/1-xWhLrlw2IvQHpkXfwwzRSTPkrU97cDo/view?usp=drivesdk",
+            },
+            {
+                "pdf": "vochtproblemen oplossen.pdf",
+                "slug": "vochtproblemen-oplossen",
+                "code": "24.2",
+                "title": "Vochtproblemen oplossen",
+                "pages": 9,
+                "sourceUrl": "https://drive.google.com/file/d/1F8VzEF-kYa4AoFuTJCnzcnsT42G2mY44/view?usp=drivesdk",
+            },
+        ],
+    },
+}
 
 SKIP_TEXT = (
     "Maak een gratis website met Weebly",
@@ -95,6 +177,38 @@ def clean_heading(text: str, code: str, title: str) -> str:
     if normalized.startswith(code):
         normalized = normalized[len(code) :].strip()
     return re.sub(r"\s+", " ", normalized).strip() or title
+
+
+def merge_continuation_blocks(
+    paragraphs: list[str], images: list[dict]
+) -> tuple[list[str], list[dict]]:
+    """Join PDF text blocks that are visibly one continued paragraph."""
+    merged: list[str] = []
+    old_to_new: dict[int, int] = {}
+    image_anchors = {image["afterParagraph"] for image in images}
+
+    for old_index, paragraph in enumerate(paragraphs):
+        is_continuation = (
+            bool(merged)
+            and not paragraph.startswith("## ")
+            and not merged[-1].startswith("## ")
+            and old_index - 1 not in image_anchors
+            and not re.search(r'[.!?:;)\]”’"\']$', merged[-1])
+            and paragraph[:1].islower()
+        )
+        if is_continuation:
+            if merged[-1].endswith("-"):
+                merged[-1] = merged[-1][:-1] + paragraph
+            else:
+                merged[-1] += " " + paragraph
+            old_to_new[old_index] = len(merged) - 1
+        else:
+            merged.append(paragraph)
+            old_to_new[old_index] = len(merged) - 1
+
+    for image in images:
+        image["afterParagraph"] = old_to_new[image["afterParagraph"]]
+    return merged, images
 
 
 def extract_article(meta: dict) -> dict:
@@ -214,6 +328,8 @@ def extract_article(meta: dict) -> dict:
     if not paragraphs:
         raise ValueError(f"{pdf_path.name}: no article text extracted")
 
+    paragraphs, images = merge_continuation_blocks(paragraphs, images)
+
     deck_source = next(
         (paragraph for paragraph in paragraphs if not paragraph.startswith("## ")),
         meta["title"],
@@ -232,8 +348,15 @@ def extract_article(meta: dict) -> dict:
 
 
 def main() -> None:
-    articles = {meta["slug"]: extract_article(meta) for meta in ARTICLES}
-    OUTPUT_DATA.write_text(
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--batch", choices=sorted(BATCHES), default="deuren-ramen")
+    args = parser.parse_args()
+    batch = BATCHES[args.batch]
+    articles = {
+        meta["slug"]: extract_article(meta) for meta in batch["articles"]
+    }
+    output_data = SITE_ROOT / "app/artikelen" / batch["output"]
+    output_data.write_text(
         json.dumps(articles, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

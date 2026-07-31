@@ -128,7 +128,7 @@ export default function Home() {
           </span>
         </a>
         <nav aria-label="Hoofdnavigatie">
-          <a className="nav-new" href="#nieuw">Nieuw: 15 artikelen</a>
+          <a className="nav-new" href="#nieuw">Nieuw: 24 artikelen</a>
           <a href="#onderwerpen">Onderwerpen</a>
           <a href="#inhoud">Oud menu</a>
           <a href="#documenten">Documenten</a>
@@ -217,29 +217,29 @@ export default function Home() {
       <section className="latest-release" id="nieuw">
         <div className="latest-release-heading">
           <span>Nieuw gepubliceerd</span>
-          <strong>Onderwerpbatch 03 staat online</strong>
-          <p>Nu vijftien volledige webartikelen · 46 PDF-pagina’s</p>
+          <strong>Onderwerpbatch 04 staat online</strong>
+          <p>Nu 24 volledige webartikelen · 88 PDF-pagina’s</p>
         </div>
         <div className="latest-release-links">
-          <a href="/artikelen/deuren-sluitend-maken">
-            <small>09.1.1</small>
-            Deuren sluitend maken <b>→</b>
+          <a href="/artikelen/vochtproblemen-en-hun-bestrijding">
+            <small>17</small>
+            Vochtproblemen en hun bestrijding <b>→</b>
           </a>
-          <a href="/artikelen/hang-en-sluitwerk">
-            <small>09.1.2</small>
-            Hang- en sluitwerk <b>→</b>
+          <a href="/artikelen/oorzaken-van-vochtproblemen">
+            <small>17.1</small>
+            Oorzaken van vochtproblemen <b>→</b>
           </a>
-          <a href="/artikelen/ramen-opknappen">
-            <small>09.2.1</small>
-            Ramen opknappen <b>→</b>
+          <a href="/artikelen/optrekkend-vocht">
+            <small>17.2</small>
+            Optrekkend vocht <b>→</b>
           </a>
-          <a href="/artikelen/nieuwe-ramen-plaatsen">
-            <small>09.2.2</small>
-            Nieuwe ramen plaatsen <b>→</b>
+          <a href="/artikelen/condensvocht">
+            <small>17.4</small>
+            Condensvocht <b>→</b>
           </a>
-          <a href="/artikelen/dubbel-glas-of-dubbele-ramen">
-            <small>09.2.3</small>
-            Dubbel glas of dubbele ramen <b>→</b>
+          <a href="/artikelen/vochtproblemen-oplossen">
+            <small>24.2</small>
+            Vochtproblemen oplossen <b>→</b>
           </a>
         </div>
       </section>
@@ -681,6 +681,39 @@ export default function Home() {
             ["09.2.1", "Ramen opknappen", "ramen-opknappen", "2 bronbeelden · 2 pagina’s"],
             ["09.2.2", "Nieuwe ramen plaatsen", "nieuwe-ramen-plaatsen", "14 bronbeelden · 6 pagina’s"],
             ["09.2.3", "Dubbel glas of dubbele ramen", "dubbel-glas-of-dubbele-ramen", "10 bronbeelden · 4 pagina’s"],
+          ].map(([code, title, slug, meta]) => (
+            <a href={`/artikelen/${slug}`} key={slug}>
+              <span>{code}</span>
+              <strong>{title}</strong>
+              <small>{meta}</small>
+              <b aria-hidden="true">→</b>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="batch-section batch-section-new" id="batch-04">
+        <div>
+          <p className="eyebrow">Muren, afwerking & vocht · batch 04</p>
+          <h2>Negen artikelen over vochtproblemen</h2>
+          <p>
+            Deze negen PDF’s omvatten samen 42 bronpagina’s en 78 afbeeldingen.
+            De oorspronkelijke tekst, voorbeelden en waarschuwingen zijn
+            integraal behouden. De technische beoordeling volgt pas tijdens de
+            inhoudelijke audit.
+          </p>
+        </div>
+        <div className="batch-grid">
+          {[
+            ["17", "Vochtproblemen en hun bestrijding", "vochtproblemen-en-hun-bestrijding", "Geen bronbeelden · 2 pagina’s"],
+            ["17.1", "Oorzaken van vochtproblemen", "oorzaken-van-vochtproblemen", "4 bronbeelden · 4 pagina’s"],
+            ["17.2", "Optrekkend vocht", "optrekkend-vocht", "18 bronbeelden · 7 pagina’s"],
+            ["17.3", "Maatregelen bij vochtdoorslag", "maatregelen-bij-vochtdoorslag", "8 bronbeelden · 4 pagina’s"],
+            ["17.4", "Condensvocht", "condensvocht", "6 bronbeelden · 4 pagina’s"],
+            ["17.5", "Binnenafwerking van vochtige muren", "binnenafwerking-van-vochtige-muren", "9 bronbeelden · 5 pagina’s"],
+            ["17.6", "Vochtwering bij binnenisolatie van daken", "vochtwering-bij-binnenisolatie-van-daken", "3 bronbeelden · 2 pagina’s"],
+            ["17.7", "Vochtproblemen: aandachtspunten en theorie", "vochtproblemen-aandachtspunten-en-theorie", "1 bronbeeld · 5 pagina’s"],
+            ["24.2", "Vochtproblemen oplossen", "vochtproblemen-oplossen", "29 bronbeelden · 9 pagina’s"],
           ].map(([code, title, slug, meta]) => (
             <a href={`/artikelen/${slug}`} key={slug}>
               <span>{code}</span>
