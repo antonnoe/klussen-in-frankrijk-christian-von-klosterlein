@@ -128,7 +128,7 @@ export default function Home() {
           </span>
         </a>
         <nav aria-label="Hoofdnavigatie">
-          <a className="nav-new" href="#nieuw">Nieuw: 10 artikelen</a>
+          <a className="nav-new" href="#nieuw">Nieuw: 15 artikelen</a>
           <a href="#onderwerpen">Onderwerpen</a>
           <a href="#inhoud">Oud menu</a>
           <a href="#documenten">Documenten</a>
@@ -217,29 +217,29 @@ export default function Home() {
       <section className="latest-release" id="nieuw">
         <div className="latest-release-heading">
           <span>Nieuw gepubliceerd</span>
-          <strong>Batch 02 staat online</strong>
-          <p>Nu tien volledige webartikelen · twintig PDF-pagina’s</p>
+          <strong>Onderwerpbatch 03 staat online</strong>
+          <p>Nu vijftien volledige webartikelen · 46 PDF-pagina’s</p>
         </div>
         <div className="latest-release-links">
-          <a href="/artikelen/deuren-opknappen">
-            <small>09.1</small>
-            Deuren opknappen <b>→</b>
+          <a href="/artikelen/deuren-sluitend-maken">
+            <small>09.1.1</small>
+            Deuren sluitend maken <b>→</b>
           </a>
-          <a href="/artikelen/keuze-van-een-raam">
-            <small>06.5.1</small>
-            Keuze van een raam <b>→</b>
+          <a href="/artikelen/hang-en-sluitwerk">
+            <small>09.1.2</small>
+            Hang- en sluitwerk <b>→</b>
           </a>
-          <a href="/artikelen/krakende-vloeren">
-            <small>08.1.7</small>
-            Krakende vloeren <b>→</b>
+          <a href="/artikelen/ramen-opknappen">
+            <small>09.2.1</small>
+            Ramen opknappen <b>→</b>
           </a>
-          <a href="/artikelen/uitgezakte-luiken">
-            <small>09.4.4</small>
-            Uitgezakte luiken <b>→</b>
+          <a href="/artikelen/nieuwe-ramen-plaatsen">
+            <small>09.2.2</small>
+            Nieuwe ramen plaatsen <b>→</b>
           </a>
-          <a href="/artikelen/standaard-gereedschappen">
-            <small>20.1</small>
-            Mijn gereedschapskisten <b>→</b>
+          <a href="/artikelen/dubbel-glas-of-dubbele-ramen">
+            <small>09.2.3</small>
+            Dubbel glas of dubbele ramen <b>→</b>
           </a>
         </div>
       </section>
@@ -658,6 +658,34 @@ export default function Home() {
               <span>{code}</span>
               <strong>{title}</strong>
               <small>{meta} · 2 pagina’s</small>
+              <b aria-hidden="true">→</b>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="batch-section batch-section-new" id="batch-03">
+        <div>
+          <p className="eyebrow">Deuren, ramen & luiken · batch 03</p>
+          <h2>Vijf artikelen als samenhangend onderwerp</h2>
+          <p>
+            Deze vijf PDF’s omvatten samen 26 bronpagina’s en 59 afbeeldingen.
+            De tekst is integraal uit de oude webprint hersteld. Ieder beeld
+            heeft een tekstanker en behoudt zijn positie in de bronvolgorde.
+          </p>
+        </div>
+        <div className="batch-grid">
+          {[
+            ["09.1.1", "Deuren sluitend maken", "deuren-sluitend-maken", "8 bronbeelden · 6 pagina’s"],
+            ["09.1.2", "Hang- en sluitwerk", "hang-en-sluitwerk", "25 bronbeelden · 8 pagina’s"],
+            ["09.2.1", "Ramen opknappen", "ramen-opknappen", "2 bronbeelden · 2 pagina’s"],
+            ["09.2.2", "Nieuwe ramen plaatsen", "nieuwe-ramen-plaatsen", "14 bronbeelden · 6 pagina’s"],
+            ["09.2.3", "Dubbel glas of dubbele ramen", "dubbel-glas-of-dubbele-ramen", "10 bronbeelden · 4 pagina’s"],
+          ].map(([code, title, slug, meta]) => (
+            <a href={`/artikelen/${slug}`} key={slug}>
+              <span>{code}</span>
+              <strong>{title}</strong>
+              <small>{meta}</small>
               <b aria-hidden="true">→</b>
             </a>
           ))}

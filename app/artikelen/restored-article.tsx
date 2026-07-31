@@ -3,6 +3,7 @@ export type RestoredArticleData = {
   title: string;
   deck: string;
   sourceUrl: string;
+  sourcePages?: number;
   paragraphs: string[];
   images: {
     file: string;
@@ -36,7 +37,7 @@ export function RestoredArticle({ article }: { article: RestoredArticleData }) {
         <p>{article.deck}</p>
         <dl>
           <div><dt>{article.code}</dt><dd>archiefnummer</dd></div>
-          <div><dt>2</dt><dd>bronpagina’s</dd></div>
+          <div><dt>{article.sourcePages ?? 2}</dt><dd>bronpagina’s</dd></div>
           <div><dt>{article.images.length}</dt><dd>bronbeelden</dd></div>
         </dl>
       </section>
