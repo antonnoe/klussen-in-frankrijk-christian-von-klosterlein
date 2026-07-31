@@ -128,7 +128,7 @@ export default function Home() {
           </span>
         </a>
         <nav aria-label="Hoofdnavigatie">
-          <a className="nav-new" href="#nieuw">Nieuw: 24 artikelen</a>
+          <a className="nav-new" href="#nieuw">Nieuw: 38 artikelen</a>
           <a href="#onderwerpen">Onderwerpen</a>
           <a href="#inhoud">Oud menu</a>
           <a href="#documenten">Documenten</a>
@@ -217,29 +217,29 @@ export default function Home() {
       <section className="latest-release" id="nieuw">
         <div className="latest-release-heading">
           <span>Nieuw gepubliceerd</span>
-          <strong>Onderwerpbatch 04 staat online</strong>
-          <p>Nu 24 volledige webartikelen · 88 PDF-pagina’s</p>
+          <strong>Onderwerpbatches 05 en 06 staan online</strong>
+          <p>Nu 38 volledige webartikelen · 194 PDF-pagina’s</p>
         </div>
         <div className="latest-release-links">
-          <a href="/artikelen/vochtproblemen-en-hun-bestrijding">
-            <small>17</small>
-            Vochtproblemen en hun bestrijding <b>→</b>
+          <a href="/artikelen/plan-je-huiswaternet">
+            <small>10.1.1</small>
+            Plan je huiswaternet <b>→</b>
           </a>
-          <a href="/artikelen/oorzaken-van-vochtproblemen">
-            <small>17.1</small>
-            Oorzaken van vochtproblemen <b>→</b>
+          <a href="/artikelen/riolering-plannen">
+            <small>10.2.1</small>
+            Riolering plannen <b>→</b>
           </a>
-          <a href="/artikelen/optrekkend-vocht">
-            <small>17.2</small>
-            Optrekkend vocht <b>→</b>
+          <a href="/artikelen/badkamerproject-christian">
+            <small>24.1</small>
+            Badkamerproject Christian <b>→</b>
           </a>
-          <a href="/artikelen/condensvocht">
-            <small>17.4</small>
-            Condensvocht <b>→</b>
+          <a href="/artikelen/dakconstructies">
+            <small>06.1</small>
+            Dakconstructies <b>→</b>
           </a>
-          <a href="/artikelen/vochtproblemen-oplossen">
-            <small>24.2</small>
-            Vochtproblemen oplossen <b>→</b>
+          <a href="/artikelen/dakkapellen-des-lucarnes">
+            <small>06.4</small>
+            Dakkapellen <b>→</b>
           </a>
         </div>
       </section>
@@ -714,6 +714,68 @@ export default function Home() {
             ["17.6", "Vochtwering bij binnenisolatie van daken", "vochtwering-bij-binnenisolatie-van-daken", "3 bronbeelden · 2 pagina’s"],
             ["17.7", "Vochtproblemen: aandachtspunten en theorie", "vochtproblemen-aandachtspunten-en-theorie", "1 bronbeeld · 5 pagina’s"],
             ["24.2", "Vochtproblemen oplossen", "vochtproblemen-oplossen", "29 bronbeelden · 9 pagina’s"],
+          ].map(([code, title, slug, meta]) => (
+            <a href={`/artikelen/${slug}`} key={slug}>
+              <span>{code}</span>
+              <strong>{title}</strong>
+              <small>{meta}</small>
+              <b aria-hidden="true">→</b>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="batch-section batch-section-new" id="batch-05">
+        <div>
+          <p className="eyebrow">Water, riool & sanitair · batch 05</p>
+          <h2>Acht artikelen als één technisch onderwerp</h2>
+          <p>
+            Deze acht PDF’s omvatten samen 57 bronpagina’s en 116 afzonderlijk
+            geplaatste afbeeldingen. De volledige tekst en praktijkvoorbeelden
+            zijn behouden; actuele eisen voor leidingmaterialen en
+            assainissement volgen in de audit.
+          </p>
+        </div>
+        <div className="batch-grid">
+          {[
+            ["10.1.1", "Plan je huiswaternet", "plan-je-huiswaternet", "8 bronbeelden · 6 pagina’s"],
+            ["10.1.2", "Leggen van het huiswaternet", "leggen-van-het-huiswaternet", "21 bronbeelden · 8 pagina’s"],
+            ["10.1.5", "Waterdruk en debietproblemen", "waterdruk-en-debietproblemen", "8 bronbeelden · 5 pagina’s"],
+            ["10.1.7", "Handige tips bij het waternet", "handige-tips-bij-het-waternet", "6 bronbeelden · 3 pagina’s"],
+            ["10.2.1", "Riolering plannen", "riolering-plannen", "18 bronbeelden · 10 pagina’s"],
+            ["10.2.2", "Riolering aanleggen", "riolering-aanleggen", "9 bronbeelden · 4 pagina’s"],
+            ["11", "De fosse septique", "de-fosse-sceptique", "7 bronbeelden · 6 pagina’s"],
+            ["24.1", "Badkamerproject Christian", "badkamerproject-christian", "39 bronbeelden · 15 pagina’s"],
+          ].map(([code, title, slug, meta]) => (
+            <a href={`/artikelen/${slug}`} key={slug}>
+              <span>{code}</span>
+              <strong>{title}</strong>
+              <small>{meta}</small>
+              <b aria-hidden="true">→</b>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="batch-section batch-section-new" id="batch-06">
+        <div>
+          <p className="eyebrow">Daken & dakconstructies · batch 06</p>
+          <h2>Zes omvangrijke dakartikelen</h2>
+          <p>
+            Deze zes PDF’s omvatten samen 49 bronpagina’s en 141 afbeeldingen.
+            Foto’s en constructietekeningen volgen de oorspronkelijke
+            tekstvolgorde. De beoordeling van detaillering, ventilatie en
+            materiaalkeuze blijft onderdeel van de latere audit.
+          </p>
+        </div>
+        <div className="batch-grid">
+          {[
+            ["06.1", "Dakconstructies", "dakconstructies", "15 bronbeelden · 8 pagina’s"],
+            ["06.2.1", "Dakpanmodellen", "dakpanmodellen", "32 bronbeelden · 8 pagina’s"],
+            ["06.2.3", "En als het dak scheef is", "en-als-het-dak-scheef-is", "5 bronbeelden · 3 pagina’s"],
+            ["06.3", "Een pannendak vernieuwen", "een-pannendak-vernieuwen", "11 bronbeelden · 8 pagina’s"],
+            ["06.4", "Dakkapellen (des lucarnes)", "dakkapellen-des-lucarnes", "50 bronbeelden · 12 pagina’s"],
+            ["06.6", "Dakgoten", "dakgoten", "28 bronbeelden · 10 pagina’s"],
           ].map(([code, title, slug, meta]) => (
             <a href={`/artikelen/${slug}`} key={slug}>
               <span>{code}</span>

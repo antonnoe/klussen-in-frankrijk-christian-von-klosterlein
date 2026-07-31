@@ -1,0 +1,1177 @@
+{
+  "plan-je-huiswaternet": {
+    "code": "10.1.1",
+    "title": "Plan je huiswaternet",
+    "deck": "Een beetje nadenken en planning zijn vereist als men een goed werkend huiswaternet wil aanleggen. Uit mijn ervaring weet ik dat het goed aanleggen van water- en rioleringsleidingen meer hoofdbrekens kost…",
+    "sourceUrl": "https://drive.google.com/file/d/15jEbibXYHCg2-4pYzR2jjbSzxSrrjIdy/view?usp=drivesdk",
+    "sourcePages": 6,
+    "paragraphs": [
+      "## 1. Plannen, nadenken , tekenen",
+      "Een beetje nadenken en planning zijn vereist als men een goed werkend huiswaternet wil aanleggen. Uit mijn ervaring weet ik dat het goed aanleggen van water- en rioleringsleidingen meer hoofdbrekens kost dan het aanleggen van elektrische bedrading; die kan men immers veel beter in alle mogelijke bochten leggen. Een beetje strategisch denken en een goed plan zijn nodig. En het uitbreiden dan wel aanpassen van een bestaand net is meestal moeilijker dan het compleet nieuw aanleggen, vooral wanneer aan het bestaande net al door meerdere generaties geprutst is.",
+      "Er zijn drie planningsstappen te onderscheiden:",
+      "## 1. Maak een schematische lijst van de verbruikers (zie bijv. de headerfoto)",
+      "## 2. Bepaal de nodige diameters",
+      "3. Plan de ‘huiselijke geografie’, dat wil zeggen de tracés van alle leidingen - en pas zo nodig de diameters aan.",
+      "Vóór men met het maken van het schema van de verbruikers begint, is het goed te weten dat er voor iedere verbruiker aanbevolen diameters voor aan- en afvoerleidingen bestaan. Deze zijn ook op de websites van de meeste Brico’s te vinden. Hier de belangrijkste in tabel 1:",
+      "Tabel 1: Benodigde leidingdiameters, aan- en afvoer",
+      "Opmerkingen:",
+      "1. De afmetingen die in bovenstaande tabel tussen haakjes { } staan, mogen alleen bij heel korte leidingen (minder dan 1 m) toegepast worden.",
+      "## 2. Bij lange aanvoerleidingen (meer dan 10 m tussen verdeler en verbruiker) kan men beter de volgende grotere",
+      "diameter kiezen.",
+      "## 5. Men vindt in deze Franse tabel bij de waterleidingen (aanvoer) geen oneven diameters!",
+      "## 6. De afvoer van de Franse WC’s is 100 mm en niet 110 zoals in NL gebruikelijk!",
+      "De beperkingen 5 en 6 brengen bij montage van ‘Nederlands’ materiaal moeilijkheden met zich mee of maken gebruik ervan onmogelijk.",
+      "## 7. De hoofdafvoer naar het gemeenteriool of de fosse septique wordt vaak ook in 100 mmø uitgevoerd.",
+      "## 8. Bij wasmachine en vaatwasser is een 40mm afvoer veiliger dan de vaak toegepaste 32, want sommige",
+      "apparaten hebben afvoerpompen met een fors debiet.",
+      "## 9. De sifons van wastafels en keukengootstenen hebben weliswaar een aansluiting van respectievelijk 32 en",
+      "40mm, maar deze worden met een lijmloos manchet (zie afbeelding 1 hieronder) in de rioolleiding van 50mm gestoken. Voor details zie punt 9 van dit stuk.",
+      "Bij dit alles geldt als regel: De leidingweerstand hangt af van diameter en lengte van de leiding, die neemt af bij meer diameter en neemt toe bij meer lengte.",
+      "Hier nog een toelichting op punt 9:",
+      "De sifons van wastafels en keukengootstenen hebben afvoerdiameters van 32 en 40mm respectievelijk. Men moet zich nu niet laten verleiden dit ook als diameter voor de PVCafvoerbuizen te kiezen. De uitgangspijpen van de sifons worden namelijk met lijmloze rubberen manchetten op de rioleringen van 40 en 50mm aangesloten. Er bestaan manchettes 40/32, 50/40 en 50/32 (buiten-/binnendiameter), zie afb. 1. Zodoende kan men een sifon makkelijk verwijderen, bijvoorbeeld bij ontstoppingswerkzaamheden.",
+      "Tabel 1 geeft de leidingdiameter bij het verbruikspunt aan. Aanvoerleidingen waardoor meerdere verbruikers gevoed worden moeten natuurlijk, als deze verbruikers tegelijkertijd water trekken, dikker zijn dan de afzonderlijke leidingen. Er bestaat een simpele regel voor de diameter-keuze van deze waterleidingen: Als de leidingen van twee verbruikers vanuit één gemeenschappelijke aanvoer gevoed worden (en tegelijkertijd gebruikt worden) dan dient men hiervoor minimaal de volgende grotere diameter te kiezen, bijv. 2 verbruikersleidingen à 10/12 --> 12/14 aanvoer 2 verbruikersleidingen à 14/16 --> 16/18 aanvoer Het is iedere keer weer een openbaring voor sommigen om te zien hoeveel er in de techniek afhangt van de \" tweede macht\", terug naar de wiskundeles van vroeger. In dit geval: de capaciteit van een leiding hangt af van de tweede macht van de diameter; dit betekent dat een iets grotere diameter al voor een fors groter debiet zorgt. Laten we eens twee voorbeelden nemen:",
+      "Een 20% grotere diameter is gelijk aan ca. 40% meer capaciteit (1,20x1,20 = 1,44), een 40% grotere diameter is gelijk aan ca.100% meer capaciteit (1,40x1,40 = 1.96)",
+      "Met deze theoretische bagage is het makkelijk een schematische lijst van verbruikers en de daaruit resulterende diameters op te stellen. Hierbij gaat men steeds van de verbruikers uit, men werkt dus als het ware tegen de stroomrichting van het water in. Ik neem hier het voorbeeld van een huis met twee badkamers, een keuken en een buanderie (bijkeuken), een WC en een aantal buitentappunten, en ik geef in tabel 2 alleen het schema voor koud water weer (bij alle aansluitingen met * een dient u vergelijkbaar schema voor warm water te maken).",
+      "Tabel 2: Planning van de leidingen per vertrek",
+      "* hier een vergelijkbaar schema voor warm water maken",
+      "# warm water via onderbouwboiler die door een aftap van de 14 mm-leiding gevoed wordt.",
+      "Nog een aantal toelichtingen bij tabel 2: - In de keuken en de buanderie is de aanvoer niet dikker dan de gootsteenleidingen gekozen omdat wasmachine en vaatwasser alleen kortstondig water trekken, en dat kan de gootsteenkraan wel aan. Dit is anders als de wasmachine in de badkamer staat en op dezelfde leiding als de douche aangesloten is! - Let op bij de badkamers: bij een douche kan de beïnvloeding door een tegelijkertijd gebruikte wastafelkraan erg onaangenaam zijn (badkamer 1), bij het vullen van een badkuip speelt dit geen rol (badkamer 2). - Op het toilet de WC spoelaansluiting en het fonteintje op één 10mm-leiding aansluiten is echt niet handig, want men wil toch graag zijn handen onder de volle straal wassen terwijl het toiletreservoir nog aan het vullen is. - Voor tuin en terras voldoet meestal één kleine aanvoer: men gebruikt normaal toch alleen één van de aanwezige aansluitingen tegelijk.",
+      "## 2. Waterverdelers, les nourrices",
+      "Bij het plannen van de aanvoeren naar de diverse vertrekken dient men met een Franse gewoonte rekening te houden: terwijl het in Nederland gebruikelijk is vanuit de watermeter één leiding met aftakkingen naar alle aan te sluiten vertrekken te leggen, gebruiken de Fransen centrale waterverdelers met separate leidingen naar de vertrekken. Deze waterverdelers (nourrices) bestaan met 3 tot 5 aftakkingen en zijn aan elkaar te koppelen. Bij de installatie-instructies onder menupunt 10.1.2 ga ik nader in op de techniek van de nourrices. In een huisleidingnet dat volgens deze installatiemethode aangelegd is, is het mogelijk bij een storing, reparatie of uitbreiding alleen de kraan in de leiding voor het betreffende vertrek te sluiten zodat alle andere verbruikers ongestoord blijven. Separate stopkranen onder iedere wastafel, zoals in Duitsland, Oostenrijk en de Scandinavische landen gebruikelijk, zijn ook niet meer nodig (maar deze zijn soms handig om het debiet in te kunnen stellen zodat de mengkraan prettig werkt, als deze niet een ingebouwde voorinstelmogelijkheid heeft). In dit stadium van planning is het vooral belangrijk te bepalen waar de verdelers geplaatst worden, want daarvan hangt de lengte van de leidingen af. De meest aangewezen plaats is een kelder of een nevenvertrek op de begane grond (schuur, garage, bijkeuken, beter niet de kast onder het keukenaanrecht). Als uit de plaatsing van de verdeler(s) erg lange leidingen naar het een of ander vertrek resulteren, is het toch beter een iets grotere diameter te kiezen om de drukverliezen door stromingsweerstand te beperken. Dit bedoelde ik met ‘diameters na de geografische planning herzien’. Beknibbelen op de diameter van leidingen is een van de meest gemaakte fouten bij waternetten, en niet alleen door Nederlanders. Ik zeg steeds als dikke-duim-formule:",
+      "20% meer diameter resulteert in 44% meer debiet, veroorzaakt maximaal 10% hogere materiaalkosten,",
+      "0% meer arbeidsloon, maar bespaart 95% van alle mogelijke ergernissen.",
+      "## 3. Franse bijzonderheden",
+      "Even diameters Ik herhaal: In Frankrijk worden alleen de even diameters gebruikt, en alle leidingen hebben een wanddikte van 1mm. Daardoor kunt u bijvoorbeeld een overgang van 12 naar 10 mm diameter realiseren door in een 10/12 pijpje een van 8/10 te solderen, zonder verloopstuk. De in andere landen (D, NL, GB) zeer gebruikelijke 15 mm-leidingen (ze zouden in de Franse terminologie 13/15 moeten heten) zijn in Frankrijk niet te vinden. Neem deze daarom nooit uit NL mee. U vindt er in Frankrijk geen hulpstukken voor (of alleen bij bepaalde internetwinkels). Dat de wanddikte ook bij de grotere diameters 1mm is heeft wel tot gevolg dat bij het buigen van 18- of 20mm leidingen aan de binnenkant plooien kunnen ontstaan. Laat u niet verleiden in Frankrijk alle beschikbare diameters te gebruiken. Er bestaat een voorkeurreeks die logaritmisch opgebouwd is. Deze voorkeurreeks is opgebouwd op een factor 1,4 voor de binnendiameters, want de wortel uit 2 is 1,414. Zodoende heeft de volgende diameter steeds de dubbele capaciteit van de voorgaande, want de capaciteit volgt de diameter met de tweede macht. De vergelijking van een zuiver logaritmische reeks, de Nederlandse standaard en de in Frankrijk te gebruiken voorkeursafmetingen maakt het duidelijk:",
+      "Waterkranen met Franse schroefdraad maten?",
+      "Bij de aansluitmaten van kranen heeft menig Nederlander (of Engelsman) zich over de Franse maatvoering verbaasd. Geen halfduimse of 3/8” schroefdraad voor de kranen, alleen vreemde maataanduidingen zoals 15/21. Wat is dat? Eerst dacht ik ook dat de waterkranen en koppelingen die ik vanuit Nederland nog in mijn loodgieterstas had in Frankrijk niet zouden passen. De maataanduidingen in de bouwmarkt en bij de plombier waren immers heel vreemd. Maar toen kwam ik erachter dat de Fransen wél 3/8\" en halfduimse (1/2”) schroefdraad gebruiken, alleen zij duiden die met hun binnen- en buitendiameter in mm aan. In de catalogus van een bouwmarkt vond ik dan ook de volgende conversietabel, die ik nu steeds in mijn loodgietertas heb:",
+      "De tabel noemt dus (van boven naar beneden):",
+      "De in Frankrijk gebruikelijke benoeming (appellation actuelle)",
+      "diameter in duimse aanduiding (diamètre en pouce)",
+      "buitendiameter van een buitendraad [mm] (diamètre du raccord mâle)",
+      "binnendiameter van een binnendraad [mm] (diamètre du raccord femelle)",
+      "Andere dan de genoemde maten zult u in huisinstallaties niet gauw tegenkomen. De meest gebruikelijke maten zijn vet gedrukt. De genoemde maataanduidingen zal men ook bij alle aansluitingen van boilers etc. en ook bij CV’s tegenkomen.",
+      "## 4. Gedetailleerde planning van de waterleidingen",
+      "Met de boven gegeven regels en aanbevelingen zijn de diameters van de leidingen te bepalen. Verder hadden wij het over de leidinglengtes. Korte leidingen zijn, vooral bij warm water, van voordeel. Als het mogelijk is zou ik steeds de warmwatervoorziening dicht bij de badkamer(s) plannen (of de badkamers dicht bij de warmwatervoorziening (combi- CV of boiler). Maar helaas is dit in een bestaand huis vaak niet mogelijk. Als lange warmwaterleidingen niet te voorkomen zijn, dan is een recirculatieleiding een oplossing (un boucle): Door een kleine pomp wordt warm water steeds van de boiler/CV langs alle verbruikers en terug gepompt. Zodoende heeft iedere verbruiker steeds warm water zonder wachttijden ter beschikking. Dat is in hotels en ziekenhuizen standaard. U kunt de pomp aan de lichtschakelaar van de badkamer(s) koppelen om onnodig permanent pompen te vermijden of u kunt een separate schakelaar voor de pomp plaatsen.",
+      "Bij de detailplanning van de waterleidingen is een beetje inventiviteit gevraagd, als men niet overal leidingen in het zicht wil hebben. Wanneer ergens de fantasie en het interdisciplinaire denken van een klusser gevraagd is, dan hier. Een paar hints uit de praktijk:",
+      "leidingen zijn goed door inbouwkasten of nevenvertrekken te leggen leidingen kunnen door een penant of nepbalk gecamoufleerd worden (afb.2)",
+      "als er een nieuwe betonvloer gestort wordt kunnen de leidingen daarin worden meegenomen als badkamer en buanderie (bijkeuken, Hauswirtschaftsraum, pantry) door een gemeenschappelijke wand gescheiden zijn, is het mogelijk alle leidingen voor badkamer en buanderie aan de kant van de buanderie in het zicht te leggen en met korte steekleidingen naar de badkamer te gaan holle (hangende) plafonds zijn uitermate geschikt voor het leggen van alle mogelijke leidingen, dus ook water en riool. Zie menupunt 08.3.2.",
+      "Waterleidingen in een nepbalk 1 bestaande balk 2 leidingen 3 nepbalk: een gladde en een geprofileerde plank",
+      "Maar wacht even vóór u de planning van de waterleidingen afmaakt:",
+      "Indien ook de rioleringen vervangen/uitgebreid/aangepast moeten worden dan zou ik een totaalplanning voor water en riool maken. In vertrekken waar veel leidingen zitten plan en plaats ik eerst de rioleringen, dan water-leidingen en ten slotte de elektrische leidingen*. Want rioleringen zijn het dikst en moeten met constant afschot gelegd worden, bij het leggen van waterleidingen hebt u door de kleinere diameters meer vrijheden, en elektrische leidingen kunnen in alle mogelijke bochten gelegd worden, al moet het niet te gek worden. Dus, als u water en riool moet vernieuwen lees dan even ook de adviezen over riool in menupunt 10.2. * had ik ook een schoorsteen moeten plaatsen dan had die op de eerste plaats gestaan",
+      "De Franse watertorens - Oude en nieuwe watertorens",
+      "U ziet in het Franse landschap overal watertorens, soms tweehonderd jaar oud, maar ook moderne bouwsels. Velen hebben een uitgesproken vormgeving.",
+      "Klik op een van de postzegels of kies links boven Play >"
+    ],
+    "images": [
+      {
+        "file": "/articles/plan-je-huiswaternet/source-000.jpeg",
+        "caption": "Bronbeeld 1 · PDF-pagina 1",
+        "alt": "Oorspronkelijk bronbeeld bij Plan je huiswaternet",
+        "afterParagraph": 7,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/plan-je-huiswaternet/source-001.jpeg",
+        "caption": "afb. 10.1.1 - 1 Lijmloze manchetten voor sifons. Links 50/40, rechts 50/32.",
+        "alt": "Oorspronkelijk bronbeeld bij Plan je huiswaternet",
+        "afterParagraph": 22,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/plan-je-huiswaternet/source-002.jpeg",
+        "caption": "Bronbeeld 3 · PDF-pagina 3",
+        "alt": "Oorspronkelijk bronbeeld bij Plan je huiswaternet",
+        "afterParagraph": 26,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/plan-je-huiswaternet/source-003.jpeg",
+        "caption": "Bronbeeld 4 · PDF-pagina 4",
+        "alt": "Oorspronkelijk bronbeeld bij Plan je huiswaternet",
+        "afterParagraph": 35,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/plan-je-huiswaternet/source-004.jpeg",
+        "caption": "Bronbeeld 5 · PDF-pagina 4",
+        "alt": "Oorspronkelijk bronbeeld bij Plan je huiswaternet",
+        "afterParagraph": 37,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/plan-je-huiswaternet/source-005.jpeg",
+        "caption": "afb. 10.1.1 - 2",
+        "alt": "Oorspronkelijk bronbeeld bij Plan je huiswaternet",
+        "afterParagraph": 48,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/plan-je-huiswaternet/source-006.jpeg",
+        "caption": "afb. 10.1.1 - 3 Inhakken van leidingen in een wand van gasbeton",
+        "alt": "Oorspronkelijk bronbeeld bij Plan je huiswaternet",
+        "afterParagraph": 49,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/plan-je-huiswaternet/source-007.jpeg",
+        "caption": "afb. 10.1.1 - 4 Leidingen achter de ossature van een voorzetwand van gipsplaat",
+        "alt": "Oorspronkelijk bronbeeld bij Plan je huiswaternet",
+        "afterParagraph": 49,
+        "sourcePage": 6
+      }
+    ]
+  },
+  "leggen-van-het-huiswaternet": {
+    "code": "10.1.2",
+    "title": "Leggen van het huiswaternet",
+    "deck": "Bij het aanleggen van waterleidingen is het doelmatig in de stroomrichting van het water te werken. Bij een compleet nieuw waterleidingsysteem zou ik dus van de toevoer uitgaan, in het algemeen is dit bij…",
+    "sourceUrl": "https://drive.google.com/file/d/1PyjNp-TAOpm51k1QVFknEAhfUjAjJqba/view?usp=drivesdk",
+    "sourcePages": 8,
+    "paragraphs": [
+      "## 1. Het leggen van de waterleidingen",
+      "Bij het aanleggen van waterleidingen is het doelmatig in de stroomrichting van het water te werken. Bij een compleet nieuw waterleidingsysteem zou ik dus van de toevoer uitgaan, in het algemeen is dit bij de watermeter. Bij een gedeeltelijke vernieuwing gaat u van de bestaande leiding uit, niet van de verbruikers. Ik beschrijf hier een compleet systeem, de werkwijze bij een deelsysteem kan hiervan op eenvoudige wijze afgeleid worden. De leiding tot en met de watermeter valt onder de verantwoordelijkheid van het waterleidingbedrijf, hieraan mag u niet komen. Vanaf de watermeter bent u verantwoordelijk. Zie afbeelding 1.",
+      "Watermeter en waterverdelers 1 Hoofdkraan 2 Watermeter 3 Aftap 3’ aftap van de verdelers 4 stopkraan 5 koudwaterverdeler 6 koudwaterleidingen en stopkranen",
+      "## 7 voeding van de boiler 8 Boiler 9 Warmwaterverdeler 10 Warmwaterleidingen en stopkranen",
+      "l",
+      "--> Bij koudwater zijn er twee reserveaansluitingen",
+      "Ieder huiswaternet moet afgetapt kunnen worden. De eerste aftap wordt onmiddellijk naast de watermeter geplaatst, 3 in afb.1. Sommige watermeters hebben een eigen aftap. De hoofdstopkraan 4 is meestal dicht bij de watermeter geplaatst; zo niet dan moet men aan het einde van de hoofdleiding bij de koudwaterverdeler (5) een stopkraan plaatsen, 4'. De waterverdelers (5) en (9) zijn de typische nourrices, voor voorbeelden zie afb.2 - 4. De koudwaterverdeler dient zo veel uitgangen te hebben als er vertrekken (of tapplaatsen zoals tuin en terras) met wateraansluiting zijn plus één voor de toevoer van de warmwaterboiler (no.8 in afb.1). Een of twee reserveaansluitingen zijn ook steeds nuttig - wie weet wat u in de toekomst nodig hebt. Het warme water wordt weer door een nourrice (9 in afb.1) verdeeld.",
+      "legenda bij afb 4:",
+      "## 1 buitendraad 20/27 (¾”)",
+      "## 2 binnendraad 20/27 (¾\")",
+      "3 4x buitendraad 15/21 (½”)",
+      "Mijn waterverdelers zijn hier te zien, afb. 5. Niet alles is netjes en recht, want ik moest er met bestaande leidingen rekening houden. Alle leidingen zijn met watervaste plakkers gekenmerkt; men zou ook sleutelhangers aan de stopkranen kunnen hangen. Ik heb er ook een overzicht van de aansluitingen bij gezet, zie hieronder.",
+      "Op alle afgangen van de nourrices zitten stopkranen. Hiervoor kiest men het liefst kogelkranen (vannes sphériques, die met de karakteristieke rode hendels), want die hebben minder last van kalkaanslag en gaan niet zo gauw vastzitten – steeds een probleem bij kranen die niet regelmatig bediend worden.",
+      "Op afb.5 ziet u links de warmwaterverdeler, bestaand uit een 5-punts en een 3-punts nourrice, rechts de koudwaterverdeler, bestaand uit twee 5-punts nourrices en onderaan een T-stuk, de niet benodigde aansluitingen zijn met een blinde kap afgesloten.",
+      "En ja, er bestaan ook kogelkranen met hendeltjes in andere kleuren,",
+      "Als in een huis een compleet nieuw waterleidingsysteem aangelegd moet worden zou ik de meerlaagse kunstofleidingen kiezen, die algemeen als PER bekend zijn. Hiervoor is speciaal krimpgereedschap nodig.",
+      "Hoe koper te solderen is (zacht met tin en Butagasvlam) en hoe men bochten met een buigijzer of buigveer maakt staat in alle handleidingen en klusadviezen van de bouwmarkten en iedereen krijgt dat met een beetje oefening onder de knie. Ik wil alleen op een punt wijzen: Alle leidingen moeten voor het solderen spanningsvrij liggen, dus nooit een leiding in een positie 'dwingen', want dat resulteert in spanningen die op den duur tot breuk kunnen leiden. Er bestaan ook een paar handige trucs die niet alom bekend zijn:",
+      "Afbeelding 7: Bochten apart buigen, pijpen op lengte brengen en dan een mof plaatsen, want twee bochten die men met een buigijzer aanbrengt komen toch nooit precies op de juiste afstand te liggen.",
+      "## 2. Het bevestigen van de leidingen",
+      "Alle leidingen moeten om de 50 à 60cm in beugels bevestigd worden. Kort voor ieder bocht of T-stuk dient ook een leidingsteun geplaatst te worden. Er bestaan ook bevestigingsbeugels met rubberen voering die een beetje thermische uitzetting toelaten en het geluid dempen. Er zijn tal van verschillende bevestigingsmiddelen in de handel; ik gebruik meestal de simpele colliers de fixation van geperst blik, zie de afbeeldingen 8 t/m 14.",
+      "Hier een paar afbeeldingen van deze simpele leidingssteunen en hun toepassing.",
+      "Warmwaterleidingen worden tegen warmteverlies door daar overheen geschoven schuimrubberen buisisolatie geïsoleerd. Het is doelmatig ook koudwaterleidingen te isoleren op trajecten waar condensatie op de leidingen op kan treden. Omdat condensvocht aan de onderkant van de leidingen naar het laagste punt loopt en daar afdruppelt, vermoedt men vaak ten onrechte een lekkage. Zie hierover ‘Lekkage of condensvorming’ onder menupunt 10.1.8 andere vraagstukken over water. Het condensprobleem treedt vooral in slecht geventileerde warme ruimtes op (denkt u eens aan de bekende condensvorming op het WC-reservoir). Geluidsoverlast (stromingsgeluid van water in leidingen of ‘slaan’ van leidingen) wordt meestal veroorzaakt door de kranen van bepaalde verbruikers die abrupt sluiten; dit kan verergerd worden door een te grote afstand van de houders, of door muurdoorvoeringen die niet zorgvuldig geïsoleerd zin - vaak is het een combinatie van deze factoren. - Voor waterslagen zie het punt 4 in 10.1.5 (<-- aanklikken). - Gaten in muren dienen rondom 15-20 mm groter te zijn dan de leidingen, dus 50-60 mm voor de gebruikelijke leidingen van 12 tot 20 mm. De vrije ruimte wordt met bouwschuim (PUR) of stukken buisisolatie opgevuld. Voor pijpbeugels met inlage zie hier.",
+      "## 3. Flexbuisaansluitingen en muurplaten",
+      "Mengkranen van wastafels en gootstenen die op het horizontale vlak gemonteerd worden hebben tegenwoordig een aansluiting door ingeschroefde of vast ingeperste flexibele aansluitslangen, afb.15 en 16. Hiervoor moet op de aanvoerleidingen de juiste schroefmof gezet worden. Ik schrijf uitdrukkelijk 'gezet', want bij koperen leidingen kan dit solderen of persen zijn, bij PER steeds persen. En let op: deze aansluitleidingen hebben een standaardlengte van 30cm. Zie ook 10.1.5.",
+      "Douche- of badkuipkranen en sommige gootsteenkranen die tegen de muur zitten worden op muurplaten bevestigd die op de leidingen gezet zijn, afb.17. Deze muurplaten dienen de juiste diameter voor de koperen buis en de te monteren waterkraan te hebben, bij mengkranen ook de juiste hart-op-hart afstand. Hiervoor bestaan de maten 120 en 150 mm; tegenwoordig is 150mm gebruiklijker. Zie afb. 18 en 19. Voor de aansluiting van een 150mm-unit op 120mm-muurplaten zie de opmerkingen onder 10.1.3.",
+      "Er bestaan ook plastic waterleidingen. Soms is het handig die voor lange leidingen (bijv. van de watermeter naar de verdelers, of lange leidingen van de verdeler naar een vertrek) te gebruiken. Deze leidingen zijn vorstveilig. Het leggen van kleine korte bochten is echter niet mogelijk. Voor de overgang van koper op plastic bestaan speciale koppelingen. Die zwarte slang is er in twee soorten: eau potable en irrigation. Het eau potable soort is gekenmerkt door een doorlopende blauwe streep aan de buitenkant. Beiden hebben dezelfde afmetingen en er passen dezelfde koppelstukken op. Maar Potable geeft minder kans op een plastic- of grondsmaakje aan je water, en de drukvastheid van de potable is ook groter. Het prijsverschil is overigens minimaal.",
+      "## 4. Testen van de waterleidingen",
+      "Als alle leidingen gelegd zijn, is het goed het systeem op lekkage te controleren alvorens de sleuven in de muur dicht te cementeren of te gipsen. Hiervoor zet u de waterdruk op de leiding en laat alle kranen lopen tot er luchtvrij water komt. Dan laat u het systeem een paar uur onder druk staan en loopt alle soldeerverbindingen na. Soldeer elke lekkende verbinding na aftappen van de leiding meteen opnieuw! Een kleine lekkage kan door kalkafzetting soms vanzelf dicht worden, maar het blijft steeds een zwakke plek die bijvoorbeeld bij drukstoten weer open kan springen. Dus liever nu in vijf minuten repareren dan later een muur weer open moeten bikken.",
+      "Redactionele opmerking",
+      "Tot nog toe beschrijf ik alleen het leggen van koperen leidingen. Ik heb de techniek met kunststofbuizen niet beschreven, omdat ik er geen ervaring mee heb. In ons huis was immers een koperen leidingsysteem aanwezig dat ik eerst gesaneerd en later uitgebreid heb; het was logisch ook hiervoor koper te kiezen. En ik beschrijf het liefst alleen dingen die ik ooit zelf gedaan heb. Bij een compleet nieuw aan te leggen huiswaternet zou ik PER of multicouche gebruiken. Voorlopig verwijs ik naar deze website voor PER producten: http://www.plomberie-pro.com/Catalogue/plomberie/raccord-per/glissement-pro.htm Zie ook de daar gelinkte PDF-infos. Les tuyaux en PER sont définis par leur diamètre extérieur et leur épaisseur, en millimètres :",
+      "## 12 × 1,1 soit 10 mm de diamètre intérieur (12 – épaisseur × 2 = 12 – 2, 2 = 9,8)",
+      "## 16 × 1,5",
+      "## 20 × 1,9",
+      "## 25 × 2,3",
+      "Diamètres courants du tube multicouche, vendus en barres (1,5 m et 3 m) et en couronnes, nus ou dans un fourreau, les diamètres extérieurs courants sont de :",
+      "## 14 (x2) soit 10 mm de diamètre intérieur (14 – épaisseur × 2 = 14 – 4 = 10)",
+      "## 16 (x2)",
+      "## 20 (x2)",
+      "## 26 (x3)",
+      "## 32 (x3)",
+      "Verder wil ik dit stuk aanvullen met: - koper, PER of multicouche - aansluitschema's voor boilers - Franse bijzonderheden"
+    ],
+    "images": [
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-000.jpeg",
+        "caption": "afb. 10.1.2 - 1 Huiswaternet met koud- en warmwaterverdeler.",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 1,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-001.png",
+        "caption": "afb. 10.1.2 - 2 Nourrice, viervoudig",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 6,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-002.jpeg",
+        "caption": "afb. 10.1.2 - 4 De aansluitingen van een nourrice afb. 10.1.2 - 2 t/m 4 Voorbeelden van Nourrices.",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 6,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-003.jpeg",
+        "caption": "afb. 10.1.2 - 3 Nourrice met stopkranen",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 6,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-004.jpeg",
+        "caption": "afb. 10.1.2 - 5 Mijn waterverdelers. Links warm, rechts koud.",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 14,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-005.jpeg",
+        "caption": "Bronbeeld 6 · PDF-pagina 3",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 14,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-006.jpeg",
+        "caption": "afb. 10.1.2 - 6 Cuivre recuit en couronne (links in de vakken) en cuivre écroui (rechts naast de stelling)",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 14,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-007.jpeg",
+        "caption": "afb. 10.1.2 - 7",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 16,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-008.jpeg",
+        "caption": "afb. 10.1.2 - 8 Collier de fixation avec patte à vis, simple",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 20,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-009.jpeg",
+        "caption": "afb. 10.1.2 - 9 Collier de fixation, double",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 20,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-010.jpeg",
+        "caption": "10.1.2 - 10 Bevestiging met sierrozet",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 20,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-011.jpeg",
+        "caption": "afb. 10.1.2 - 11",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 20,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-012.jpeg",
+        "caption": "afb. 10.1.2 - 12",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 20,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-013.jpeg",
+        "caption": "afb. 10.1.2 - 14 patte à vis avec cheville placo",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 20,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-014.jpeg",
+        "caption": "afb. 10.1.2 - 13 pijpbeugel met isolerende inlage",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 20,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-015.jpeg",
+        "caption": "Bronbeeld 16 · PDF-pagina 5",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 21,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-016.jpeg",
+        "caption": "afb. 10.1.2 - 15 Mengkraan met ingeperste aansluitslangen",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 23,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-017.jpeg",
+        "caption": "afb. 10.1.2 - 16 Inschroef-aansluitslangen",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 23,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-018.jpeg",
+        "caption": "aaffb. 10.1.2 - 17 Muurplaat 12/17 (3/8\") met soldeeraansluiting 12mmø.",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 24,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-019.jpeg",
+        "caption": "afb. 10.1.2 - 18 Beugel met twee muurplaten voor een mengkraan",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 24,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/leggen-van-het-huiswaternet/source-020.jpeg",
+        "caption": "afb. 10.1.2 - 19 Muurplaten voor een mengkraan, op de juiste afstand gemonteerd, met gesoldeerde waterleidingen; hier in de ossature voor gipsplaten die dan betegeld worden.",
+        "alt": "Oorspronkelijk bronbeeld bij Leggen van het huiswaternet",
+        "afterParagraph": 24,
+        "sourcePage": 7
+      }
+    ]
+  },
+  "waterdruk-en-debietproblemen": {
+    "code": "10.1.5",
+    "title": "Waterdruk en debietproblemen",
+    "deck": "‘platte’ land",
+    "sourceUrl": "https://drive.google.com/file/d/14F0qI1oNiGCVdRnNpiZJkPOaCzIX4xs9/view?usp=drivesdk",
+    "sourcePages": 5,
+    "paragraphs": [
+      "## 1. Te lage of te hoge waterdruk, debietproblemen - - typische problemen op het Franse",
+      "‘platte’ land",
+      "Wanneer het huiswaterleidingnet volgens de onder 10.1.1 en 10.1.2 aangegeven regels aangelegd is, zal men geen ‘huisgemaakte’ problemen met onderlinge beïnvloeding van de waterverbruikers hebben. Want dit is mijn ervaring:",
+      "Acht of negen van tien Frankrijkgangers die over problemen met het waternet klagen, hebben dit aan hun huiswaternet te danken en niet aan het waterleidingbedrijf.",
+      "Dit noem ik huisgemaakte problemen. Maar niet ieder gemeentewatersysteem is volgens de regels aangelegd en er bestaan ook typisch Franse problemen die met de geografie en het soms niet erg moderne net van de waterleidingbedrijven te maken hebben. De druk kan te hoog of te laag zij, of het debiet van de gemeentelijke aanvoerleiding kan te klein zijn.",
+      "Even ter verduidelijking: Anders dan in het platte Nederland kun je in een heuvelachtig gebied in Frankrijk niet overal een ‘normale’ waterdruk verwachten. In dichtbevolkte gebieden is dat meestal geen probleem, daar staan voldoende pompstations of reduceerinrichtingen. Trouwens: een normale waterdruk is iets van 2,5 tot 4 of hooguit 5 kg/cm2; men spreekt ook over ‘bar’ en de Fransen zeggen simpelweg trois kilos als zij 3 bar of 3 kg/cm² bedoelen. Vooral in heuvelachtige gebieden kunnen zich problemen voordoen. Te weinig druk komt daar voor bij de hoger gelegen huizen, of op percelen die ver van de watertoren of het pompstation verwijderd zijn, of die een te dunne aanvoerleiding hebben. Andersom komt te hoge waterdruk voor bij huizen die juist in een dal liggen, en/of dicht bij een watertoren. De natuurwetenschappelijke achtergrond is dat het hoogteverschil in het leidingnet als een extra drukgenerator werkt, voordruk van het pompstation en druk van de statische waterkolom worden als het ware opeengestapeld.",
+      "## 2. Probleemanalyse 'waterdruk'",
+      "Om vast te stellen waar de oorzaak van de problemen zit (bij het waterleidingbedrijf of in huis) moet de waterdruk die het huis binnenkomt gemeten worden. Dat doet men zo: u hebt een manometer tot ongeveer 10 bar (of kg/cm²) nodig. Die sluit u op het uiteinde van het huisnet aan, zo ver mogelijk van de watermeter verwijderd. Hiervoor verwijdert men een kraan en plaatst de manometer op diens plaats. Als alle waterverbruikers afgesloten zijn, treedt geen drukverlies door stroming op en u hebt in het hele huiswaternet dezelfde druk. U meet dus de begindruk. De mogelijke uitkomsten zijn:",
+      "Gevolgen en te ondernemen acties:",
+      "Geval 3: Geen actie nodig.",
+      "Geval 4: Waarschijnlijk sputteren de mengkranen en slaat het overdrukventiel van de boiler te pas en te onpas aan, en sommige gasgeisers kunnen hier niet tegen. Hier moet een drukregelaar of reduceer geplaatst worden.",
+      "Als u tussen de 2 en 5 bar meet (geval 2 en 3), zou ik voor de zekerheid nog een stap verder gaan. Dan opent u een kraan dicht bij het aansluitpunt van de manometer. Zakt de druk onder de kritieke grens van 2 bar, dan is de huisleiding te klein van diameter of te lang en slokt een groot deel van de aanwezige druk door stromingsverliezen op. In dit geval kan een opvoerunit helpen, maar als langetermijnoplossing is het beter het hele leidingnet volgens de huidige inzichten aan te passen, of tenminste belangrijke delen door een groter diameter te vervangen. Dat kan zeer ingrijpend zijn. Zie de uiteenzettingen in menupunt 10.1.2.",
+      "## 3. Dit zijn de oplossingen voor",
+      "waterdrukproblemen: hydrofoor of détendeur",
+      "Bij te weinig waterdruk (geval 1 of 2) moet een opvoerunit geïnstalleerd worden. Deze units zijn als kant-en-klare kleine sets bestaande uit pomp, bufferdrukvat en besturingsunit verkrijgbaar; zij heten in het Frans hydrofoor of surpresseur en kosten tussen de € 150 en 250 (voor een unit die 3 bar en 1,5-2m3/h levert). Deze moet men tussen de watermeter en de verdeler plaatsen, en er is een elektriciteitsaansluiting ter plekke nodig. Om geluidsoverlast te voorkomen kiest men een plek in huis ver van de slaapkamers, een elastische opstelling en ook elastische leidingaansluitingen; soms moet een aparte waterslagdemper geplaatst worden (meer over waterslagdempers onder punt 4).",
+      "Bij te hoge waterdruk moet na de watermeter een drukregelaar of drukverminderaar, ook reduceer genoemd (reducteur de pression of détendeur), geïnstalleerd worden, kost ca. € 50. Een regulateur de pression is makkelijk instelbaar, een détendeur is meestal op een vaste secondaire druk ingesteld. Een bestaande verkalkte drukregelaar ontkalken en opnieuw instellen is haast onmogelijk, omdat bij de demontage meestal het een of ander kwetsbare onderdeel sneuvelt. Vervangen dus.",
+      "Ik wil ook nog een bijzonder geval noemen: Ik heb van iemand gehoord die een opvoerunit geplaatst had, maar die trok geregeld vacuüm op de zuigleiding (wil zeggen de aansluitleiding op het gemeentenet). De gemeentelijke aanvoerleiding was erg lang en had gewoon een te geringe diameter. Enige oplossing was het plaatsen van een buffertank die vanuit het openbare net door een vlotterventiel gevuld wordt (zoals een WC spoelbak). Zo kon de buffer steeds weer langzaam gevuld worden, ook had men in huis op een gegeven ogenblik meer water nodig dan het net kon leveren.",
+      "U moet er iets voor over hebben als u veraf van dichtbevolkte gebieden wilt wonen.",
+      "Een zeer complete website over drukproblemen is die van Watts industries:",
+      "http://www.wattsindustries.com/images1/17/pdf/d_guide_rdp_fr.pdf_ ... en hier worden ook de problemen bij hoge gebouwen (drie of meer verdiepingen) behandeld.",
+      "## 4. Waterslagen? Installeer waterslagdempers!",
+      "Wat is waterslag?",
+      "Een snel sluitende kraan brengt de stromende waterkolom in een leiding plotseling tot stilstand. Dit is vaak hoorbaar als een harde metaalachtig klinkende 'klap' in de leiding, die soms door het hele huis te horen is. Deze klap wordt door de bij het abrupte sluiten van een waterverbruiker optredende zeer hoge druk veroorzaakt. Meestal zijn de magneetventielen van wasmachines en vaatwassers de boosdoener, maar ook vlotterkranen van WC-reservoirs of een van die moderne een-hendel-kranen kunnen de oorzaak zijn. Water is incompressibel (laat zich niet samenpersen) en geeft deze drukgolf dus ongedempt aan het leidingnet door. En hoe hoger de initiële leidingdruk hoe groter het risico van deze klappen. Het meest onschuldige effect is het vervelende",
+      "Deze amortisseur dempt de drukgolf in de waterleiding door middel van een luchtkussen. De opbouw van deze waterslag-dempers lijkt op die van een CV-expansievat: het is een bol die door een rubberen membraan M in een watervoerende ruimte W en een luchtdrukruimte L onderverdeeld is. Deze luchtruimte dempt de waterslagen.",
+      "L is het luchtkussen M het membraan W de waterruimte",
+      "Een waterslagdemper wordt in de watertoevoerleiding vlak voor die verbruiker geplaatst, die de waterslag veroorzaakt. Het model van afbeelding 4 wordt met het bijgeleverde T-stuk in de leiding gezet. Op afb. 5 is de praktische uitvoering ervan te zien: het T-stuk is op de uitgang van de stopkraan geplaatst, de demper is aan de ‘voet’ van het T-stuk aangesloten (rechts), en de slang van de wasmachine is op de andere ‘arm’ van de T aangesloten (onder).",
+      "Er bestaan ook dempers met twee aansluitingen, het Tstuk is als het ware geïntegreerd, zie afb.6. Heet in het Frans antibélier montage en ligne. Welk van de twee modellen voor u het meest geschikt is hangt van de situatie ter plaatse en de voor het type leiding benodigde koppelingen af. Het meest efficiënt is een waterslagdemper die zo dicht mogelijk bij de veroorzaker van de waterslagen gemonteerd is.",
+      "Op afb.7 zijn diverse opties voor plaatsing van de twee modellen te zien. Ik laat hier alleen de meest voor de hand liggende oplossingen zien. Voor meer opties raadpleeg de hieronder genoemde websites van de fabrikanten.",
+      "Uitleg bij de drie voorbeelden: (A): T-stuk als hoekstuk gebruikt, demper op een van de armen van de T gemonteerd",
+      "(B): T-stuk in de rechte leiding, demper zoals op afb.5 op de voet van de T gemonteerd",
+      "(C): demper van afb.6 in de leiding gemonteerd",
+      "Meer info over waterslag en waterslagdempers is op de volgende websites te vinden:",
+      "http://huis-en-tuin.infonu.nl/doe-het-zelf/68799-waterslag-in-de-waterleiding.html https://www.flamcogroup.com/nl/catalog/systeemcomponenten-voor-verwarmings-en-drinkwaterinstallaties/toebehorenvoor-sanitaire-installaties/flexofit-s-waterslagdemper/flexofit-s http://boutique-plomberie.fr/coup-de-belier/2068-coups-de-belier-type-525-antischock.html http://www.wattsindustries.nl/images1/11/pdf/Waterslagdempers_TDS.pdf"
+    ],
+    "images": [
+      {
+        "file": "/articles/waterdruk-en-debietproblemen/source-000.jpeg",
+        "caption": "Bronbeeld 1 · PDF-pagina 1",
+        "alt": "Oorspronkelijk bronbeeld bij Waterdruk en debietproblemen",
+        "afterParagraph": 7,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/waterdruk-en-debietproblemen/source-001.jpeg",
+        "caption": "afb. 10.1.5 - 1 Surpresseur (of: hydrofoor)",
+        "alt": "Oorspronkelijk bronbeeld bij Waterdruk en debietproblemen",
+        "afterParagraph": 14,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/waterdruk-en-debietproblemen/source-002.jpeg",
+        "caption": "afb. 10.1.5 - 2 Regulateur de pression, hier ingesteld op 3,5bar (zie het kleine zwarte venster met een waarde tussen 3 en 4) en met de rode waarschuwingswijzer op 5bar",
+        "alt": "Oorspronkelijk bronbeeld bij Waterdruk en debietproblemen",
+        "afterParagraph": 14,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/waterdruk-en-debietproblemen/source-003.jpeg",
+        "caption": "Afb.3 toont een dwarsdoorsnede door een waterslagdemper: afb. 10.1.5 - 3",
+        "alt": "Oorspronkelijk bronbeeld bij Waterdruk en debietproblemen",
+        "afterParagraph": 22,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/waterdruk-en-debietproblemen/source-004.jpeg",
+        "caption": "afb.10.1.5 - 5 Flamco waterslagdemper aangesloten aan de stopkraan van een wasmachine. Foto R.v.d.Meulen",
+        "alt": "Oorspronkelijk bronbeeld bij Waterdruk en debietproblemen",
+        "afterParagraph": 24,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/waterdruk-en-debietproblemen/source-005.jpeg",
+        "caption": "afb. 10.1.5 - 4 Waterslagdemper en T-stuk merk Flamco",
+        "alt": "Oorspronkelijk bronbeeld bij Waterdruk en debietproblemen",
+        "afterParagraph": 24,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/waterdruk-en-debietproblemen/source-006.jpeg",
+        "caption": "Afb. 10.1.5 - 6 Thermador Waterslagdemper ‘en ligne’ met geïntegreerd T-stuk",
+        "alt": "Oorspronkelijk bronbeeld bij Waterdruk en debietproblemen",
+        "afterParagraph": 26,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/waterdruk-en-debietproblemen/source-007.png",
+        "caption": "Afb. 10.1.5 - 7 Diverse aansluitmogelijkheden voor waterslagdempers",
+        "alt": "Oorspronkelijk bronbeeld bij Waterdruk en debietproblemen",
+        "afterParagraph": 27,
+        "sourcePage": 4
+      }
+    ]
+  },
+  "handige-tips-bij-het-waternet": {
+    "code": "10.1.7",
+    "title": "Handige tips bij het waternet",
+    "deck": "Handige tips",
+    "sourceUrl": "https://drive.google.com/file/d/18sJSyxtzxcNFMT7P0HVExGBB-Xt-4Cx5/view?usp=drivesdk",
+    "sourcePages": 3,
+    "paragraphs": [
+      "Handige tips",
+      "Voor het monteren van waterkranen en afvoer kunt u de wastafel of keukengootsteen het beste ondersteboven op de werkbank of twee schragen plaatsen. Zo kan men zowel de kranen met hun aansluitslangetjes als de sifon makkelijk vast-zetten. Dan pas monteert u de wastafel tegen de muur of de gootsteen op het onderkastje.",
+      "Het watersysteem zet u pas op druk als zowel het koud- als het warmwatersysteem compleet aangesloten zijn. Als alleen het koudwatersysteem aangesloten is kan bij (thermostatische) mengkranen water uit de warmwateraansluiting schieten.",
+      "De Flexpipes van waterkranen dienen steeds met een zachte bocht gelegd te worden, nooit recht en op spanning (en, aan de andere kant, ook niet met scherpe bochten, want dan kan de flexpipe worden dichtgeknepen). In het voorbeeld van afb. 1 en 2, het ging hier om de vier aansluitingen van een dubbele wastafel, moesten de aanvoerpijpen verlengd worden omdat de nieuwe mengkranen flexbuizen van 30cm lengte hadden ipv. de massieve zachte koperen leidingen van de oude, die 35 of 40cm lang waren.",
+      "Achteraf verzuchtte betrokken bricoleur met toch wel enige ervaring: En tegen anderen zeg ik altijd meten, meten en nog eens meten. De Engelsen vatten dit kort en bondig samen: measure twice, cut once.",
+      "Want wat was eenvoudiger geweest dan de bestaande zacht koperen pijp van 10 mm ongeveer tien centimeter boven de invoer in de 12 mm koperen aanvoerleiding af te zagen. Met knelkoppelingen van 10 mm (bicône) naar de standaard 3/8 schroef aansluiting was het dan snel voor elkaar geweest. Aan de rechterkant zouden de flex aansluitingen iets minder strak zijn aangesloten, en aan de linker kant zou de verlengoplossing niet nodig zijn geweest.",
+      "Ik heb nog eens bij een brico gekeken: aanluitleidingen voor waterkranen zijn inderdaad alleen in 30cm lengte verkrijgbaar. Flexbuizen met twee wartelmoeren van bijv. 12/17 (=3/8\") zijn in alle mogelijke lengtes aanwezig (afb. 3 en 4), maar die voor de waterkranen nodige met 8mm male schroefaansluiting vond ik alleen in 30cm (afb.4 rechts boven en rechts onder, details zie afb.5).",
+      "Hier (rechts) wordt de slang door een te scherpe bocht, veroorzaakt door een te grote lengte en de ongunstige ligging van de toevoer, afgeknepen:"
+    ],
+    "images": [
+      {
+        "file": "/articles/handige-tips-bij-het-waternet/source-000.jpeg",
+        "caption": "afb. 10.1.7 - 1 Linker wastafel: Beide toevoerpijpen om 10cm verlengd - alles OK!",
+        "alt": "Oorspronkelijk bronbeeld bij Handige tips bij het waternet",
+        "afterParagraph": 3,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/handige-tips-bij-het-waternet/source-001.jpeg",
+        "caption": "afb. 10.1.7 - 2 Rechter wastafel: Dit is een grensgeval, misschien net nog goed, maar misschien was ook hier een hogere ligging van de aansluitingen op zijn plaats geweest.",
+        "alt": "Oorspronkelijk bronbeeld bij Handige tips bij het waternet",
+        "afterParagraph": 3,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/handige-tips-bij-het-waternet/source-002.png",
+        "caption": "afb. 10.1.7 - 3",
+        "alt": "Oorspronkelijk bronbeeld bij Handige tips bij het waternet",
+        "afterParagraph": 5,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/handige-tips-bij-het-waternet/source-003.png",
+        "caption": "afb. 10.1.7 - 4",
+        "alt": "Oorspronkelijk bronbeeld bij Handige tips bij het waternet",
+        "afterParagraph": 5,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/handige-tips-bij-het-waternet/source-004.jpeg",
+        "caption": "afb. 10.1.7 - 5",
+        "alt": "Oorspronkelijk bronbeeld bij Handige tips bij het waternet",
+        "afterParagraph": 6,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/handige-tips-bij-het-waternet/source-005.jpeg",
+        "caption": "afb. 10.1.7 - 6",
+        "alt": "Oorspronkelijk bronbeeld bij Handige tips bij het waternet",
+        "afterParagraph": 6,
+        "sourcePage": 2
+      }
+    ]
+  },
+  "riolering-plannen": {
+    "code": "10.2.1",
+    "title": "Riolering plannen",
+    "deck": "Als de planning voor het waterleidingnet (zie 10.1.1) klaar is doet u hetzelfde voor de riolering. U gaat weer van de verbruikers en hun aanbevolen afvoerdiameters uit en voegt die samen tot een net met…",
+    "sourceUrl": "https://drive.google.com/file/d/1PEIdDpG-MbPQqTOdfyIvH_-XbksmOX1i/view?usp=drivesdk",
+    "sourcePages": 10,
+    "paragraphs": [
+      "Als de planning voor het waterleidingnet (zie 10.1.1) klaar is doet u hetzelfde voor de riolering. U gaat weer van de verbruikers en hun aanbevolen afvoerdiameters uit en voegt die samen tot een net met diameters die in stromingsrichting gezien steeds toenemen.",
+      "De maten tussen haakjes { .. } zou ik alleen nemen als het om heel korte leidingen gaat, zeg minder dan 1m. Onderbouwsifons (bekersifons) bestaan in 32mm (voornamelijk voor wastafels) en 40mm (voornamelijk voor keukengootstenen, éviers).",
+      "Deze kunnen met handige rubbermanchetten 32/40, 32/50 en 40/50 op de grotere afvoerleidingdiameters aangesloten worden; deze manchetten hebben binnen en buiten ringvormige afdichtlamellen. Omdat deze manchetten lijmloos zijn kunnen de sifons voor ontstoppingswerkzaamheden makkelijk los genomen worden.",
+      "Badkuipen hebben voor de afvoer (sifon) een gat van 52 mmØ. De sifons hebben dan een afvoer van 40mmØ. Douchebakken hebben voor de afvoer (sifon) een gat van 60 of 90 mmØ. De sifons hebben dan een afvoer van 40 of beter 50mmØ. Normale douche- en badsifons hebben een inbouwhoogte H van ca.115 mm. Voor 60 en 90 mm bestaan ook modellen met H = 80 mm; deze zijn van bovenaf te openen voor het reinigen en om verstoppingen te verhelpen. U plant uw rioleringsnet net zo als bij de waterleidingen vanuit de gebruikspunten (wastafels, badkuipen, douche-",
+      "## 1. Gedetailleerde planning van de riolering: afschot en beluchting",
+      "Bij het vastleggen van de definitieve routing van de rioleringen moet men, anders dan bij waterleidingen, op afschot en beluchting letten.",
+      "Afschot Men moet elke afvoer van vuil water met een constante afschot van ca. 0,8 - 1% aanleggen. 1% is gelijk aan 1 cm per strekkende meter. Bij aansluitingen aan de standleiding past met een T-stuk met 87° toe, dat geeft meteen de juiste helling aan. Meer is niet nodig. Bij minder afschot wordt de stroomsnelheid te laag, het zelfreinigingseffect werkt niet meer, en de leidingen slibben te snel dicht. Bij meer afschot kan een separatie van vaste en vloeibare stoffen plaats vinden; het water loopt weg, excrementen en papier blijven liggen. Verstoppingen zijn het resultaat. Bij dit soort gevallen beter een afschot van ca. 1% aanhouden en dan een verticale val toepassen. Het is nagenoeg onmogelijk het nodige afschot van 0,8 à 1% te realiseren als men langere leidingen dwars door het huis in de vloer legt (in het beton stort); als men door een kamer van 8 m moet is dat immers 6 à 8cm. Natuurlijk is alles wat met stroming en afschot te maken heeft een beetje ingewikkelder. Wie hier meer over wil weten kan dit in DIN 12 056 nalezen. De essentie is dat men bij dunnere leidingen, bijv. 40mmø, beter een iets groter afschot (2,0 - 2,5%) kan toepassen om de relatief grotere wrijving in dunne leidingen tegen te gaan.",
+      "Beluchting Een vaak gemaakte fout (ook van vakmensen, en ook in Nederland) is het niet beluchten van afvoerleidingen. Bij het doortrekken van de WC ontstaat dan door de massieve bijna als een zuiger naar beneden stortende waterkolom een vacuüm dat ondiepe stankafsluiters (meestal die van een douche of een schrobputje in de vloer) leegzuigt zodat er een open verbinding naar het riool ontstaat. En elk riool stinkt soms wel naar rotte eieren. Daarom moet u afvoeren naar het riool steeds beluchten, zie afb. 2 - 6. De Fransen spreken bij het fenomeen van leegzuigen van désyphonage, mise à sec des syphons of vidange des syphons.",
+      "Beeld 2 toont de meest effectieve maar ook duurste manier van aansluiten. De 125mm-valpijp ('standpijp') is boven het dak uit verlengd en van een afdekhoedje voorzien. Deze standleiding moet zo min mogelijk ‘verspringen’. Dus recht door het dak naar boven is het beste (en meestal goed te camoufleren als men deze leiding door een nevenvertrek legt, bijvoorbeeld een berging, een inbouwkast of de bijkeuken). Buiten leggen (wordt in Engeland vaak gedaan, aan de achtergevel) is in alle gebieden waar het kan vriezen af te raden. Boven de hoogste aangesloten afvoer kan deze leiding een geringere diameter dan 125mm hebben, want hier stroomt uitsluitend lucht die een veel geringere viscositeit dan water heeft en daardoor 'makkelijker' stroomt. Maar wie het zekere voor het onzekere wil nemen plaatst ook hier een 125mm-leiding.",
+      "Afbeelding 2 en 3 tonen badkamerrioleringen met beluchtte valpijp (of standleiding); de helling van de 'horizontale' leidingen is hier sterk overdreven. In afb. 2 zijn alle afvoerleidingen separaat op deze ‘standpijp’ aangesloten. Meer gebruikelijk (en ook kosten- en ruimtebesparend) is het meerdere afvoeren met één verzamelleiding op de beluchtte standpijp aan te sluiten (afb. 3). Men moet dan wel op de juiste diametervergroting bij iedere aansluiting letten en de verzamelleiding moet belucht worden (links op deze tekening). Daar moet een beluchtingspijp (ook ontspanningsleiding, vacuümbreker of atmosferische compensatie genoemd) geplaatst worden, die ook weer boven het dak uitkomt. Let op: deze tweede vacuüm-breker kan beter niet aan het uiterste uiteinde van de horizontale leiding geplaatst worden, want de hele horizontale afvoer moet doorspoeld worden! Er moet tenminste één afvoer aan de andere kant van de beluchtingsleiding zitten, anders treedt er, vooral als het om een lang stuk leiding gaat, te makkelijk sedimentatie en dus verstopping op.",
+      "Maar ook bij deze aansluiting volgens afb. 3 is het goed de WC separaat op de valpijp aan te sluiten of tenminste het dichtst bij de valpijp te plaatsen. De WC-pijp kan beter geen 90°-bochten hebben, liever 45°, desnoods 2x 45°. Bij Dyka, pag. 14 - 19, is een aantal goede voorbeelden te zien. Er zijn combinaties van de twee systemen volgens afb. 2 en 3 mogelijk, dus bepaalde afvoeren separaat en rechtstreeks op de valpijp aangesloten, anderen via een verzamelleiding. Badkamers met zowel een douche als een badkuip verdienen bijzondere aandacht; bij het laten leeglopen van de badkuip kan het namelijk voorkomen dat water in de douche terecht komt en deze overloopt, vooral als de gemeenschappelijke afvoer een te kleine diameter heeft. De afvoeren van badkuip en douche zijn dan namelijk communicerende vaten en die willen steeds hetzelfde vloeistofniveau hebben. Ik heb ook van situaties gehoord waar bij een afvoer zoals op afb.3 bij het leg laten lopen van de badkuip de sifon van de douche steeds leeg werd gezogen, het effect van désyphonage.",
+      "Dus is het beter de douche apart op de standpijp aan te sluiten. En natuurlijk moet iedere verzamelleiding op de juiste plaats weer een beluchting hebben. Een leidingsysteem zoals op afbeelding 4 is dan een goede oplossing. Let op: niet de op afb.5 getoonde minder betrouwbare beluchting kiezen!",
+      "Nog een mogelijkheid: De oplossing volgens afb. 6 lijkt me wel mogelijk. Maar, zoals gezegd, alles is afhankelijk van de situatie ter plekke.",
+      "En als de WC niet dicht bij de valpijp te plaatsen is, en op dezelfde rioolpijp nog een douchebak of wastafel aangesloten is, moet men beslist nog een separate beluchting leggen. Op een Engelse website heb ik de volgende oplossing gevonden, eigenlijk een bypassbeluchting:",
+      "Ik wil wel nog even benadrukken dat het in huizen met een of twee verdiepingen meestal niet noodzakelijk is de standpijp boven de hoogste aansluiting met de volle diameter, meestal 125mmø, door te laten lopen. Hier moet door de pijp immers alleen lucht stromen, en die stroomt vanwege de geringere viscositeit veel makkelijker dan water. Een diameter van 50mm is dan meestal voldoende. In multi-storey-gebouwen met op iedere verdieping een compleet rioolnet is dat anders. Er zijn in Nederland en Frankrijk allerhande binnenbeluchters verkrijgbaar (afb.7 en 8), ook sifons met ingebouwde beluchters (clapet anti-désiphonnage), maar dit alles zijn lapmiddelen om de oorspronkelijke fout, een ontoereikend belucht afvoersysteem, achteraf enigszins te corrigeren. Ik ken ook iemand die als tijdelijke remedie bij zijn douche waarvan de sifon steeds leeggezogen wordt, na iedere WCbeurt water liet lopen zodat de stankafsluiter meteen weer gevuld is, maar dat is echt een nood-noodoplossing!",
+      "Ik wil niet zeggen dat het anders dan met de hiervoor beschreven oplossingen niet lukt het probleem van désiphonnage op te lossen, maar bepaalde effecten zijn moeilijk te voorspellen. Het kan bij ontbrekende of ontoereikende beluchting steeds weer voorkomen dat bij het doortrekken van de WC een van de stankafsluiters leeggezogen wordt, of dat bij het leeg laten lopen van de badkuip plotseling water in de douche staat. Ik ben in mijn drie huizen reeds de gekste dingen tegen gekomen. Dus ik neem geen enkel risico meer. Achteraf verhelpen is altijd moeilijker, en zeker duurder! En steeds eraan denken: De WC-uitlaat heeft in Frankrijk 100mm, de standpijp 125 mmø; de in Nederland gangbare diameter 110 is in Frankrijk niet gebruikelijk. Er blijken wél verloopstukken tussen 100 en 110 mmø te bestaan (www.nicoll.fr), maar die vind je bij een gewone Brico niet.",
+      "## 2. Ook een detail waar het vaak misgaat: De overstort van de boiler",
+      "Iedere boiler heeft een overstort (groupe de securité). Bij de afvoer van het water uit deze overstort worden vaak fouten gemaakt; als men die gedachteloos op een bestaand riool aansluit kan men voor verrassingen komen te staan. Op afbeelding 9 is de boiler overstort gewoon op dezelfde riolering aangesloten als de badkuip. Daar was niets mis mee zolang de badkuip alleen voor het douchen gebruikt werd.",
+      "Maar als men een bad neemt en de volle badkuip dan leeg laat lopen, en de",
+      "De praktische uitvoering is op afb. 11 en 12 te zien, hier bij een HR-combiketel toegepast. Deze heeft dus twee waterafvoeren: de overstort van de boiler en de afvoer van condenswater dat in de rookgasafvoer ontstaat.",
+      "Legenda bij afbeelding 11: (1) Overstort van boiler (2) afloop van condenswater uit rookgas (3) waterbak van de opvoerunit (4) motor/pomp gedeelte van de opvoerunit (5) uitlaatslang van de opvoerunit (6) hoge rioolaansluiting (7) sifon",
+      "## 3. Het tracé van de rioolbuizen",
+      "Het vinden van het juiste tracé voor de rioolbuizen is wegens hun grote diameter en de noodzaak van een constante afschot vaak niet makkelijk. Het aanleggen onder de vloer is goed te doen als in de daaronder gelegen verdieping een verlaagd plafond geplaatst wordt. Hierbij treden helaas vaak geluidsproblemen op. Een handige oplossing is de sinds ca. 30 jaren vooral bij renovatieprojecten toegepaste voorwandinstallatie. Alle sanitairelementen worden aan frames, die ca. 20 cm diep en 120 cm hoog zijn, gemonteerd en de afvoerleidingen worden tussen de bestaande wand en deze frames gelegd. Diverse leveranciers bieden hiervoor complete systemen aan en de prijzen zijn nu ook langzamerhand redelijk. Zie afb.13 en 14. Vaak moet alleen voor de douche, vooral een inloopdouche, een aparte afvoer gelegd worden, want de afvoerbuizen van voorwandinstallaties liggen hiervoor te hoog."
+    ],
+    "images": [
+      {
+        "file": "/articles/riolering-plannen/source-000.jpeg",
+        "caption": "Bronbeeld 1 · PDF-pagina 1",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 0,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/riolering-plannen/source-001.jpeg",
+        "caption": "afb. 10.2.1 - 1 Rubbermanchet 40/50 en 32/50",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 2,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/riolering-plannen/source-002.jpeg",
+        "caption": "afb. 10.2.1 - 2 Separate leidingen voor alle afvoeren -> separate pipes for all bathroom drains",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 8,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/riolering-plannen/source-003.jpeg",
+        "caption": "afb. 10.2.1 - 3 Gemeenschappelijke leiding voor alle afvoeren -> One common pipe for all bathroom drains; this requires a second air connection close to the far end of the horizontal drain.",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 8,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/riolering-plannen/source-004.jpeg",
+        "caption": "afb. 10.2.1 - 4 Gedeeltelijk gemeenschappelijke leidingen -> Compromise between separate and common drains",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 10,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/riolering-plannen/source-005.jpeg",
+        "caption": "afb. 10.2.1 - 5 Niet aan te bevelen! Ongunstige plaatsing van de tweede vacuüm-breker. -> Not recommended! It is important for the whole of the horizontal branch to be flushed with liquid. There must be at least one drain unit outside the vent pipe connection.",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 11,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/riolering-plannen/source-006.jpeg",
+        "caption": "afb. 10.2.1 - 6 Mogelijke oplossing als de laatste rioolaansluiting verticaal verloopt - dus geen dood stukje leiding waarin sedimentatie op kan treden. -> A possible connection for the vent pipe (vacuum breaker) if the last appliance has a vertical drain pipe.",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 12,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/riolering-plannen/source-007.jpeg",
+        "caption": "Bronbeeld 8 · PDF-pagina 5",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 12,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/riolering-plannen/source-008.jpeg",
+        "caption": "afb. 10.2.1 - 7 Binnenbeluchter, rechts de onderdelen -> AAV, air admittance valve, right: the components",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 14,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/riolering-plannen/source-009.jpeg",
+        "caption": "afb.10.2.1 - 8a Binnenbeluchter, het principe -> air admittance valve, the principle",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 14,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/riolering-plannen/source-010.jpeg",
+        "caption": "afb. 10.2.1 - 8b: Binnenbeluchter, werkwijze van het model op afb.7 -> air admittance valve (AAV), how it works",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 14,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/riolering-plannen/source-011.jpeg",
+        "caption": "afb. 10.2.1 - 9 Boiler overstort lager dan badkuipniveau (als die vol is)",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 17,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/riolering-plannen/source-012.jpeg",
+        "caption": "10.2.1 - 10 Boiler overstort met opvoerpomp",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 18,
+        "sourcePage": 7
+      },
+      {
+        "file": "/articles/riolering-plannen/source-013.jpeg",
+        "caption": "afb. 10.2.1 - 11 Opvoerunit, hier bij een HR-ketel. Pijl: Hoogte van de badkuip, die achter de muur ligt en op dezelfde afvoerleiding aangesloten is.",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 19,
+        "sourcePage": 7
+      },
+      {
+        "file": "/articles/riolering-plannen/source-014.jpeg",
+        "caption": "afb. 10.2.1 - 12 De opvoerunit van afb.11, merk Wilo",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 20,
+        "sourcePage": 8
+      },
+      {
+        "file": "/articles/riolering-plannen/source-015.jpeg",
+        "caption": "afb. 10.2.1 - 13 voorwandinstallatie: tegen de linker muur een element voor wastafelmontage, rechts voor een WC",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 22,
+        "sourcePage": 8
+      },
+      {
+        "file": "/articles/riolering-plannen/source-016.jpeg",
+        "caption": "afb. 10.2.1 - 14 voorwandinstallatie; let op de diametervergroting van rechts naar links, en de WC is het dichtst bij de standpijp geplaatst",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 22,
+        "sourcePage": 9
+      },
+      {
+        "file": "/articles/riolering-plannen/source-017.jpeg",
+        "caption": "Zo kan het natuurlijk ook!",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering plannen",
+        "afterParagraph": 22,
+        "sourcePage": 9
+      }
+    ]
+  },
+  "riolering-aanleggen": {
+    "code": "10.2.2",
+    "title": "Riolering aanleggen",
+    "deck": "Het gebruikelijke materiaal voor huisinterne rioleringen is PVC (hard Polyvinylchloride, grijs gekleurd) dat gelijmd wordt. Bij het aanleggen van de riolering gaat men van de hoofdafvoer uit en werkt tegen…",
+    "sourceUrl": "https://drive.google.com/file/d/1vMGznmkncQEUoG1Sz0snpXJIiBy8mqJi/view?usp=drivesdk",
+    "sourcePages": 4,
+    "paragraphs": [
+      "## 1. Het leggen van de rioleringen",
+      "Het gebruikelijke materiaal voor huisinterne rioleringen is PVC (hard Polyvinylchloride, grijs gekleurd) dat gelijmd wordt. Bij het aanleggen van de riolering gaat men van de hoofdafvoer uit en werkt tegen de stroomrichting in. Het is doelmatig alle leidingen eerst koud (zonder lijmen) in elkaar te steken en waar nodig provisorisch te ondersteunen. Hierbij moet men goed op het in 10.2.1 beschreven afschot letten. Als ik onder mijn waterpas van 600mm lengte aan een kant een klosje van 6mm vastplak resulteert dit in een afschot van 1%, zie afb.1. Er bestaan ook speciale hellingwaterpassen, maar die worden zelfs door de vakman bijna nooit gebruikt, afb. 2 en 3. Ik heb de mijne toevallig op een rommelmarkt gevonden.",
+      "Als alles goed uitgelijnd en spanningsvrij is worden de afzonderlijke pijpen en hulpstukken genummerd en op elke verbinding met viltstift een referentiestreep gezet (afb. 4). Ik wil er nog eens nadrukkelijk op wijzen dat de leidingen spanningsvrij moeten worden gelegd. Waar spanning aanwezig is, ontstaan vroeger of later scheuren en juist op de meest ongelukkige plaatsen. Wanneer dit alles is gebeurd, kunnen de pijpen en hulpstukken, bij de valpijp beginnend, in elkaar gelijmd worden. Een goede instructie voor het lijmen vindt u bij Dyka, pag. 4 - 8; daar wordt ook op veel voorkomende fouten bij het verlijmen van PVC-buizen gewezen.",
+      "Waar nodig worden beugels ter ondersteuning/ ophanging geplaatst. Voor de afstand van de ophangingen zie ook weer bij Dyka pag.15; tienmaal de buisdiameter oftewel bij de normale leidingafmetingen 50-80 cm is meestal een goede maat; bij verticale buizen kan men het twee- à drievoudige hiervan nemen. Bij doorvoeren door muren en betonnen plafonds wordt de leiding ingemetseld, natuurlijk span-ningsvrij. Hier zijn eigenlijk geen isolerende tussenlagen nodig (isolatiebus of PUR-schuim), maar ik zou die toch plaatsen om spannings-vrijheid te waarborgen, zie afb. 5.",
+      "Ook rioleringsleidingen kunnen in nepbalken gelegd worden, zoals deze die door een halletje (couloir) loopt, afb. 6 en 7. Het gaat hier om een doucheafvoer met de extra ruim bemeten diameter van 80mmø die langs een strijkbalk gelegd is. Links ervan liggen reeds elektrische leidingen. Nepbalken zie ook 12.1.3 afb. 13 t/m 15 .",
+      "Hier nog een foto hoe het niet moet, afb. 8. De nieuw aangelegde WC heeft wel een naar buiten gevoerde standleiding, maar die moet duidelijk hoger dan het hoogste raam eindigen. Deze plaatsing onder het fors uitstekende dak heeft tot stankoverlast bij alle ernaast liggende ramen geleid.",
+      "## 2. Literatuur, websites",
+      "De meest uitvoerige instructies over het leggen van PVC rioleringen heb ik op de website van DYKA gevonden.",
+      "## 3. Handige tips, tout venant",
+      "De inbouwunits van hangtoiletten hebben meestal een afvoerbocht van PP, Polypropyleen (sommigen denken dat het ABS = Acrylonitril-butadieen-styreen is, maar dat is het niet). PP kan alleen met een speciale lijm met PVC-rioolbuizen verlijmd worden! Gewone PVC-lijm werkt hier niet. Beter kan hier een aansluitstuk met rubbermanchet geplaatst worden. Er bestaan PVC-moffen met rubbermanchet aan beide kanten, andere hebben een lijmverbinding aan een kant en aan de andere kant een manchetverbinding.",
+      "Voor het inschuiven in een manchetverbinding dient het uiteinde van de buis afgeschuind te zijn, en ik smeer de afschuining van de buis voor het inschuiven in de manchetten ook steeds met groene zeep in.",
+      "Hetzelfde geldt voor wastafelsifons van RVS of PP (meestal wit). Daarom de PVC-buis voor de wastafel- en gootsteenafvoer een maat groter uitvoeren, dan heeft de rubbermanchet (zie afb. 1 onder 10.2.1) de nodige ruimte.",
+      "Rioleringen legt men, zoals boven gezegd, het liefst door nevenvertrekken. Als het echt niet anders kan moeten valpijpen soms ook door bewoonde ruimtes gelegd worden. Om geluidsoverlast te vermijden is het noodzakelijk om deze pijpen heen een koker te timmeren of te metselen die aan de binnenkant van geluiddempend materiaal voorzien is. Het beste is iedoch de ruimte tussen valpijp en koker met zand te vullen."
+    ],
+    "images": [
+      {
+        "file": "/articles/riolering-aanleggen/source-000.jpeg",
+        "caption": "afb. 10.2.2 - 1 Waterpas met klosje, hier voor een afschot van 1% (helling 1 op 100).",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 1,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/riolering-aanleggen/source-001.jpeg",
+        "caption": "afb. 10.2.2 - 2 Hellingwaterpas",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 1,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/riolering-aanleggen/source-002.jpeg",
+        "caption": "afb. 10.2.2 - 3 Hellingwaterpas detail. Links: geen helling, midden: helling 1 op 100 of 1%, rechts helling 2 op 100 of 2% (of 1 op 50)",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 1,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/riolering-aanleggen/source-003.jpeg",
+        "caption": "afb. 10.2.2 - 4 Aansluiting 12 is voor een WC vóór de nog op te trekken muur, 13 voor een achter deze muur, beiden 100mm. Bij 23 worden de wastafels aangesloten, 40mm (voor 32mm sifons). Alle openingen zijn met huishoudfolie en rubberband afgesloten, anders stinkt's.",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 2,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/riolering-aanleggen/source-004.jpeg",
+        "caption": "afb. 10.2.2 - 5 Muur- en plafonddoorvoeringen met isolerende tussenlaag (geel) -> isolation (yellow) for pipe passages through floor and wall",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 2,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/riolering-aanleggen/source-005.jpeg",
+        "caption": "afb. 10.2.2 - 6",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 4,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/riolering-aanleggen/source-006.jpeg",
+        "caption": "afb. 10.2.2 - 7 Rioleringsbuis weggewerkt met planken die een nepbalk vormen -> This is how I covered an 80mm shower drain by a false beam",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 4,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/riolering-aanleggen/source-007.jpeg",
+        "caption": "afb. 10.2.2 - 8 Goed bedoeld maar slecht gedaan! -> Oh no, a soil stack vent ending under a protruding roof!",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 5,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/riolering-aanleggen/source-008.jpeg",
+        "caption": "afb. 10.2.2 - 9 PVC-sok met rubbermanchet",
+        "alt": "Oorspronkelijk bronbeeld bij Riolering aanleggen",
+        "afterParagraph": 10,
+        "sourcePage": 4
+      }
+    ]
+  },
+  "de-fosse-sceptique": {
+    "code": "11",
+    "title": "De fosse septique",
+    "deck": "--> Let op: Dit stuk is gebaseerd op informatie van voor 2007. Ik heb verder niets aan updates gedaan omdat wij een huis gekocht hadden dat op een gemeenteriool aangesloten is.",
+    "sourceUrl": "https://drive.google.com/file/d/1xcSi0IDLuijaA_7ljMcctQjQaLTER9Ah/view?usp=drivesdk",
+    "sourcePages": 6,
+    "paragraphs": [
+      "--> Let op: Dit stuk is gebaseerd op informatie van voor 2007. Ik heb verder niets aan updates gedaan omdat wij een huis gekocht hadden dat op een gemeenteriool aangesloten is.",
+      "De meeste Nederlanders met een (tweede) huis in Frankrijk wonen op het platteland of in een klein dorp en zijn dus meestal aangewezen op een septic tank (fosse septique,of deftiger: assainissement individuel of assainissement autonome en officieel zelfs: assainissement non collectif). A la campagne wordt soms ook nog op openbaar water geloosd. Ongeveer 13 miljoen Fransen, ofwel 30% van de plattelandsebevolking, zijn niet op het openbare riool aangesloten en beschikken dus over een système d'assainissement autonome, of lozen in uitzonderlijke gevallen op het oppervlaktewater. Aansluiting op een riool zit er vrijwel niet in, maar sinds 2007 moet elke woning die niet kan worden aangesloten over een voorziening beschikken, een septic tank dus. De gemeenten hadden tot eind 2012 de tijd gekregen om een controlesysteem te ontwikkelen.",
+      "Enkele voorwaarden: de fosse moet officieel zijn geplaatst door een erkend bedrijf en moet meer dan 35 meter afstand hebben van een bron waaruit drinkwater komt. Het behandelde afvalwater mag niet in een put worden geloosd of in een andere holle ruimte in de natuur. Een fosse septique moet ten minste één keer in de vier jaar worden geleegd. Zo luiden althans de voorschriften. En: op een recentelijk gehouden waterzuiveringscongres beweerde een professionnel de l'assainissement dat van de 4,5 miljoen bestaande particuliere zuiveringsinstallaties meer dan 3 miljoen niet deugen.",
+      "Vóór je iets aan de afvalwaterzuivering van het Frans huis doet, is het verstandig op het gemeentehuis naar de plannen van de gemeente te informeren (zie punt 6). Modernisering of vervanging van het bestaande systeem zou een overbodige investering zijn als er binnen enkele jaren toch een gemeenteriool komt. In dit soort gevallen worden bestaande niet aan de normen voldoende situaties zonder meer gedoogd.",
+      "eaux vannes, het wc-water, dat in een fosse septique of een fosse toutes eaux moet eaux menagères, het keukenwater, dat via een vetafscheider, de bac dégraisseur, in de fosse toutes eaux moet bad- en douchewater kan óf met het wc-water óf met het andere huishoudelijke afvalwater afgevoerd worden.",
+      "## 1. Basisprincipe",
+      "Het afvalwater stroomt in een tank waar zware delen bezinken en door bacteriën afgebroken worden. Het gezuiverde water verlaat de tank en wordt door een buizenstelsel in de tuin verdeeld waar in de grond de definitieve zuivering plaatsvindt. Men spreekt dan van infiltratie in de grond. Strikt genomen heet alleen een systeem voor het wc-water 'fosse septique'. Als al het huishoudelijke afvalwater erin terecht komt, is het eigenlijk een 'fosse toutes eaux', maar de uitdrukking fosse septique is algemeen gebruikelijk en wordt daarom ook hier gebruikt.",
+      "Afbeelding 2",
+      "De elementen van een individuele afvalwaterzuivering",
+      "1 bac dégraisseur (vetvanger) 2 fosse toutes eaux (de septic tank) OL = ontluchting van de fosse (niet in detail aangegeven) 3 ongeperforeerde pvc-buis 4 regard de branchement et de visite (verdeel- en inspectieput) 5 tube d’épandage (buizen van het vloeiveld, geperforeerde buis)",
+      "De afstand tussen de fosse (2) en het vloeiveld (5) is normaliter groter dan hier op het schema aangegeven.",
+      "## 2. Uitvoeringsprincipes",
+      "De hoofdriolering van het huis, een PVC-pijp van 125 mm diameter (soms ook 100 mm), loopt naar de fosse (2) die in de tuin zit, soms ook in stal of schuur, zelden in de kelder. In de aansluiting van de keuken op deze tank dient een vetafscheider (bac dégraisseur) geplaatst te worden (1); soms is deze ook in de tank geïntegreerd en heeft dan een separate ingang. De vetafscheider werkt door zwaartekracht en rusttijd. Vaak is er ook een grof filter geïnstalleerd (préfiltre). De fosse kan uit beton bestaan, ter plekke gemaakt maar meestal als geprefabriceerde unit, en sinds de jaren zestig worden er steeds meer fosses septiques van kunststof toegepast. In de fosse bezinken de vastere bestanddelen en het voorgezuiverde water stroomt aan de andere kant eruit. De hoofdzaak bij eenfosse septique zijn de bacteriën. Deze breken het meeste van het bezinksel onder productie van CO2 af.",
+      "Afbeelding 3 toont de dwarsdoorsnede van een moderne septic tank.",
+      "Afbeelding 3",
+      "1 inlaat afvalwater 2 tussenschotten 3 uitlaat naar vloeiveld 4 inspectiedeksels 5 zweefstoffen 6 en 7 bezinksel (residu) 8 ontluchting beluchting van (1) en (3) kan ook op andere",
+      "Vanuit de fosse septique wordt het verregaand gereinigde water met weer een PVC-buis (100 of 125 mm diameter) naar het als vloeiveld gereserveerde gedeelte van de tuin geleid en daar aangesloten op de tubes d’épandage, letterlijk de verspreidingsbuizen, zie afbeelding 4. Deze bestaan uit PVC, zijn geperforeerd of van sleuven (1) voorzien en worden in een bed van grind onder de grond geplaatst, soms met een laag tuinvilt (géotextile) (2) eromheen.",
+      "Afbeelding 4 Tube d'épandage",
+      "## 1 uitlaatsleuven 2 cocosvezel of landbouwvilt 3 emboîture (optromping) 4 stroomrichting",
+      "De buizen hebben een optromping (emboîture) (3) en er moet op de stromingsrichting gelet worden (4). Het grindbed dient circa 60 cm breed en 50-60 cm hoog te zijn en wordt met worteldoek of tuinvilt en daarop 10-15 cm tuinaarde afgedekt. Om een te snelle stroming in de épandage te voorkomen moeten de buizen met niet te veel afschot aangelegd worden; een kamvormig verdeelsysteem of een zigzag-patroon wordt soms toegepast; bij een hellend terrein moeten de buizen de hoogtelijnen van het terrein volgen. De onderlinge afstand van de buizen is meestal 2 à 3 m; deze afstand en andere uitvoeringsdetails zijn afhankelijk van het soort grond (sterk of juist weinig doorlatend).",
+      "Een zandbak (lit filtrant) is een alternatief als het buizensysteem moeilijk aan te leggen is (denk aan rotsgrond). Deze zandbak kan behoorlijk groot zijn (je moet eerder aan 20 à 30 dan aan 5 m³ denken). Als ook een zandbak moeilijk aan te leggen is dan is een kunstmatige infiltratieheuvel een alternatief. Verder dient men te trachten vloeiveld, zandbak of infiltratieheuvel lager dan de fosse aan te leggen; anders is een pompinstallatie compleet met pompput, vuilwaterpomp en aansturing nodig. Maar alles is, zoals gezegd, afhankelijk van de bodemgesteldheid en de terreinvorm.",
+      "Op strategische punten van het buizenstelsel, bij voorkeur om de 15-20 m, worden inspectieputten (regards de visite) geplaatst, gelijktijdig beluchting. Vanuit deze regards kunnen verstoppingen verholpen worden. Van een drinkwaterbron moet een behoorlijke afstand aangehouden worden, bij voorkeur meer dan de voorgeschreven 35 m, en deze kan beter aan de andere kant van het huis liggen. Er bestaan ook regels voor de afstand van de erfscheiding. Op het vloeiveld mogen geen diepwortelende planten en vooral geen bomen geplant worden.",
+      "Let op:",
+      "Afbeelding 2 is geen bouwtekening maar een principetekening en dient uitsluitend ter illustratie van deze tekst. Sommige details zoals ontstoppingsopeningen en beluchting zijn alleen schematisch aangegeven. De schets is niet op schaal.",
+      "## 3. Standaard afmetingen",
+      "De afmetingen van het afwateringssysteem dienen aan het aantal bewoners aangepast te worden. Om een eerste indruk van de omvang te krijgen kunt u als volgt rekenen:",
+      "## 3 m³ basisvolume voor een huis dat door maximaal drie mensen wordt bewoond,",
+      "plus 0,5 m³ per extra persoon",
+      "25 m (strekkende meter) tubes d’épandage per persoon, alternatief 6 m³ lit filtrant. Afhankelijk van de bodemgesteldheid kunnen ook andere lengtes noodzakelijk zijn.",
+      "## 4. Werking van de fosse septique",
+      "Als er een oude septic tank aanwezig is bestaat er een grote kans dat deze jarenlang niet onderhouden of allang niet meer gebruikt is en daardoor niet meer werkt. De tank kan óf bacteriologisch dood óf mechanisch beschadigd zijn. De bacteriën in de fosse van een regelmatig bewoond huis doen jarenlang hun dienst en men heeft er geen omkijken naar, als er maar geregeld nieuw voedsel vanuit de WC komt. Maar de instandhouding van de bacteriëncultuur in de fosse kan kritiek zijn, als het huis niet regelmatig bewoond wordt (vakantiehuis) en de bacteriën dus niet regelmatig nieuw voedsel krijgen. Dan moet u aan het begin van het seizoen geregeld in de supermarkt een pakje bacteriën (activateur microbiologique genoemd, merknaam Éparcyl) kopen en via de WC naar de fosse septique spoelen. Doe je dat niet dan loopt het water er praktisch zo vies uit als het erin komt en het vloeiveld raakt verstopt. Vroeger gooide men ook een dode kip of rotte eieren als ‘activateur’ in de fosse. En een vriend gooit er gewoon een halve liter yoghurt in, liefst beschimmelde, sinds hij weet dat Éparcyl gewoon gedroogde yoghurt is (!).",
+      "In een goed werkende fosse lossen ook normale hoeveelheden WC-papier en resten uit het afwaswater op. Wél is het een goede gewoonte vet uit potten en pannen eerst met papier uit te vegen! Maar ook dan moet het vetfilter regelmatig geïnspecteerd en gereinigd worden, bijvoorbeeld twee of drie keer per jaar. Omdat het onvermijdelijk is dat ook stoffen in de fosse septique terecht komen waar de bacteriën geen raad mee weten (en die dan een sliblaag op de bodem vormen), moet de tank na een aantal jaren leeggezogen worden. Soms hoort men dat dit om de drie à vier jaar moet gebeuren, maar ik heb ook van tanks gehoord waar dit langer dan tien jaar niet gebeurd is, en die nog steeds naar behoren werken. Een wettelijke verplichting tot legen bestaat niet. Het legen wordt door gespecialiseerde bedrijven met tankzuigers gedaan. Deze bedrijven zijn te vinden in de gouden gids (pages jaunes) onder de trefwoorden vidange of curage, soms ook onder fosses septiques. Het opnieuw opstarten van de fosse is geen probleem; een of twee zakjes Eparcyl (of de reeds genoemde halve liter yoghurt) door de WC spoelen, en als de fosse vol is loopt deze vanzelf weer over naar de épandage. Een fosse van kunststof moet meteen weer met water gevuld worden; dan bestaat er een evenwicht tussen binnen- en buitendruk – anders kan de tank door de aarddruk inklappen!",
+      "Als het huis niet het hele jaar of door minder personen bewoond wordt dan het aantal waarop de fosse is maatgegeven, kan met minder vaak leegmaken volstaan worden. Reken maar de dubbele tijd bij bewoning van zes maanden per jaar of minder, en nogmaals het dubbele als er twee in plaats van vier of vijf mensen wonen.",
+      "Mechanische beschadigingen van een fosse zijn meestal veroorzaakt door de uitwendige druk van de omringende aarde waardoor de tank gebarsten is en er grondwater in kan sijpelen (en natuurlijk afvalwater weg kan lekken). Gevaar van mechanische beschadigingen is bijzonder groot als er boven op nabij de tank met voertuigen gereden is en de grond puin bevat. Betonnen tanks zijn er soms te repareren (kunststofmortel), plastic tanks van polyethyleen moeten bij iedere beschadiging vervangen worden.",
+      "## 5. Praktische tips",
+      "In het dagelijkse leven moet men op een paar dingen letten bij het omgaan met een fosse septique:",
+      "Chloor (bleekwater, javel) mag nooit in een fosse septique terechtkomen, want dat doodt de bacteriën. Spiritus en ammonia horen ook niet in een septic systeem; kleinere hoeveelheden kunnen soms zonder verstoring verwerkt worden, maar u kunt beter te voorzichtig dan te nonchalant zijn. Er zijn allerlei schoonmaak middelen te koop die als septictank-veilig geëtiketteerd zijn.",
+      "Dingen die ook niet in het normale riool horen, moeten beslist niet in de fosse septique terecht komen: aardolieproducten (wasbenzine, peut, thinner, ook géén kwasten ermee in de gootsteen uitwassen), (foto-) chemicaliën, medicijnen, make-up middelen, bestrijdingsmiddelen, ontsmettingsmiddelen. Maandverband mag sowieso nooit in een afwateringssysteem terecht komen.",
+      "Tip van een arts: mensen die met antibiotica behandeld worden, als het éven kan niet op het toilet dat op de fosse septique uitmondt. Dan maar even op een camping-WC of ergens anders want de antibiotica kunnen de gehele bacterieflora lamleggen.",
+      "Als een fosse definitief buiten bedrijf gesteld wordt (condamnée) worden de bacteriën door het toevoegen van ongebluste kalk (chaux vive) geïnactiveerd - tenminste, zo doet een vakman dat; als dat bij een fosse is gedaan dan is deze nooit meer aan de praat te krijgen. Vervangen dus.",
+      "Soms is er met leidingen geknoeid, er komt bijvoorbeeld hemelwater in de fosse terecht. Dat moet men corrigeren om niet bij iedere plensbui alle bacteriën weg te spoelen.",
+      "Als de installatie ooit uitgebreid en door een extra tank aan nieuwe eisen aangepast is, dan is deze vaak niet op de meest doelmatige manier aan de oude aangesloten.",
+      "Een vaak gemaakte fout is het toepassen van regenpijpen als verbinding tussen fosse en vloeiveld. Rioleringspijpen hebben een grotere wanddikte.",
+      "## 6. De administratieve molen",
+      "Op de aanleg van nieuwe fosses septiques wordt toegezien door de DDASS, de Direction Départementale des Affaires Sanitaires et Sociales. Op La Mairie haal je de formulieren voor de aanvraag van de assainissement autonome, de particuliere waterzuivering, die fosse en épandage omvat. De ambtenaar van de DDASS bepaalt dan wat voor een soort tank moet worden geplaatst, welke inhoud die moet hebben en hoeveel meter épandage (afwateringspijpen) er moeten komen. Vaak komt de ambtenaar langs en vertelt na beoordeling van de plaatselijke situatie wat er moet gebeuren: volume en type van de tank zowel als lengte en ligging van de tubes d’épandage. De voorschriften hiervoor kunnen per streek verschillen, aangepast aan het soort grond.",
+      "Als later in uw gemeente een openbaar riool aangelegd wordt kan men de fosse septique buiten bedrijf stellen. Dat doet men door de ingangsleiding van de fosse af te zagen en deze op het riool aan te sluiten (een bypass maken). Nooit de uitlaat van de fosse septique eenvoudigweg op het nieuwe riool aansluiten, want dan wordt de fosse nog steeds doorstroomd maar werkt niet meer als zodanig. Het systeem is dan verstoppingsgevoelig en potentieel explosiegevaarlijk!",
+      "De correcte procedure is dus:",
+      "de ingangsleiding van de fosse septique op het openbare riool aansluiten (een bypass maken, bij voorkeur 125 mm diameter)",
+      "alle andere aansluitingen van de fosse verwijderen de fosse septique leeg laten zuigen fosse septique verwijderen of met puin en aarde volstorten.",
+      "## 8. De kosten",
+      "De kosten van aanleg zijn behalve van de afmetingen afhankelijk van factoren zoals aantal en ligging van de aansluitpunten (keuken, WC's, badkamer), soort ondergrond, helling, omvang van het graafwerk. Daarom is het hier onmogelijk er iets zinnigs over te zeggen. Laat je niet door prijzen van fosses septiques préfabriquées die bij bouwmarkten voor € 400 à 500 te koop staan verleiden om hierop een kostenraming te baseren. De tank zelf is het minst kostbare van de totale installatie!",
+      "Als indicatie: Ik ken mensen die een graafmachine gehuurd hebben en alles zelf gedaan hebben – die waren met iets boven de € 1000 klaar. Anderen hebben aan een aannemer meer dan € 5000 betaald, maar dan ging het ook om een huis en twee gîtes. Het is steeds verstandig, op de Mairie of bij de buren naar een goede aannemer te informeren en meerdere offertes te laten maken.",
+      "## 9. Ten slotte nog iets over de ‘nieuwe’ wetgeving betreffende Fosses",
+      "Septiques",
+      "In 1992 kregen alle Franse gemeenten de verplichting opgelegd maatregelen te treffen ter zuivering van het afvalwater, (La Loi sur l'Eau de 1992). De gemeentes moesten in 2005 een schéma directeur d’assainissement klaar hebben. Dit plan geeft aan welke straten of gebieden op de riolering worden aangesloten en welke niet. In gebieden die aangesloten worden, gelden tot de uitvoering van de plannen gedoogregels voor oudere bestaande installaties (die meestal niet aan de regels voldoen). In de gebieden die niet aangesloten worden, moeten de bestaande zuiveringen op termijn aan de nieuwe regels aangepast worden, nieuwe moeten meteen aan de regels voldoen. De geldende eisen voor een particuliere zuiveringsinstallatie (assainissement non collectif) staan in de Franse norm XP-P16 603 (DTU 64.1).",
+      "Let op:",
+      "De oude fosses septiques die uitsluitend WC-water verwerkten, zijn niet meer toegestaan; in de moderne fosses toutes eaux wordt al het afvalwater uit keuken, badkamer en WC verwerkt en regenwater dient steeds gescheiden afgevoerd te worden. Volgens de wet moesten de gemeenten uiterlijk 31 december 2005 voorzien in een Service Public",
+      "## 10. Commentaren en tips van anderen",
+      "Wie een huis met fosse septique bezit doet er goed aan, vooral als het huis wordt verhuurd, in de WC en in de keuken of werkkast goed zichtbaar een bord met een tekst met de volgende strekking op te hangen:",
+      "Als een fosse septique slecht werkt, kan dit aan een ontoereikende of ontbrekende ontluchting liggen. Hiervoor gelden dezelfde regels als voor de bekende ontspanningsleiding die achter elke WC dient te liggen en die ook vaak vergeten wordt, maar het zijn beslist twee aparte leidingen: De leiding wordt op de tank op de door de fabrikant aangegeven plaats aangesloten. Dit moet het hoogste punt van de tank zijn. Deze leiding moet hoger dan het hoogste raam van het huis eindigen. Een doelmatige oplossing is daarom: vanuit de tank wordt de leiding licht omhooglopend terug naar het huis gevoerd en vervolgens langs de gevel of binnenshuis omhoog door het dak naar buiten. Laat deze ontgassingleiding net zo als de ontspanningsleidingen niet te dicht bij een balkon of dakkapel uitkomen i.v.m. mogelijke stankoverlast. Als een septic tank stinkt dan ligt dat meestal aan een foute of ontbrekende ontluchting.",
+      "Let op: Dit stuk is gebaseerd op informatie van voor 2007. Ik heb verder niets aan updates gedaan omdat wij toen een huis gekocht hadden dat op een gemeenteriool aangesloten is.",
+      "Informatiebronnen: Het ministerie voor energie en milieu publiceert op een website uitvoerige informatie die regelmatig geactualiseerd wordt; in 22 menupunten worden alle administrative en technische vragen betreffende les assainissements noncollectifs behandeld. Op deze website is onder het punt Entreprises een lijst van alle toegestane systemen te vinden.",
+      "Dit is de actuele Franse norm voor fosses septiques: http://www.centre-corse.com/wp-content/uploads/2012/09/DTU_64.1-P1-1-mars20071.pdf",
+      "Kijk verder op www.leroymerlin.fr, voer bij questions in: fosse septique of www.castorama.fr en de websites van bijna alle franse bouwmaterialenzaken",
+      "Nederlandse websites: www.riool.info www.ibahelpdesk.nl"
+    ],
+    "images": [
+      {
+        "file": "/articles/de-fosse-sceptique/source-000.jpeg",
+        "caption": "afb. 11 - 1 © Foto Hans Heus",
+        "alt": "Oorspronkelijk bronbeeld bij De fosse septique",
+        "afterParagraph": 1,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/de-fosse-sceptique/source-001.jpeg",
+        "caption": "afb. 11 - 2",
+        "alt": "Oorspronkelijk bronbeeld bij De fosse septique",
+        "afterParagraph": 6,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/de-fosse-sceptique/source-002.jpeg",
+        "caption": "afb. 11 - 4 Tube d'épandage",
+        "alt": "Oorspronkelijk bronbeeld bij De fosse septique",
+        "afterParagraph": 16,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/de-fosse-sceptique/source-003.jpeg",
+        "caption": "afb. 11 - 5 De 'bedding' van de tubes d'épandage",
+        "alt": "Oorspronkelijk bronbeeld bij De fosse septique",
+        "afterParagraph": 18,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/de-fosse-sceptique/source-004.jpeg",
+        "caption": "afb. 11 - 6 De tankzuiger staat voor het huis, de afzuigleiding wordt gelegd",
+        "alt": "Oorspronkelijk bronbeeld bij De fosse septique",
+        "afterParagraph": 44,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/de-fosse-sceptique/source-005.jpeg",
+        "caption": "afb. 11 - 7 De fosse wordt leeggezogen",
+        "alt": "Oorspronkelijk bronbeeld bij De fosse septique",
+        "afterParagraph": 45,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/de-fosse-sceptique/source-006.jpeg",
+        "caption": "Bronbeeld 7 · PDF-pagina 6",
+        "alt": "Oorspronkelijk bronbeeld bij De fosse septique",
+        "afterParagraph": 58,
+        "sourcePage": 6
+      }
+    ]
+  },
+  "badkamerproject-christian": {
+    "code": "24.1",
+    "title": "Badkamerproject Christian",
+    "deck": "Er was iets vreemds aan de hand met de plek waar we besloten een badkamer te gaan maken. Het was eigenlijk helemaal geen kamer. Het was een grote L-vormige couloir die toegang bood tot vier kamers, in het…",
+    "sourceUrl": "https://drive.google.com/file/d/1uR-KEYp3efwbPGkoUSalLMZDFIuJ2O58/view?usp=drivesdk",
+    "sourcePages": 15,
+    "paragraphs": [
+      "Er was iets vreemds aan de hand met de plek waar we besloten een badkamer te gaan maken. Het was eigenlijk helemaal geen kamer. Het was een grote L-vormige couloir die toegang bood tot vier kamers, in het plafond zat een gat, zeker van een vroegere trap naar de zolder, en het had een deur naar de aansluitende schuur (afb.1 en 2).",
+      "## 1. Voorbereidende werkzaamheden",
+      "Het eerste wat ik deed was een plafond aanbrengen; daarvoor moest een balk geplaatst worden, afb.1 en 2. Daarna begonnen wij plannen voor de indeling te maken. Afb.3 toont het vijfde plan. Wat wij wilden was: - een badkuip, - een inloopdouche (douche à l’ Italienne), - twee wastafels en - een WC en ook opbergruimte voor handdoeken etc.. De plaats van de WC werd natuurlijk bepaald door de ligging van de hoofdafvoer. Aansluiten op het bestaande systeem was praktisch onmogelijk dus heb ik een nieuwe hoofdafvoerbuis in de aangrenzende schuur gepland, deze dan ook aangelegd en de badkamer erop aangesloten.",
+      "Mijn eerste actie was het verwijderen van de bestaande plankenvloer. De nieuwe vloer bestaat uit zwaluwstaart-platen, zogenaamde Lewis-platen (zie afb.4) met een betonlaag erop. Het lukte de vloer zo te dimensioneren dat die niet veel hoger kwam te liggen dan de oorspronkelijke (en de rest van het couloir, dat nu als gang dient). Oorspronkelijk lagen er 32mm dikke grenen planken. De Lewisplaat is 17mm hoog, daarop 8mm beton, dan 10mm tegels+tegellijm -> 35mm.",
+      "Bij het gieten van de vloer heb ik een fout gemaakt: ik heb de balken onder de Lewisplaat niet ondersteund zoals onder 8.2.3 beschreven. Ik dacht dat de balken sterk genoeg waren om de last van het nog niet uitgeharde en dus niet meedragende beton aan te kunnen – niet dus. De vloer was in het midden van het vertrek 8mm doorgezakt, net te veel om dat met de tegellijm te compenseren. Ik moest dus een egalisatielaag aanbrengen.",
+      "<- Afb.24.1-4 Het leggen van de Lewisplaten",
+      "De bestaande muren waren niet geschikt om deze te betegelen – te onregelmatig en niet draagkrachtig. Daarom moesten er voor deze muren gipsplaten geplaatst worden, en wel de groene watervaste. De volgende actie was dus het plaatsen van het metalen regelwerk. Ik heb dit exact haaks gedaan en daarmee de onregelmatigheden van de muren gecompenseerd, zie 16.4-afb.8 en mijn plattegrond, hierboven afb.3.",
+      "## 2. Riolering",
+      "Dan de afvoer. Ik had separate afvoeren voor badkuip en douche voorzien om het effect van communicerende vaten zeker uit te sluiten (u hebt toch zeker van die badkamers gehoord waar de douche overloopt als men de badkuip leeg laat lopen; voor meer details over dit soort problemen zie menupunt 10.2.1). Aan de andere kant van de badkamer heb ik de afvoer voor de WC en de wastafels geïnstalleerd, zie afb.3, en ook de aansluitingen voor de geplande aangrenzende bezoekersbadkamer met WC, douchecabine en wastafel. Op afb.6 is deze douchebak provisorisch neergezet. Ik heb de PVC-afvoerleidingen eerst ‘koud’ in elkaar gezet en zorgvuldig ondersteund, daarna alle stukken met viltstiftstrepen gemerkt en genummerd, zie afb.7, en pas verlijmd nadat alles met het nodige afschot uitgelijnd was. Op het muurtje (blauwe pijl) heb ik later de scheidingswand (beton cellulaire) tussen de grote badkamer en de iets hoger liggende kleine gasten-badkamer gebouwd.",
+      "Na het plaatsen van de vloer en de afvoeren kon ik mijn waterleidingen aanleggen. Op afb.8 ziet u de warmen koudwater aansluitingen voor de badkuip (links) en de douche (rechts). Ik heb voor koper gekozen, niet voor de moderne door krimpfittingen verbonden PERleidingen; dit omdat ik het bestaande koperen leidingnet gerepareerd en uitgebreid had en daardoor alle gereedschappen (en de nodige vaardigheden) voor koper in huis had.",
+      "## 3. Het tegelwerk",
+      "Daarna begon het betegelen van de vloer. Ik heb voor grijze tegels van 33x33cm gekozen, en heb die met 5mm-naden in baksteenverband gelegd. Afb. 9 en 10. Op de plaats van de inloopdouche ziet u de zwarte randstreep en de witte slabbe van de afvoergoot. Het zwarte randprofiel wordt onder de tegels in de lijmlaag gelegd en loopt dan achter de wandtegels omhoog.",
+      "Rond de afvoergoot ziet u (afb. 11) een iets vreemd tegelpatroon; dit kwam omdat ik achter de goot met een volle niet gesneden tegel door ben gegaan - de kleine invulstukken vallen onder de doucheafscheiding en de badkuip weg. Nadat de hele vloer betegeld en gevoegd was (ik heb voor grijze voegmortel gekozen, witte voegen zijn op een vloer ondoenlijk) kon ik met het bekleden en betegelen van de muren beginnen. Op de metalen profielen (zie afb.5) heb ik groene (watervaste) gipsplaten geplaatst die ik daarna betegeld heb.",
+      "Voor inloopdouches wordt een vloerhelling van 0,5 à 1% naar de afvoergoot toe aanbevolen. Ik heb voor rond de 0,7% gekozen en heb dit met twee gekruisde lijmlagen onder de tegels gerealiseerd. Fout dus! De uiteindelijke helling was iets minder dan 0,5%, en daarop blijft het water staan. Bij een volgend project zou ik het zo doen als ik het bij een professional in Nederland gezien heb: De helling van 1% in de betonlaag realiseren, en dit beter drie keer dan twee keer verifiëren. Dan de tegels gewoon met één lijmlaag plaatsen...",
+      "Op afb. 11 ziet u dat ik niet op de vloer met betegelen begonnen ben maar een tegelrij hoger. Dit is doelmatig als de vloer niet compleet horizontaal is, dan is het namelijk ontzettend moeilijk de tegels precies horizontaal te zetten. Ik heb dus een metalen profiel op de gipsplaten geschroefd, op een hoogte van een tegel plus twee voegbreedtes. De onderste tegelrij kan ik dan na het uitharden van de tegels plaatsen, met tegelkruisjes boven en wiggen onder tegen de vloer. Boven de nis bij de douchecabine heb ik het net zo gedaan; ik kon hier makkelijk een betegelde nis plaatsen omdat de afstand tussen de gipsplaat en de erachter liggende scheve muur bijna 12cm bedroeg. Op afbeelding 13 is de achterkant van de badkamer bijna compleet betegeld, op de vroegere deurnis na, waar ik een raam geplaatst heb.",
+      "Nog even over de nis: hier is de bouw van een soortgelijke nis beschreven volgens mij nodeloos ingewikkeld, en slecht in het tegelpatroon ingepast",
+      "Ik heb dan ook de tegenover liggende muur betegeld, de afscheiding tegen de toekomstige gastenbadkamer, die ik van blokken beton cellulaire opgebouwd had. Voor het drie tegels brede stuk links wordt de WC geplaatst, op het 3x8 tegels grote vlak wordt een op maat gemaakte spiegel gelijmd. Afb.14. Onder de spiegel ziet u de aansluitingen voor de twee wastafels",
+      "## 4. De doucheafscheiding",
+      "En nu de doucheafscheiding. Die heb ik uit blocs de beton cellulaire van 25x60x7cm opgebouwd. Andere opties waren glasbouwstenen of een op maat gemaakt scherm van gehard glas. Om de twee lagen heb ik de cellenbetonblokken door veerankers met de daarachter liggende reeds betegelde muur verbonden, afb. 15 en 16. Ik heb dit muurtje op beide kanten betegeld, de voorkant heb ik met plastic hoekprofielen en op maat gesneden tegels afgewerkt, afb.17.",
+      "Zo ziet het geheel er nu uit, afb.18. Ik heb voor een verende doucherail en een plastic douchegordijn gekozen. Pendelende glazen douchedeuren zouden",
+      "## 5. Plaatsing van de hangende WC",
+      "Tegen de tegenoverliggende wand kon ik nu de WC plaatsen. Ik heb het ophangframe tegen muur en vloer vastgezet, de spoel- en afvoeraansluitingen gemaakt, en dan het geheel met watervaste gipsplaten bekleed en deze betegeld; de plaatsing van het montageframe en de afmetingen van de gipsplatenkast heb ik zo gekozen dat ik alles met ongesneden hele tegels kon bekleden. Ook hier heb ik hoekprofielen gebruikt. U kunt deze in een bij de tegels passende kleur kiezen, of juist in een contrasterende kleur; bij Schlüter Systems vindt u een enorme keuze, in plastic en metaal. Zie afb. 20 t/m 23.",
+      "Ook hier heb ik de truc gebruikt met de eerste complete tegelrij te beginnen (hier de derde).",
+      "## 6. De badkuip",
+      "Ik heb een plastic badkuip van 80x175cm geplaatst. De ombouw heb ik van beton cellulaire op een terugspringende plint gemaakt, ook van beton cellulaire. Zo heeft men plaats voor de voeten als men voor de badkuip staat. Afb.24 t/m 27.",
+      "Op deze foto (afb.25) heb ik de contouren van de blocs en beton cellulaire een beetje geaccentueerd.",
+      "## 7. Elektra",
+      "En nu de elektrische installatie, zie afb. 28, 29 en 30. Ik heb alle elektrische leidingen vanuit een 175x175mm installatiebox gelegd, die ik buiten de badkamer geplaatst heb: plafondspots, spiegelverlichting, afzuigventilator, stopcontacten voor scheerapparaat en tandenborstels, en een vast gemonteerde haardroger - zie ook de afbeeldingen onder 13.1.5. De meeste leidingen heb ik tussen het balkenplafond en het hangende gipsplatenplafond gelegd. Ik heb alle koperen leidingen en de Lewisplaat van aardaansluitingen voorzien en deze met de hoofdaarde verbonden. En wanneer er ergens een aardlekschakelaar nodig is, dan is het voor de elektra in de badkamer. Water, blote huid en elektriciteit zijn een gevaarlijke combinatie. Conform de Franse elektranormen zijn alle groepen van de elektrische installatie aangesloten op interrupteurs différentiels.",
+      "## 8. Het resultaat",
+      "Wij zijn nu al meer dan twaalf jaar gelukkig met het geheel, afb. 31 – 33.",
+      "Wie de afbeeldingen groter wil zien gebruikt ctrl+scroll.",
+      "## 9. Nog een paar details",
+      "Rond de spiegel en 10cm onder het plafond hebben wij tegelstreepjes (des listels) in een contrasterende kleur geplaatst, zie bijv. afb.33. Dit is het enige kleureffect in de badkamer. Wij zijn namelijk van mening dat alles wat je niet zo makkelijk kunt veranderen terughoudend moet zijn, de kleureffecten komen dan van handdoeken en andere accessoires. In de raamnis hebben wij twee tweedeurs IKEA-kastjes geplaatst, het meest rechtse in de breedte aangepast, afb.32; zo kan je makkelijk handdoeken en andere spullen opbergen. Het plafond is een ‘zwevend plafond’ (afb.34) met schaduwvoeg zoals onder 08.3.2 afb.17 beschreven.",
+      "Voegen met voegspecie of met siliconekit? Waar betegelde muren en vloeren elkaar raken dient men de voegen niet met specie te vullen maar met siliconekit uit de spuit, omdat muur en vloer verschillende uitzettingscoëfficiënten kunnen hebben of zich bij zetting anders gedragen.",
+      "In onze badkamer heb ik het zo gedaan (afb.35): 1 = witte voegspecie, 3mm voegen 2 = grijze voegspecie, 5mm voegen 3 = witte siliconekit 4 = grijze siliconekit Wat gebeuren kan als men hiermee te nonchalant omgaat is hier te zien: afb.36 De muren zijn gemetseld, en de valpijp in de hoek heeft men met de schuin geplaatste gipsplaat gecamoufleerd. Alle naden werden met voegspecie afgewerkt. Na drie maanden ging de linker naad open.",
+      "Ik werd ook gevraagd waarom wij voor WC en wastafels geen voorwand-installatie gekozen hebben zoals onder 10.2.1 beschreven. Dit zou de wastafels een centimeter of 25 naar voren hebben gebracht, en dat zou de loopruimte tussen badkuip en wastafels te veel beperken. Een andere optie zou geweest zijn de box van de hangende WC tot het plafond te verlengen; zo lijkt het toch een beetje op een ingemetselde ouderwetse spoelbak. Zou kunnen, en men had daar ook opslagruimte voor cosmetica etc. kunnen creëren (zie mijn animatie op afb.37).",
+      "C.v.Klösterlein, 2018-05-11"
+    ],
+    "images": [
+      {
+        "file": "/articles/badkamerproject-christian/source-000.jpeg",
+        "caption": "Bronbeeld 1 · PDF-pagina 1",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 0,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-001.jpeg",
+        "caption": "Afb. 24.1-1 en 24.1-2 (rechts)",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 0,
+        "sourcePage": 1
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-002.jpeg",
+        "caption": "Afb. 24.1-3 Plattegrond van de badkamer. Let op de niet haakse muren links en boven.",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 2,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-003.jpeg",
+        "caption": "Bronbeeld 4 · PDF-pagina 2",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 4,
+        "sourcePage": 2
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-004.jpeg",
+        "caption": "Afb. 24.1-5 Metalen wandprofielen",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 6,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-005.jpeg",
+        "caption": "Afb.24.1-6 De rioleringen provisorisch gelegd. Vlnr: WC gastenbad, WC badkamer, douchebak gastenbad, wastafel 1, wastafel gastenbadk., wastafel 2, sifon voor wasmachine (die dan niet geplaatst werd)",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 8,
+        "sourcePage": 3
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-006.jpeg",
+        "caption": "Afb.24.1-7 Rioleringsbuizen ‘koud’ in elkaar gezet en ondersteund, alle stukken van passtrepen voorzien en genummerd",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 8,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-007.jpeg",
+        "caption": "Afb.24.1-8 Koperen waterleidingen achter de metalen staanders",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 8,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-008.jpeg",
+        "caption": "Afb. 24.1-9 Tegels 'koud' uitgelegd",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 11,
+        "sourcePage": 4
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-009.jpeg",
+        "caption": "Afb.24.1-10 De eerste drie rijen tegel gelegd",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 11,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-010.jpeg",
+        "caption": "Afb. 24.1-11",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 13,
+        "sourcePage": 5
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-011.jpeg",
+        "caption": "Afb. 24.1-12",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 14,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-012.jpeg",
+        "caption": "Afb. 24.1-13",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 14,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-013.jpeg",
+        "caption": "Afb. 24.1-14",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 14,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-014.jpeg",
+        "caption": "Afb. 24.1-16",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 18,
+        "sourcePage": 6
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-015.jpeg",
+        "caption": "Afb. 24.1-15 Opbouw van de doucheafscheiding. Rechts een balk als mal.",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 19,
+        "sourcePage": 7
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-016.jpeg",
+        "caption": "Afb. 24.1-17",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 19,
+        "sourcePage": 7
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-017.jpeg",
+        "caption": "Afb. 24.1-18",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 19,
+        "sourcePage": 7
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-018.jpeg",
+        "caption": "Afb. 24.1-19",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 21,
+        "sourcePage": 8
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-019.jpeg",
+        "caption": "Afb. 24.1-20",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 21,
+        "sourcePage": 8
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-020.jpeg",
+        "caption": "afb. 24.1 - 21 Een metaalprofiel aanbrengen",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 22,
+        "sourcePage": 8
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-021.jpeg",
+        "caption": "afb. 24.1 - 22 En van hier uit tegelen, dus met de derde rij beginnen",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 22,
+        "sourcePage": 8
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-022.jpeg",
+        "caption": "afb. 24.1 - 23 Dan het profiel voor de tweede rij plaatsen en deze tegelen",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 22,
+        "sourcePage": 8
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-023.jpeg",
+        "caption": "Afb. 24.1-24 De terugspringende plint",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 24,
+        "sourcePage": 9
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-024.jpeg",
+        "caption": "Afb. 24.1-25 Plint, detail",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 24,
+        "sourcePage": 9
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-025.jpeg",
+        "caption": "Afb. 24.1-26 De ombouw is bijna klaar ...",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 25,
+        "sourcePage": 10
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-026.jpeg",
+        "caption": "Afb. 24.1-27 ... en nu is alles betegeld",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 25,
+        "sourcePage": 10
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-027.jpeg",
+        "caption": "Afb. 24.1-29 De installatiebox 175x175mm aan de buitenkant, zie afb.28 boven",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 27,
+        "sourcePage": 10
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-028.jpeg",
+        "caption": "Afb. 24.1-28 Leidingsaanleg aan de buitenkant",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 27,
+        "sourcePage": 11
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-029.jpeg",
+        "caption": "Afb. 24.1-30",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 27,
+        "sourcePage": 11
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-030.jpeg",
+        "caption": "Afb. 24.1-31",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 30,
+        "sourcePage": 11
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-031.jpeg",
+        "caption": "Afb. 24.1-32",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 30,
+        "sourcePage": 11
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-032.jpeg",
+        "caption": "Afb. 24.1-33",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 30,
+        "sourcePage": 12
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-033.jpeg",
+        "caption": "Afb. 24.1 - 33a En hier de kleine gastenbadkamer",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 30,
+        "sourcePage": 13
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-034.jpeg",
+        "caption": "Afb. 24.1-34",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 32,
+        "sourcePage": 13
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-035.jpeg",
+        "caption": "Abb. 24.1-35 De verschillende voegmaterialen",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 33,
+        "sourcePage": 14
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-036.jpeg",
+        "caption": "Afb. 24.1-36",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 33,
+        "sourcePage": 14
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-037.jpeg",
+        "caption": "Afb. 24.-37 Animatie van een WC-box 'up to the sky'",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 34,
+        "sourcePage": 14
+      },
+      {
+        "file": "/articles/badkamerproject-christian/source-038.jpeg",
+        "caption": "Afb. 24.1-38 LED-verlichting, hier onder een zwevend kastje - had ik ook goed onder mijn recessed badkuip plint kunnen installeren!",
+        "alt": "Oorspronkelijk bronbeeld bij Badkamerproject Christian",
+        "afterParagraph": 35,
+        "sourcePage": 15
+      }
+    ]
+  }
+}
