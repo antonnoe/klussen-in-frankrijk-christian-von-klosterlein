@@ -753,6 +753,18 @@ footer p, footer > a:last-child { font-size: 11px; }
   font-size: 18px; line-height: 1.85;
   font-kerning: normal; text-wrap: pretty;
 }
+.batch-body .article-paragraph-block a {
+  color: var(--wine);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(128, 0, 0, .4);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+}
+.batch-body .article-paragraph-block a:hover,
+.batch-body .article-paragraph-block a:focus-visible {
+  text-decoration-color: currentColor;
+}
 .batch-body .article-paragraph-block > h2,
 .batch-body .article-paragraph-block > h3 {
   margin-top: 58px; color: var(--wine); font-weight: 400; line-height: 1.25;

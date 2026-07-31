@@ -13,6 +13,31 @@ export type RestoredArticleData = {
   }[];
 };
 
+function renderInlineLinks(text: string) {
+  const parts = [];
+  const pattern = /\[([^\]]+)\]\((\/[^)]+)\)/g;
+  let cursor = 0;
+  let match;
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > cursor) {
+      parts.push(text.slice(cursor, match.index));
+    }
+    parts.push(
+      <a href={match[2]} key={`${match[2]}-${match.index}`}>
+        {match[1]}
+      </a>,
+    );
+    cursor = pattern.lastIndex;
+  }
+
+  if (cursor < text.length) {
+    parts.push(text.slice(cursor));
+  }
+
+  return parts;
+}
+
 export function RestoredArticle({ article }: { article: RestoredArticleData }) {
   return (
     <main className="article-site batch-article" id="top">
@@ -64,11 +89,11 @@ export function RestoredArticle({ article }: { article: RestoredArticleData }) {
           return (
             <section className="article-paragraph-block" key={index}>
               {paragraph.startsWith("## ") ? (
-                <h2>{paragraph.slice(3)}</h2>
+                <h2>{renderInlineLinks(paragraph.slice(3))}</h2>
               ) : paragraph.startsWith("### ") ? (
-                <h3>{paragraph.slice(4)}</h3>
+                <h3>{renderInlineLinks(paragraph.slice(4))}</h3>
               ) : (
-                <p>{paragraph}</p>
+                <p>{renderInlineLinks(paragraph)}</p>
               )}
               {anchoredImages.length ? (
                 <div
